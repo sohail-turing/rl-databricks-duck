@@ -1,0 +1,51 @@
+id: T-XXX
+domain: sales            # sales | marketing | finance | engineering
+sub_domain: TBD
+difficulty: hard         # easy | medium | hard
+target_pass_at_5: "<20%"
+
+query: |
+  TBD — the natural-language question the agent receives.
+
+minimal_hint: |
+  TBD — the smallest hint that makes the baseline agent solve reliably.
+  Contains only knowledge an agent could plausibly infer.
+
+expected_assets:
+  tables: []
+  notebooks: []
+  dashboards: []
+  drive_docs: []
+
+gold_sql: |
+  -- canonical query
+
+gold_answer:
+  type: number              # number | string | set | table
+  value: TBD
+  tolerance: 0
+  accepted_formats: []
+
+verifier:
+  kind: programmatic        # programmatic | judge
+  spec: numeric_match       # for programmatic: exact_match | set_match | numeric_match | frame_match
+                            # for judge: leave spec empty and set rubric below
+  rubric: ""                # required only when kind == judge
+
+distractors: []
+  # Example entry:
+  # - claim_id: D-1
+  #   taxonomy_id: D.T.NAME
+  #   asset_ref: main.metric_store_internal.fct__example__a8f3b2c1
+  #   ablation: permission_hide
+  #   verified: false
+
+anchors: []
+  # Example entry:
+  # - claim_id: A-1
+  #   taxonomy_id: A.T.AUTH
+  #   asset_ref: main.certified.example
+  #   ablation: permission_hide
+  #   verified: false
+
+output_location: "/Workspace/Users/${eval_user}/_runs/${run_id}/T-XXX/"

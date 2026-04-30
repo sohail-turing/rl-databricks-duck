@@ -1,0 +1,94 @@
+id: T-EXAMPLE
+domain: engineering
+sub_domain: asset_management
+difficulty: hard
+target_pass_at_5: "<20%"
+
+query: |
+  How many enterprise laptops were provisioned last quarter?
+
+minimal_hint: |
+  Use the certified inventory table for provisioning counts.
+  Filter status = 'PROVISIONED' on provisioned_date.
+
+expected_assets:
+  tables:
+    - main.certified.laptop_inventory
+  notebooks:
+    - /Workspace/Shared/it_assets/quarterly_provisioning.ipynb
+  dashboards: []
+  drive_docs:
+    - /Companies/Engineering/asset_management/2026-q1-summary.gdoc
+
+gold_sql: |
+  SELECT COUNT(DISTINCT laptop_id) AS provisioned_count
+  FROM main.certified.laptop_inventory
+  WHERE status = 'PROVISIONED'
+    AND provisioned_date >= DATE '2026-01-01'
+    AND provisioned_date <  DATE '2026-04-01';
+
+gold_answer:
+  type: number
+  value: 1247
+  tolerance: 0
+  accepted_formats: ["1247", "1,247", "1.247k"]
+
+verifier:
+  kind: programmatic
+  spec: numeric_match
+
+distractors:
+  - claim_id: D-1
+    taxonomy_id: D.T.NAME
+    asset_ref: main.metric_store_internal.fct__laptop_inventory__a8f3b2c1
+    ablation: permission_hide
+    verified: false
+    notes: "Materialization backing — identical structured comment, hash-suffix name."
+  - claim_id: D-2
+    taxonomy_id: D.T.WCM
+    asset_ref: main.eng_procurement.laptop_orders
+    ablation: permission_hide
+    verified: false
+    notes: "Deprecated source — comment marked **DEPRECATED**."
+  - claim_id: D-3
+    taxonomy_id: D.T.SEM
+    asset_ref: main.eng_servicedesk.laptop_requests
+    ablation: permission_hide
+    verified: false
+    notes: "Wrong semantics — request_date is when the ticket opened, not when the laptop was provisioned."
+  - claim_id: D-4
+    taxonomy_id: D.T.CAT
+    asset_ref: users.jane_doe.laptop_analysis
+    ablation: permission_hide
+    verified: false
+    notes: "User-space CTAS copy with abbreviated columns and no comment."
+  - claim_id: D-5
+    taxonomy_id: D.NA.*
+    asset_ref: /Workspace/Shared/it_assets/quarterly_provisioning.ipynb
+    ablation: snippet_ablate
+    apply_script: harness/ablation/T-EXAMPLE/D-5/apply.sh
+    undo_script:  harness/ablation/T-EXAMPLE/D-5/undo.sh
+    verified: false
+    notes: "Comment in cell 3 says 'use order_date for provisioning'; ablating the line should help the agent."
+
+anchors:
+  - claim_id: A-1
+    taxonomy_id: A.T.AUTH
+    asset_ref: main.certified.laptop_inventory
+    ablation: permission_hide
+    verified: false
+  - claim_id: A-2
+    taxonomy_id: A.NA.CUI
+    asset_ref: main.certified.laptop_inventory.provisioned_date
+    ablation: snippet_ablate
+    apply_script: harness/ablation/T-EXAMPLE/A-2/apply.sh
+    undo_script:  harness/ablation/T-EXAMPLE/A-2/undo.sh
+    verified: false
+    notes: "Column-comment instruction 'This is the canonical date for provisioning queries. Do NOT use order_date.'"
+  - claim_id: A-3
+    taxonomy_id: A.G.AUTH
+    asset_ref: /Companies/Engineering/asset_management/2026-q1-summary.gdoc
+    ablation: permission_hide
+    verified: false
+
+output_location: "/Workspace/Users/${eval_user}/_runs/${run_id}/T-EXAMPLE/"

@@ -1,0 +1,29 @@
+id: revenue_report_v1
+model: openai:gpt-4o
+description: |
+  Rubric for analytical report-style tasks where the agent must produce a
+  written summary referencing specific tables and dashboards.
+dimensions:
+  - name: factual_accuracy
+    weight: 0.40
+    description: |
+      Numbers and date ranges in the report match the gold answer within
+      the task's tolerance. Assertions about trends are supported by the data.
+  - name: use_of_correct_sources
+    weight: 0.30
+    description: |
+      The agent cites the gold table(s) by fully-qualified name. It does not
+      cite deprecated, materialization-backing, or user-space tables as
+      authoritative.
+  - name: completeness
+    weight: 0.20
+    description: |
+      The report addresses every sub-question in the prompt (e.g. total,
+      breakdown by region, trend vs prior period).
+  - name: structure
+    weight: 0.10
+    description: |
+      The report has a clear structure (summary, breakdown, methodology) and
+      readable formatting.
+partial_credit: true
+output_format: json
