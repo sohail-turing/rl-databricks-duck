@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "table_count": 30,
+  "table_count": 38,
   "tables": [
     {
       "canonical_name": "main.certified.calendar_periods",
@@ -29,6 +29,34 @@
       "sqlite_name": "certified__channels",
       "row_count": 8,
       "schema_path": "certified/channels.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.genders",
+      "local_name": "certified.genders",
+      "sqlite_name": "certified__genders",
+      "row_count": 3,
+      "schema_path": "certified/genders.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.marital_statuses",
+      "local_name": "certified.marital_statuses",
+      "sqlite_name": "certified__marital_statuses",
+      "row_count": 4,
+      "schema_path": "certified/marital_statuses.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.countries",
+      "local_name": "certified.countries",
+      "sqlite_name": "certified__countries",
+      "row_count": 8,
+      "schema_path": "certified/countries.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.languages",
+      "local_name": "certified.languages",
+      "sqlite_name": "certified__languages",
+      "row_count": 5,
+      "schema_path": "certified/languages.schema.json"
     },
     {
       "canonical_name": "main.certified.employees",
@@ -71,6 +99,41 @@
       "sqlite_name": "marketing_campaigns__campaigns",
       "row_count": 12,
       "schema_path": "marketing_campaigns/campaigns.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_personal_details",
+      "local_name": "certified.customer_personal_details",
+      "sqlite_name": "certified__customer_personal_details",
+      "row_count": 360,
+      "schema_path": "certified/customer_personal_details.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_employment_details",
+      "local_name": "certified.customer_employment_details",
+      "sqlite_name": "certified__customer_employment_details",
+      "row_count": 360,
+      "schema_path": "certified/customer_employment_details.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_identifications",
+      "local_name": "certified.customer_identifications",
+      "sqlite_name": "certified__customer_identifications",
+      "row_count": 720,
+      "schema_path": "certified/customer_identifications.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_next_of_kin",
+      "local_name": "certified.customer_next_of_kin",
+      "sqlite_name": "certified__customer_next_of_kin",
+      "row_count": 360,
+      "schema_path": "certified/customer_next_of_kin.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_channel_enrollments",
+      "local_name": "certified.customer_channel_enrollments",
+      "sqlite_name": "certified__customer_channel_enrollments",
+      "row_count": 2520,
+      "schema_path": "certified/customer_channel_enrollments.schema.json"
     },
     {
       "canonical_name": "main.hr_people.departments",

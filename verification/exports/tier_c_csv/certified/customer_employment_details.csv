@@ -1,0 +1,361 @@
+id,customer_id,employment_status,occupation,job_title,employer_name,employer_address,employer_phone,employment_start_date,employment_end_date,years_employed,income_amount,income_frequency,is_primary_income,is_self_employed,created_at,updated_at
+CED-0000001,CUST-000001,Employed,Healthcare,Registered Nurse,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-103-1589,2012-12-06,,13.4,9670.2,monthly,True,False,2025-10-13,2025-12-19
+CED-0000002,CUST-000002,Student,Student,Student Associate,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-348-8525,2020-05-13,,6.0,4846.42,monthly,False,False,2025-05-25,2025-10-25
+CED-0000003,CUST-000003,Student,Student,Student Associate,Pioneer Tech,"88 Peachtree Ave, Atlanta, GA",+1-704-262-8089,2012-07-20,,13.8,4833.48,bi-weekly,True,False,2024-04-30,2024-05-31
+CED-0000004,CUST-000004,Employed,Hospitality,Guest Services Lead,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-162-3895,2014-11-04,,11.5,6468.94,bi-weekly,True,False,2024-11-02,2025-06-12
+CED-0000005,CUST-000005,Unemployed,Unemployed,Unemployed Associate,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-619-4245,2018-10-12,,7.6,2276.63,bi-weekly,True,False,2025-09-29,2025-12-01
+CED-0000006,CUST-000006,Employed,Education,Teacher,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-765-4820,2009-07-27,,16.8,12285.63,monthly,True,False,2024-08-08,2024-09-28
+CED-0000007,CUST-000007,Employed,Logistics,Operations Coordinator,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-205-4488,2025-03-06,,1.2,9579.42,monthly,True,False,2024-11-14,2025-02-17
+CED-0000008,CUST-000008,Employed,Professional Services,Business Consultant,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-946-7561,2025-09-29,,0.6,11014.71,monthly,True,False,2025-04-21,2025-11-03
+CED-0000009,CUST-000009,Retired,Retired,Retired Associate,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-464-8610,2024-06-29,,1.8,2887.91,monthly,True,False,2025-07-23,2025-12-19
+CED-0000010,CUST-000010,Self-Employed,Hospitality,Guest Services Lead,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-985-4138,2022-12-10,,3.4,14008.25,bi-weekly,True,True,2025-10-17,2026-05-01
+CED-0000011,CUST-000011,Employed,Professional Services,Business Consultant,Blue River Health,"101 Main St, Charlotte, NC",+1-704-138-7607,2015-04-03,,11.1,10189.68,monthly,True,False,2025-07-06,2026-02-18
+CED-0000012,CUST-000012,Employed,Hospitality,Guest Services Lead,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-947-2312,2016-03-10,,10.1,9890.59,monthly,True,False,2024-12-28,2025-09-10
+CED-0000013,CUST-000013,Employed,Professional Services,Business Consultant,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-343-5063,2010-03-19,,16.1,11032.63,monthly,True,False,2026-01-09,2026-05-01
+CED-0000014,CUST-000014,Employed,Education,Teacher,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-144-9229,2015-09-19,,10.6,14159.92,monthly,True,False,2025-05-20,2025-10-06
+CED-0000015,CUST-000015,Employed,Healthcare,Registered Nurse,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-991-6204,2012-10-29,,13.5,12849.7,monthly,True,False,2026-03-14,2026-05-01
+CED-0000016,CUST-000016,Self-Employed,Retail,Store Supervisor,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-437-7093,2016-07-09,,9.8,5928.33,monthly,True,True,2025-05-11,2025-07-12
+CED-0000017,CUST-000017,Retired,Retired,Retired Associate,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-189-6518,2025-05-20,2035-05-09,10.0,959.23,monthly,False,False,2026-04-25,2026-05-01
+CED-0000018,CUST-000018,Unemployed,Unemployed,Unemployed Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-363-9440,2025-10-02,,0.6,3700.0,bi-weekly,True,False,2024-12-02,2025-07-18
+CED-0000019,CUST-000019,Employed,Education,Teacher,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-549-5221,2011-10-11,,14.6,5216.99,bi-weekly,False,False,2026-01-16,2026-05-01
+CED-0000020,CUST-000020,Employed,Technology,Software Engineer,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-474-3286,2015-03-18,,11.1,12572.03,monthly,True,False,2026-05-09,2026-05-01
+CED-0000021,CUST-000021,Student,Student,Student Associate,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-983-9683,2015-09-08,,10.6,827.99,monthly,True,False,2025-08-26,2026-05-01
+CED-0000022,CUST-000022,Employed,Education,Teacher,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-144-9817,2025-08-19,,0.7,6303.52,monthly,False,False,2026-08-22,2026-05-01
+CED-0000023,CUST-000023,Unemployed,Unemployed,Unemployed Associate,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-320-3746,2022-05-14,2031-09-21,9.4,4801.09,bi-weekly,True,False,2024-11-10,2024-12-22
+CED-0000024,CUST-000024,Unemployed,Unemployed,Unemployed Associate,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-634-5296,2020-04-25,2029-12-15,9.6,1913.15,monthly,True,False,2025-01-24,2026-01-06
+CED-0000025,CUST-000025,Self-Employed,Education,Teacher,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-800-3889,2023-02-23,,3.2,6417.37,monthly,True,True,2024-07-29,2025-03-04
+CED-0000026,CUST-000026,Employed,Education,Teacher,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-201-7572,2024-05-03,,2.0,7487.56,monthly,True,False,2024-06-15,2024-11-19
+CED-0000027,CUST-000027,Employed,Education,Teacher,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-885-3252,2021-03-31,,5.1,12690.56,monthly,True,False,2026-09-22,2026-05-01
+CED-0000028,CUST-000028,Retired,Retired,Retired Associate,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-933-6022,2019-09-11,,6.6,1004.18,monthly,False,False,2026-04-22,2026-05-01
+CED-0000029,CUST-000029,Employed,Healthcare,Registered Nurse,Coastal Services,"101 Main St, Charlotte, NC",+1-704-604-9642,2012-04-18,,14.0,3458.45,monthly,True,False,2025-03-28,2025-11-08
+CED-0000030,CUST-000030,Employed,Healthcare,Registered Nurse,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-453-7887,2023-10-10,,2.6,3214.2,bi-weekly,False,False,2026-01-29,2026-05-01
+CED-0000031,CUST-000031,Self-Employed,Logistics,Operations Coordinator,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-612-4874,2010-12-03,,15.4,6731.39,bi-weekly,True,True,2024-05-31,2024-07-26
+CED-0000032,CUST-000032,Retired,Retired,Retired Associate,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-796-2545,2024-10-21,2034-02-07,9.3,1917.72,monthly,False,False,2024-02-14,2024-10-09
+CED-0000033,CUST-000033,Employed,Finance,Financial Analyst,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-490-2220,2025-02-28,,1.2,11306.44,monthly,True,False,2025-05-08,2026-02-16
+CED-0000034,CUST-000034,Employed,Logistics,Operations Coordinator,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-142-6614,2017-02-09,,9.2,2831.98,monthly,True,False,2025-05-12,2025-11-24
+CED-0000035,CUST-000035,Self-Employed,Retail,Store Supervisor,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-101-6207,2015-08-06,,10.7,7375.01,bi-weekly,True,True,2026-04-28,2026-05-01
+CED-0000036,CUST-000036,Employed,Healthcare,Registered Nurse,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-100-4596,2019-01-23,,7.3,9952.13,monthly,True,False,2025-11-03,2026-05-01
+CED-0000037,CUST-000037,Employed,Construction,Project Technician,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-316-7174,2010-05-29,,15.9,6468.34,monthly,True,False,2025-01-05,2025-10-16
+CED-0000038,CUST-000038,Self-Employed,Professional Services,Business Consultant,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-124-6675,2018-11-01,,7.5,5635.62,monthly,True,True,2024-12-07,2025-07-20
+CED-0000039,CUST-000039,Employed,Construction,Project Technician,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-285-8996,2015-12-09,,10.4,11610.11,bi-weekly,True,False,2026-02-10,2026-05-01
+CED-0000040,CUST-000040,Student,Student,Student Associate,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-216-2548,2018-05-06,,8.0,1568.58,monthly,True,False,2026-07-02,2026-05-01
+CED-0000041,CUST-000041,Employed,Retail,Store Supervisor,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-402-8359,2017-02-26,,9.2,8529.9,monthly,True,False,2026-05-04,2026-05-01
+CED-0000042,CUST-000042,Self-Employed,Healthcare,Registered Nurse,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-282-7025,2016-03-25,,10.1,4797.48,monthly,True,True,2025-06-19,2026-04-22
+CED-0000043,CUST-000043,Unemployed,Unemployed,Unemployed Associate,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-372-6494,2025-04-07,,1.1,2841.26,bi-weekly,True,False,2026-07-12,2026-05-01
+CED-0000044,CUST-000044,Self-Employed,Education,Teacher,Blue River Health,"101 Main St, Charlotte, NC",+1-704-650-9657,2024-04-03,,2.1,6582.77,monthly,True,True,2024-12-08,2025-08-04
+CED-0000045,CUST-000045,Employed,Hospitality,Guest Services Lead,Blue River Health,"101 Main St, Charlotte, NC",+1-704-531-1308,2016-09-19,,9.6,14202.97,monthly,True,False,2026-07-22,2026-05-01
+CED-0000046,CUST-000046,Employed,Education,Teacher,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-429-8504,2025-03-12,,1.1,7619.48,monthly,True,False,2025-08-24,2026-05-01
+CED-0000047,CUST-000047,Employed,Education,Teacher,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-582-7789,2020-02-18,,6.2,9033.59,bi-weekly,True,False,2025-12-08,2026-05-01
+CED-0000048,CUST-000048,Employed,Education,Teacher,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-457-3543,2012-04-27,,14.0,5875.28,bi-weekly,True,False,2025-09-15,2026-05-01
+CED-0000049,CUST-000049,Employed,Logistics,Operations Coordinator,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-518-7006,2015-08-16,,10.7,5282.36,weekly,True,False,2026-02-05,2026-05-01
+CED-0000050,CUST-000050,Employed,Education,Teacher,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-410-1227,2009-12-13,,16.4,14172.61,bi-weekly,True,False,2026-08-25,2026-05-01
+CED-0000051,CUST-000051,Student,Student,Student Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-617-7033,2012-09-06,,13.6,3247.22,monthly,True,False,2024-04-24,2024-08-02
+CED-0000052,CUST-000052,Employed,Healthcare,Registered Nurse,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-673-3893,2024-08-05,,1.7,8931.14,weekly,True,False,2025-07-09,2025-11-30
+CED-0000053,CUST-000053,Employed,Professional Services,Business Consultant,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-978-6787,2025-02-14,,1.2,11407.67,bi-weekly,True,False,2026-09-17,2026-05-01
+CED-0000054,CUST-000054,Retired,Retired,Retired Associate,Blue River Health,"101 Main St, Charlotte, NC",+1-704-800-1691,2019-05-20,,6.9,1161.32,bi-weekly,True,False,2026-01-22,2026-05-01
+CED-0000055,CUST-000055,Employed,Professional Services,Business Consultant,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-937-6214,2016-10-02,,9.6,9963.08,bi-weekly,True,False,2024-02-13,2024-10-24
+CED-0000056,CUST-000056,Employed,Hospitality,Guest Services Lead,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-220-3252,2017-01-15,,9.3,9471.76,monthly,True,False,2026-09-17,2026-05-01
+CED-0000057,CUST-000057,Student,Student,Student Associate,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-859-6647,2023-01-31,,3.2,1404.94,monthly,True,False,2025-02-18,2026-01-04
+CED-0000058,CUST-000058,Employed,Logistics,Operations Coordinator,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-197-3360,2024-11-02,,1.5,3219.01,monthly,True,False,2025-07-13,2026-02-13
+CED-0000059,CUST-000059,Student,Student,Student Associate,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-317-7367,2014-05-12,,12.0,4572.72,weekly,True,False,2026-04-05,2026-05-01
+CED-0000060,CUST-000060,Student,Student,Student Associate,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-906-7287,2013-12-17,,12.4,2010.17,monthly,True,False,2024-02-18,2024-08-06
+CED-0000061,CUST-000061,Retired,Retired,Retired Associate,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-356-6756,2013-05-04,,13.0,890.37,monthly,True,False,2025-12-18,2026-02-15
+CED-0000062,CUST-000062,Self-Employed,Construction,Project Technician,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-995-6010,2012-11-22,,13.4,9891.91,monthly,True,True,2026-01-13,2026-03-21
+CED-0000063,CUST-000063,Employed,Finance,Financial Analyst,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-336-7462,2009-07-07,,16.8,10249.71,monthly,True,False,2024-08-25,2025-04-16
+CED-0000064,CUST-000064,Employed,Logistics,Operations Coordinator,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-300-1571,2011-12-23,,14.4,3105.07,monthly,True,False,2024-01-05,2024-09-13
+CED-0000065,CUST-000065,Unemployed,Unemployed,Unemployed Associate,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-187-1940,2015-01-01,2023-09-06,8.7,1402.74,monthly,True,False,2025-11-11,2026-05-01
+CED-0000066,CUST-000066,Employed,Education,Teacher,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-586-2624,2017-06-02,,8.9,6454.78,monthly,True,False,2026-06-20,2026-05-01
+CED-0000067,CUST-000067,Self-Employed,Professional Services,Business Consultant,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-575-6270,2015-11-15,,10.5,13808.55,monthly,True,True,2026-05-07,2026-05-01
+CED-0000068,CUST-000068,Student,Student,Student Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-109-7234,2020-12-02,,5.4,1027.72,bi-weekly,True,False,2024-10-29,2025-01-08
+CED-0000069,CUST-000069,Self-Employed,Healthcare,Registered Nurse,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-806-2335,2012-02-21,,14.2,13881.63,bi-weekly,True,True,2025-02-02,2025-12-21
+CED-0000070,CUST-000070,Employed,Technology,Software Engineer,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-308-7541,2025-02-27,,1.2,11905.0,bi-weekly,True,False,2024-07-09,2025-04-09
+CED-0000071,CUST-000071,Employed,Professional Services,Business Consultant,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-751-2639,2018-11-10,,7.5,9708.45,bi-weekly,False,False,2025-12-21,2026-05-01
+CED-0000072,CUST-000072,Employed,Professional Services,Business Consultant,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-280-1503,2023-09-24,,2.6,7472.36,monthly,True,False,2024-10-24,2024-11-22
+CED-0000073,CUST-000073,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-938-5865,2012-01-22,,14.3,2672.78,bi-weekly,True,False,2025-08-01,2026-01-23
+CED-0000074,CUST-000074,Unemployed,Unemployed,Unemployed Associate,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-931-8257,2013-09-27,,12.6,5049.47,monthly,True,False,2025-08-21,2026-05-01
+CED-0000075,CUST-000075,Student,Student,Student Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-730-5143,2024-10-20,,1.5,1280.78,monthly,True,False,2025-05-15,2025-07-29
+CED-0000076,CUST-000076,Employed,Technology,Software Engineer,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-104-5236,2009-10-21,,16.5,5765.84,weekly,True,False,2024-03-09,2024-10-19
+CED-0000077,CUST-000077,Employed,Healthcare,Registered Nurse,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-152-9129,2011-11-17,,14.5,4484.16,monthly,True,False,2025-04-02,2025-09-11
+CED-0000078,CUST-000078,Employed,Technology,Software Engineer,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-203-2952,2016-06-02,,9.9,4909.46,monthly,True,False,2025-02-27,2025-07-15
+CED-0000079,CUST-000079,Employed,Technology,Software Engineer,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-651-6203,2011-06-17,,14.9,13566.96,bi-weekly,True,False,2025-06-29,2026-03-13
+CED-0000080,CUST-000080,Retired,Retired,Retired Associate,Blue River Health,"101 Main St, Charlotte, NC",+1-704-154-7571,2022-08-24,2029-07-02,6.9,4523.26,monthly,False,False,2024-08-26,2025-02-27
+CED-0000081,CUST-000081,Employed,Logistics,Operations Coordinator,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-417-6464,2014-06-22,,11.9,5155.1,bi-weekly,False,False,2025-06-15,2026-01-26
+CED-0000082,CUST-000082,Employed,Technology,Software Engineer,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-678-1218,2022-08-31,,3.7,3146.71,monthly,True,False,2025-10-20,2026-05-01
+CED-0000083,CUST-000083,Self-Employed,Hospitality,Guest Services Lead,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-771-8231,2014-02-27,,12.2,9287.23,monthly,True,True,2024-11-20,2025-06-01
+CED-0000084,CUST-000084,Retired,Retired,Retired Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-643-6694,2016-03-31,2024-10-12,8.5,2212.08,weekly,True,False,2024-10-11,2025-08-01
+CED-0000085,CUST-000085,Employed,Finance,Financial Analyst,Blue River Health,"101 Main St, Charlotte, NC",+1-704-763-9378,2010-08-13,,15.7,13055.04,monthly,True,False,2026-03-07,2026-05-01
+CED-0000086,CUST-000086,Employed,Professional Services,Business Consultant,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-436-6091,2013-07-04,,12.8,10729.34,bi-weekly,True,False,2025-04-23,2025-09-26
+CED-0000087,CUST-000087,Employed,Logistics,Operations Coordinator,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-724-3859,2022-04-19,,4.0,3654.0,monthly,True,False,2026-03-30,2026-05-01
+CED-0000088,CUST-000088,Employed,Retail,Store Supervisor,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-293-6387,2020-05-08,,6.0,8558.21,monthly,True,False,2024-07-06,2024-08-12
+CED-0000089,CUST-000089,Retired,Retired,Retired Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-242-3580,2013-04-15,2016-11-21,3.6,3476.12,monthly,True,False,2024-04-13,2024-05-14
+CED-0000090,CUST-000090,Employed,Retail,Store Supervisor,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-276-8816,2018-05-05,,8.0,11195.45,bi-weekly,True,False,2025-05-29,2026-01-10
+CED-0000091,CUST-000091,Employed,Healthcare,Registered Nurse,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-685-1499,2014-10-12,,11.6,6893.17,monthly,False,False,2026-08-21,2026-05-01
+CED-0000092,CUST-000092,Employed,Education,Teacher,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-942-9208,2022-05-08,,4.0,13076.32,monthly,True,False,2024-09-05,2024-09-26
+CED-0000093,CUST-000093,Employed,Logistics,Operations Coordinator,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-719-5636,2017-02-13,,9.2,8302.97,weekly,True,False,2025-06-04,2025-07-09
+CED-0000094,CUST-000094,Self-Employed,Technology,Software Engineer,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-474-5239,2025-03-30,,1.1,2306.81,bi-weekly,True,True,2024-04-22,2025-01-08
+CED-0000095,CUST-000095,Employed,Professional Services,Business Consultant,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-612-5977,2022-11-16,,3.5,10065.16,monthly,True,False,2025-12-02,2026-03-04
+CED-0000096,CUST-000096,Employed,Retail,Store Supervisor,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-777-2424,2009-07-26,,16.8,10787.75,monthly,True,False,2025-01-31,2025-03-04
+CED-0000097,CUST-000097,Self-Employed,Healthcare,Registered Nurse,Blue River Health,"101 Main St, Charlotte, NC",+1-704-625-5505,2013-06-06,,12.9,8354.02,monthly,True,True,2024-04-23,2024-12-07
+CED-0000098,CUST-000098,Employed,Professional Services,Business Consultant,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-181-9324,2024-12-19,,1.4,11869.65,monthly,True,False,2025-05-26,2025-11-06
+CED-0000099,CUST-000099,Self-Employed,Finance,Financial Analyst,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-706-8757,2013-08-21,,12.7,6599.44,monthly,True,True,2024-12-02,2025-03-16
+CED-0000100,CUST-000100,Employed,Retail,Store Supervisor,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-639-8793,2020-11-21,,5.4,6454.21,bi-weekly,True,False,2026-04-24,2026-05-01
+CED-0000101,CUST-000101,Employed,Construction,Project Technician,Blue River Health,"101 Main St, Charlotte, NC",+1-704-702-9078,2009-09-11,,16.6,8396.77,bi-weekly,True,False,2024-09-01,2025-07-29
+CED-0000102,CUST-000102,Self-Employed,Finance,Financial Analyst,Blue River Health,"101 Main St, Charlotte, NC",+1-704-411-2818,2025-05-11,,1.0,13527.86,bi-weekly,True,True,2025-11-18,2026-05-01
+CED-0000103,CUST-000103,Employed,Logistics,Operations Coordinator,Pioneer Tech,"88 Peachtree Ave, Atlanta, GA",+1-704-853-8730,2009-05-25,,16.9,11888.63,monthly,True,False,2026-07-25,2026-05-01
+CED-0000104,CUST-000104,Retired,Retired,Retired Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-902-5428,2013-02-27,2016-06-06,3.3,2616.64,monthly,True,False,2025-12-16,2026-05-01
+CED-0000105,CUST-000105,Employed,Construction,Project Technician,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-130-2919,2010-01-08,,16.3,14151.78,monthly,True,False,2024-05-18,2025-02-10
+CED-0000106,CUST-000106,Employed,Finance,Financial Analyst,Coastal Services,"101 Main St, Charlotte, NC",+1-704-362-2185,2020-09-07,,5.6,4720.51,monthly,True,False,2024-07-10,2024-10-21
+CED-0000107,CUST-000107,Unemployed,Unemployed,Unemployed Associate,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-131-7748,2021-02-08,,5.2,3321.4,monthly,True,False,2025-09-14,2026-02-17
+CED-0000108,CUST-000108,Self-Employed,Education,Teacher,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-537-3761,2018-06-27,,7.8,14430.43,monthly,True,True,2025-08-17,2025-12-28
+CED-0000109,CUST-000109,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-657-1139,2011-07-31,2013-08-28,2.1,1429.61,monthly,True,False,2026-05-08,2026-05-01
+CED-0000110,CUST-000110,Self-Employed,Retail,Store Supervisor,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-890-9859,2022-07-09,,3.8,11090.1,monthly,True,True,2026-02-15,2026-05-01
+CED-0000111,CUST-000111,Employed,Hospitality,Guest Services Lead,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-476-3529,2017-12-04,,8.4,3495.01,bi-weekly,True,False,2026-07-12,2026-05-01
+CED-0000112,CUST-000112,Employed,Professional Services,Business Consultant,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-677-4055,2025-10-21,,0.5,12433.96,weekly,True,False,2026-09-16,2026-05-01
+CED-0000113,CUST-000113,Employed,Technology,Software Engineer,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-119-3784,2019-10-10,,6.6,6578.16,monthly,True,False,2024-11-16,2025-04-10
+CED-0000114,CUST-000114,Employed,Retail,Store Supervisor,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-731-3734,2009-11-28,,16.4,4693.15,bi-weekly,True,False,2024-08-05,2025-04-27
+CED-0000115,CUST-000115,Student,Student,Student Associate,Blue River Health,"101 Main St, Charlotte, NC",+1-704-183-2455,2014-01-01,,12.3,3040.4,monthly,False,False,2024-03-20,2024-06-09
+CED-0000116,CUST-000116,Self-Employed,Healthcare,Registered Nurse,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-944-3562,2018-07-26,,7.8,11118.46,monthly,True,True,2024-01-22,2024-11-06
+CED-0000117,CUST-000117,Employed,Professional Services,Business Consultant,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-288-6854,2009-05-06,,17.0,4191.75,weekly,True,False,2025-12-11,2026-02-12
+CED-0000118,CUST-000118,Self-Employed,Construction,Project Technician,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-944-6600,2024-05-22,,1.9,13785.24,weekly,True,True,2026-06-12,2026-05-01
+CED-0000119,CUST-000119,Employed,Logistics,Operations Coordinator,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-723-5241,2012-10-04,,13.6,10302.09,bi-weekly,True,False,2024-05-06,2024-11-11
+CED-0000120,CUST-000120,Student,Student,Student Associate,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-827-8555,2009-12-07,,16.4,3837.32,monthly,True,False,2024-06-22,2025-03-08
+CED-0000121,CUST-000121,Employed,Healthcare,Registered Nurse,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-956-8315,2022-01-02,,4.3,13068.94,weekly,True,False,2026-09-23,2026-05-01
+CED-0000122,CUST-000122,Retired,Retired,Retired Associate,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-489-3801,2010-11-21,,15.4,3108.95,monthly,True,False,2026-09-24,2026-05-01
+CED-0000123,CUST-000123,Unemployed,Unemployed,Unemployed Associate,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-219-1591,2013-07-04,2019-07-07,6.0,3067.92,bi-weekly,True,False,2024-05-08,2025-04-26
+CED-0000124,CUST-000124,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"101 Main St, Charlotte, NC",+1-704-234-5869,2020-12-14,,5.4,3735.35,monthly,True,False,2025-06-24,2026-04-07
+CED-0000125,CUST-000125,Self-Employed,Construction,Project Technician,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-977-7868,2009-12-11,,16.4,3915.93,weekly,False,True,2024-02-21,2024-07-23
+CED-0000126,CUST-000126,Unemployed,Unemployed,Unemployed Associate,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-493-3679,2020-03-14,2028-02-11,7.9,2381.76,weekly,True,False,2024-10-24,2025-03-04
+CED-0000127,CUST-000127,Employed,Finance,Financial Analyst,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-498-3811,2009-05-07,,17.0,8874.43,weekly,True,False,2024-01-20,2024-07-06
+CED-0000128,CUST-000128,Employed,Technology,Software Engineer,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-205-9551,2010-03-02,,16.2,5914.96,monthly,True,False,2024-08-21,2024-10-23
+CED-0000129,CUST-000129,Retired,Retired,Retired Associate,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-713-7220,2022-03-06,2024-02-19,2.0,1725.51,bi-weekly,True,False,2025-09-05,2026-01-09
+CED-0000130,CUST-000130,Employed,Retail,Store Supervisor,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-928-7889,2023-02-04,,3.2,3894.57,monthly,True,False,2025-02-02,2025-10-08
+CED-0000131,CUST-000131,Employed,Construction,Project Technician,Blue River Health,"101 Main St, Charlotte, NC",+1-704-406-4988,2020-08-08,,5.7,13239.85,monthly,True,False,2025-07-23,2025-11-19
+CED-0000132,CUST-000132,Employed,Healthcare,Registered Nurse,Blue River Health,"101 Main St, Charlotte, NC",+1-704-604-4192,2022-07-07,,3.8,11357.14,monthly,True,False,2025-02-25,2025-05-02
+CED-0000133,CUST-000133,Employed,Finance,Financial Analyst,Coastal Services,"101 Main St, Charlotte, NC",+1-704-232-4623,2025-03-24,,1.1,12364.67,weekly,True,False,2024-01-14,2024-11-28
+CED-0000134,CUST-000134,Retired,Retired,Retired Associate,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-632-8857,2012-06-30,2020-02-09,7.6,1979.76,monthly,True,False,2025-02-14,2025-10-25
+CED-0000135,CUST-000135,Employed,Education,Teacher,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-410-3187,2015-08-04,,10.7,9331.76,monthly,True,False,2025-02-02,2025-03-09
+CED-0000136,CUST-000136,Employed,Professional Services,Business Consultant,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-454-1891,2019-08-22,,6.7,2205.53,monthly,True,False,2026-08-23,2026-05-01
+CED-0000137,CUST-000137,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-134-5603,2022-05-04,,4.0,3887.31,monthly,True,False,2026-05-14,2026-05-01
+CED-0000138,CUST-000138,Employed,Technology,Software Engineer,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-261-7336,2021-12-17,,4.4,2234.05,monthly,True,False,2025-04-18,2025-05-11
+CED-0000139,CUST-000139,Employed,Construction,Project Technician,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-653-6967,2013-10-08,,12.6,12075.67,bi-weekly,True,False,2025-01-15,2025-02-24
+CED-0000140,CUST-000140,Self-Employed,Construction,Project Technician,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-517-5748,2023-05-17,,3.0,2978.24,monthly,True,True,2026-01-16,2026-05-01
+CED-0000141,CUST-000141,Employed,Retail,Store Supervisor,Blue River Health,"101 Main St, Charlotte, NC",+1-704-563-4235,2024-01-24,,2.3,12296.35,monthly,True,False,2025-07-27,2026-05-01
+CED-0000142,CUST-000142,Employed,Technology,Software Engineer,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-980-1426,2013-06-19,,12.9,6057.59,monthly,True,False,2026-05-21,2026-05-01
+CED-0000143,CUST-000143,Student,Student,Student Associate,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-257-3758,2009-12-29,,16.3,2189.58,weekly,True,False,2024-07-26,2025-05-10
+CED-0000144,CUST-000144,Employed,Retail,Store Supervisor,Blue River Health,"101 Main St, Charlotte, NC",+1-704-120-3190,2022-04-21,,4.0,14086.89,bi-weekly,True,False,2026-09-10,2026-05-01
+CED-0000145,CUST-000145,Employed,Retail,Store Supervisor,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-313-8665,2013-03-19,,13.1,4945.9,bi-weekly,True,False,2026-06-12,2026-05-01
+CED-0000146,CUST-000146,Employed,Retail,Store Supervisor,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-848-9854,2014-06-09,,11.9,7970.32,bi-weekly,True,False,2025-09-03,2025-11-07
+CED-0000147,CUST-000147,Employed,Finance,Financial Analyst,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-270-9025,2021-02-06,,5.2,4477.17,monthly,True,False,2025-02-14,2026-01-24
+CED-0000148,CUST-000148,Employed,Education,Teacher,Coastal Services,"101 Main St, Charlotte, NC",+1-704-486-6991,2010-05-05,,16.0,6476.15,bi-weekly,True,False,2026-07-29,2026-05-01
+CED-0000149,CUST-000149,Employed,Retail,Store Supervisor,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-930-5941,2023-10-24,,2.5,9247.63,monthly,True,False,2025-01-15,2026-01-05
+CED-0000150,CUST-000150,Employed,Hospitality,Guest Services Lead,Blue River Health,"101 Main St, Charlotte, NC",+1-704-490-5396,2016-06-11,,9.9,3824.92,bi-weekly,True,False,2024-06-13,2024-08-13
+CED-0000151,CUST-000151,Self-Employed,Professional Services,Business Consultant,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-260-4756,2010-09-01,,15.7,8459.65,monthly,True,True,2026-08-17,2026-05-01
+CED-0000152,CUST-000152,Employed,Logistics,Operations Coordinator,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-450-2738,2022-10-31,,3.5,2237.23,monthly,True,False,2026-01-28,2026-05-01
+CED-0000153,CUST-000153,Employed,Finance,Financial Analyst,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-686-9381,2010-04-20,,16.0,2293.66,monthly,True,False,2024-07-21,2025-05-24
+CED-0000154,CUST-000154,Employed,Professional Services,Business Consultant,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-989-9570,2013-10-24,,12.5,14201.11,bi-weekly,True,False,2025-04-17,2026-01-05
+CED-0000155,CUST-000155,Employed,Finance,Financial Analyst,Pioneer Tech,"88 Peachtree Ave, Atlanta, GA",+1-704-437-5430,2009-11-01,,16.5,12390.21,monthly,True,False,2025-04-30,2025-11-27
+CED-0000156,CUST-000156,Employed,Construction,Project Technician,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-906-7384,2018-05-26,,7.9,10309.64,monthly,True,False,2025-05-14,2026-01-20
+CED-0000157,CUST-000157,Employed,Logistics,Operations Coordinator,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-427-4915,2022-05-02,,4.0,4893.15,monthly,True,False,2024-10-23,2025-07-01
+CED-0000158,CUST-000158,Employed,Professional Services,Business Consultant,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-901-7982,2022-09-25,,3.6,5207.37,monthly,True,False,2026-06-24,2026-05-01
+CED-0000159,CUST-000159,Employed,Technology,Software Engineer,Coastal Services,"101 Main St, Charlotte, NC",+1-704-913-8353,2018-09-29,,7.6,9755.86,bi-weekly,True,False,2026-08-15,2026-05-01
+CED-0000160,CUST-000160,Self-Employed,Technology,Software Engineer,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-870-9401,2023-08-10,,2.7,4577.09,monthly,True,True,2024-11-01,2025-06-13
+CED-0000161,CUST-000161,Self-Employed,Hospitality,Guest Services Lead,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-731-8244,2019-03-18,,7.1,7077.0,monthly,False,True,2024-04-08,2024-09-24
+CED-0000162,CUST-000162,Employed,Education,Teacher,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-544-7046,2025-07-15,,0.8,4671.93,monthly,True,False,2025-06-30,2026-02-03
+CED-0000163,CUST-000163,Employed,Technology,Software Engineer,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-646-9691,2021-12-14,,4.4,8574.49,monthly,True,False,2024-06-10,2024-07-07
+CED-0000164,CUST-000164,Employed,Healthcare,Registered Nurse,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-618-3376,2015-01-16,,11.3,4510.09,monthly,True,False,2026-01-10,2026-05-01
+CED-0000165,CUST-000165,Employed,Logistics,Operations Coordinator,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-840-6637,2019-06-12,,6.9,9713.26,monthly,True,False,2025-02-11,2025-11-24
+CED-0000166,CUST-000166,Employed,Logistics,Operations Coordinator,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-952-4789,2018-02-14,,8.2,13428.17,monthly,True,False,2024-07-26,2025-07-19
+CED-0000167,CUST-000167,Student,Student,Student Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-305-1422,2014-05-24,,11.9,4530.51,monthly,True,False,2026-06-19,2026-05-01
+CED-0000168,CUST-000168,Retired,Retired,Retired Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-456-7881,2014-09-26,2022-11-03,8.1,3119.21,monthly,False,False,2026-04-30,2026-05-01
+CED-0000169,CUST-000169,Self-Employed,Education,Teacher,Coastal Services,"101 Main St, Charlotte, NC",+1-704-445-9500,2009-08-11,,16.7,5285.64,bi-weekly,True,True,2025-03-28,2025-10-05
+CED-0000170,CUST-000170,Employed,Finance,Financial Analyst,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-457-9087,2013-04-09,,13.1,11638.36,bi-weekly,True,False,2026-05-04,2026-05-01
+CED-0000171,CUST-000171,Employed,Construction,Project Technician,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-816-8601,2012-08-15,,13.7,14182.02,weekly,True,False,2025-06-16,2025-10-03
+CED-0000172,CUST-000172,Self-Employed,Education,Teacher,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-327-7265,2011-06-26,,14.8,14419.92,monthly,False,True,2024-06-11,2024-09-20
+CED-0000173,CUST-000173,Employed,Finance,Financial Analyst,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-694-6392,2024-05-06,,2.0,6433.12,bi-weekly,True,False,2026-02-20,2026-05-01
+CED-0000174,CUST-000174,Employed,Professional Services,Business Consultant,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-625-9235,2012-03-10,,14.1,11733.73,bi-weekly,True,False,2025-05-09,2025-11-20
+CED-0000175,CUST-000175,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-155-4107,2018-06-30,,7.8,4844.34,monthly,True,False,2025-06-22,2025-12-17
+CED-0000176,CUST-000176,Student,Student,Student Associate,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-490-7517,2024-06-11,,1.9,2913.7,bi-weekly,True,False,2024-05-07,2024-09-09
+CED-0000177,CUST-000177,Employed,Construction,Project Technician,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-745-3221,2017-10-29,,8.5,3004.04,bi-weekly,True,False,2026-08-17,2026-05-01
+CED-0000178,CUST-000178,Self-Employed,Education,Teacher,Coastal Services,"101 Main St, Charlotte, NC",+1-704-526-8324,2022-04-06,,4.1,13969.35,monthly,True,True,2024-07-27,2025-02-09
+CED-0000179,CUST-000179,Employed,Finance,Financial Analyst,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-579-7094,2023-05-21,,2.9,7047.34,bi-weekly,True,False,2024-04-29,2024-07-09
+CED-0000180,CUST-000180,Retired,Retired,Retired Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-858-5039,2009-11-11,,16.5,1121.5,weekly,True,False,2025-09-04,2026-05-01
+CED-0000181,CUST-000181,Unemployed,Unemployed,Unemployed Associate,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-940-5164,2012-07-16,,13.8,4458.34,monthly,True,False,2025-06-19,2026-05-01
+CED-0000182,CUST-000182,Employed,Retail,Store Supervisor,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-478-1497,2016-01-07,,10.3,10533.26,bi-weekly,True,False,2026-04-02,2026-05-01
+CED-0000183,CUST-000183,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-676-2250,2016-04-05,2024-03-08,7.9,3478.43,monthly,True,False,2024-06-02,2024-11-28
+CED-0000184,CUST-000184,Unemployed,Unemployed,Unemployed Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-163-3262,2017-02-17,2023-09-03,6.5,1802.26,bi-weekly,True,False,2024-02-21,2024-06-23
+CED-0000185,CUST-000185,Unemployed,Unemployed,Unemployed Associate,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-954-9783,2023-11-30,,2.4,2442.81,monthly,True,False,2025-09-19,2026-05-01
+CED-0000186,CUST-000186,Employed,Education,Teacher,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-371-2627,2024-01-01,,2.3,9384.89,monthly,False,False,2024-08-02,2024-09-06
+CED-0000187,CUST-000187,Unemployed,Unemployed,Unemployed Associate,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-755-1573,2017-06-10,2023-10-16,6.3,3804.48,bi-weekly,True,False,2025-10-05,2026-05-01
+CED-0000188,CUST-000188,Employed,Hospitality,Guest Services Lead,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-496-1649,2025-05-11,,1.0,10003.41,weekly,False,False,2024-10-10,2025-02-08
+CED-0000189,CUST-000189,Employed,Professional Services,Business Consultant,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-629-9793,2024-05-11,,2.0,12450.51,bi-weekly,True,False,2024-05-09,2024-09-11
+CED-0000190,CUST-000190,Employed,Technology,Software Engineer,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-396-4999,2017-11-10,,8.5,5046.32,monthly,True,False,2025-01-29,2025-11-22
+CED-0000191,CUST-000191,Employed,Education,Teacher,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-244-5302,2023-10-04,,2.6,11539.75,bi-weekly,True,False,2025-12-31,2026-04-21
+CED-0000192,CUST-000192,Student,Student,Student Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-203-2618,2012-12-14,,13.4,2097.81,monthly,True,False,2025-08-26,2026-05-01
+CED-0000193,CUST-000193,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-644-1873,2023-12-25,,2.3,2935.8,weekly,True,False,2026-08-13,2026-05-01
+CED-0000194,CUST-000194,Retired,Retired,Retired Associate,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-731-5324,2017-12-28,,8.3,4442.67,bi-weekly,False,False,2025-11-13,2026-05-01
+CED-0000195,CUST-000195,Employed,Finance,Financial Analyst,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-549-5228,2009-11-29,,16.4,11749.7,monthly,True,False,2025-03-29,2025-05-11
+CED-0000196,CUST-000196,Retired,Retired,Retired Associate,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-982-7852,2009-06-13,2017-04-27,7.9,1597.67,monthly,True,False,2026-09-23,2026-05-01
+CED-0000197,CUST-000197,Self-Employed,Education,Teacher,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-653-7240,2023-03-06,,3.2,8319.37,monthly,True,True,2025-10-25,2026-05-01
+CED-0000198,CUST-000198,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-987-6963,2009-08-19,,16.7,952.74,monthly,True,False,2025-01-02,2025-11-20
+CED-0000199,CUST-000199,Self-Employed,Technology,Software Engineer,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-738-9647,2022-04-15,,4.0,8587.45,weekly,True,True,2025-07-20,2026-02-19
+CED-0000200,CUST-000200,Employed,Retail,Store Supervisor,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-946-9319,2015-05-12,,11.0,11073.22,monthly,True,False,2026-07-01,2026-05-01
+CED-0000201,CUST-000201,Retired,Retired,Retired Associate,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-316-3386,2022-03-21,2024-03-15,2.0,1501.63,bi-weekly,True,False,2024-12-11,2025-06-17
+CED-0000202,CUST-000202,Self-Employed,Education,Teacher,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-393-9104,2017-12-02,,8.4,8165.48,bi-weekly,True,True,2024-05-07,2024-11-01
+CED-0000203,CUST-000203,Employed,Construction,Project Technician,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-561-4866,2024-08-07,,1.7,5817.65,bi-weekly,True,False,2025-10-22,2026-05-01
+CED-0000204,CUST-000204,Employed,Finance,Financial Analyst,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-168-4017,2016-10-11,,9.6,9402.66,monthly,True,False,2024-11-23,2025-03-25
+CED-0000205,CUST-000205,Unemployed,Unemployed,Unemployed Associate,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-882-7435,2012-10-06,2018-02-14,5.4,1899.13,bi-weekly,True,False,2026-05-14,2026-05-01
+CED-0000206,CUST-000206,Employed,Finance,Financial Analyst,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-971-2298,2012-04-06,,14.1,12240.36,weekly,True,False,2024-05-11,2025-04-22
+CED-0000207,CUST-000207,Employed,Education,Teacher,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-324-1743,2014-06-12,,11.9,12879.83,weekly,True,False,2024-10-11,2024-11-19
+CED-0000208,CUST-000208,Employed,Logistics,Operations Coordinator,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-942-6946,2019-01-30,,7.2,5805.41,monthly,True,False,2024-07-23,2025-02-18
+CED-0000209,CUST-000209,Employed,Healthcare,Registered Nurse,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-754-2084,2021-01-18,,5.3,3081.19,monthly,True,False,2025-12-06,2026-05-01
+CED-0000210,CUST-000210,Student,Student,Student Associate,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-721-3808,2011-01-29,,15.3,2041.24,monthly,True,False,2024-09-13,2024-12-09
+CED-0000211,CUST-000211,Employed,Healthcare,Registered Nurse,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-396-1761,2022-01-04,,4.3,6048.56,monthly,True,False,2026-09-08,2026-05-01
+CED-0000212,CUST-000212,Self-Employed,Finance,Financial Analyst,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-319-7960,2011-05-17,,15.0,11738.11,bi-weekly,True,True,2024-01-24,2024-07-04
+CED-0000213,CUST-000213,Retired,Retired,Retired Associate,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-322-7521,2021-02-11,2029-01-01,7.9,2650.25,monthly,False,False,2025-09-06,2026-05-01
+CED-0000214,CUST-000214,Self-Employed,Technology,Software Engineer,Pioneer Tech,"88 Peachtree Ave, Atlanta, GA",+1-704-519-7861,2011-02-14,,15.2,8263.91,bi-weekly,True,True,2026-05-07,2026-05-01
+CED-0000215,CUST-000215,Employed,Education,Teacher,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-796-9758,2021-03-25,,5.1,2834.38,monthly,True,False,2025-05-06,2025-08-24
+CED-0000216,CUST-000216,Retired,Retired,Retired Associate,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-208-8015,2017-09-18,,8.6,2982.42,bi-weekly,True,False,2024-09-04,2024-12-21
+CED-0000217,CUST-000217,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-791-1543,2021-04-03,,5.1,4539.66,monthly,True,False,2026-04-26,2026-05-01
+CED-0000218,CUST-000218,Retired,Retired,Retired Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-952-1937,2010-09-11,,15.6,4149.28,weekly,True,False,2026-02-06,2026-05-01
+CED-0000219,CUST-000219,Employed,Technology,Software Engineer,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-647-1212,2015-06-18,,10.9,3014.45,monthly,True,False,2025-04-04,2025-10-03
+CED-0000220,CUST-000220,Self-Employed,Professional Services,Business Consultant,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-206-9678,2016-01-19,,10.3,10222.33,bi-weekly,True,True,2024-10-19,2025-05-29
+CED-0000221,CUST-000221,Unemployed,Unemployed,Unemployed Associate,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-263-4434,2011-01-18,2012-01-21,1.0,2422.67,bi-weekly,False,False,2025-02-16,2025-11-25
+CED-0000222,CUST-000222,Retired,Retired,Retired Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-980-8066,2015-05-04,2022-04-02,6.9,2511.73,bi-weekly,True,False,2026-05-15,2026-05-01
+CED-0000223,CUST-000223,Retired,Retired,Retired Associate,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-685-9646,2011-01-20,,15.3,4923.85,monthly,True,False,2024-12-05,2025-08-06
+CED-0000224,CUST-000224,Employed,Logistics,Operations Coordinator,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-101-9307,2009-12-20,,16.4,6671.72,weekly,False,False,2024-05-19,2024-10-16
+CED-0000225,CUST-000225,Employed,Professional Services,Business Consultant,Coastal Services,"101 Main St, Charlotte, NC",+1-704-914-9668,2012-05-01,,14.0,4883.6,weekly,True,False,2025-01-26,2025-08-01
+CED-0000226,CUST-000226,Employed,Logistics,Operations Coordinator,Pioneer Tech,"88 Peachtree Ave, Atlanta, GA",+1-704-118-5959,2017-12-09,,8.4,9615.56,weekly,True,False,2024-06-05,2024-12-16
+CED-0000227,CUST-000227,Employed,Professional Services,Business Consultant,Coastal Services,"101 Main St, Charlotte, NC",+1-704-499-5783,2016-06-24,,9.9,7748.35,monthly,True,False,2026-07-27,2026-05-01
+CED-0000228,CUST-000228,Employed,Retail,Store Supervisor,Coastal Services,"101 Main St, Charlotte, NC",+1-704-398-2061,2015-01-07,,11.3,10950.97,monthly,False,False,2024-05-18,2024-07-28
+CED-0000229,CUST-000229,Retired,Retired,Retired Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-609-4147,2018-06-16,,7.9,4527.03,bi-weekly,True,False,2026-06-07,2026-05-01
+CED-0000230,CUST-000230,Retired,Retired,Retired Associate,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-826-6279,2012-05-18,2020-08-06,8.2,4065.49,bi-weekly,True,False,2026-04-15,2026-05-01
+CED-0000231,CUST-000231,Retired,Retired,Retired Associate,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-565-9719,2018-10-07,,7.6,5090.08,bi-weekly,True,False,2025-07-09,2025-10-16
+CED-0000232,CUST-000232,Self-Employed,Hospitality,Guest Services Lead,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-318-6881,2016-07-08,,9.8,14070.7,weekly,True,True,2025-11-20,2026-05-01
+CED-0000233,CUST-000233,Retired,Retired,Retired Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-876-3310,2017-07-26,,8.8,5178.25,monthly,True,False,2026-10-02,2026-05-01
+CED-0000234,CUST-000234,Employed,Education,Teacher,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-764-1661,2018-07-21,,7.8,14065.32,bi-weekly,True,False,2024-04-07,2024-08-05
+CED-0000235,CUST-000235,Unemployed,Unemployed,Unemployed Associate,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-440-4769,2024-02-11,2026-04-15,2.2,2405.64,monthly,True,False,2024-11-15,2025-04-09
+CED-0000236,CUST-000236,Employed,Construction,Project Technician,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-338-6190,2010-09-10,,15.6,3203.55,weekly,True,False,2024-02-23,2024-06-09
+CED-0000237,CUST-000237,Employed,Technology,Software Engineer,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-647-4479,2010-03-14,,16.1,7508.52,weekly,False,False,2026-03-02,2026-05-01
+CED-0000238,CUST-000238,Retired,Retired,Retired Associate,Blue River Health,"101 Main St, Charlotte, NC",+1-704-711-7776,2016-04-10,,10.1,3088.18,monthly,True,False,2025-02-23,2025-07-04
+CED-0000239,CUST-000239,Employed,Construction,Project Technician,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-551-6313,2019-12-18,,6.4,14483.69,monthly,True,False,2026-03-17,2026-05-01
+CED-0000240,CUST-000240,Employed,Hospitality,Guest Services Lead,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-931-8344,2023-12-31,,2.3,6808.13,bi-weekly,True,False,2026-06-16,2026-05-01
+CED-0000241,CUST-000241,Employed,Construction,Project Technician,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-904-6513,2024-08-23,,1.7,3361.36,bi-weekly,True,False,2024-04-08,2024-09-22
+CED-0000242,CUST-000242,Unemployed,Unemployed,Unemployed Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-482-3582,2013-05-06,2018-05-23,5.0,3087.82,monthly,True,False,2024-03-08,2024-11-12
+CED-0000243,CUST-000243,Employed,Professional Services,Business Consultant,Coastal Services,"101 Main St, Charlotte, NC",+1-704-595-3887,2015-05-23,,10.9,10427.16,monthly,True,False,2025-03-15,2025-11-06
+CED-0000244,CUST-000244,Student,Student,Student Associate,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-316-3595,2014-08-05,,11.7,1172.55,monthly,True,False,2025-10-18,2026-05-01
+CED-0000245,CUST-000245,Student,Student,Student Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-253-7940,2022-05-10,,4.0,4787.71,weekly,True,False,2024-05-27,2024-10-17
+CED-0000246,CUST-000246,Self-Employed,Healthcare,Registered Nurse,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-143-3090,2009-10-08,,16.6,10599.49,monthly,True,True,2025-06-25,2026-01-05
+CED-0000247,CUST-000247,Employed,Retail,Store Supervisor,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-131-8591,2011-10-12,,14.6,11436.2,monthly,True,False,2025-01-31,2025-11-25
+CED-0000248,CUST-000248,Employed,Technology,Software Engineer,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-938-5998,2013-10-05,,12.6,11050.27,monthly,True,False,2026-01-27,2026-05-01
+CED-0000249,CUST-000249,Employed,Healthcare,Registered Nurse,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-737-9293,2024-01-25,,2.3,11891.26,bi-weekly,False,False,2026-01-25,2026-05-01
+CED-0000250,CUST-000250,Employed,Retail,Store Supervisor,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-639-2746,2017-10-21,,8.5,10825.84,monthly,True,False,2024-08-10,2024-11-09
+CED-0000251,CUST-000251,Self-Employed,Technology,Software Engineer,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-551-5817,2023-09-30,,2.6,7090.13,monthly,True,True,2024-04-29,2024-08-02
+CED-0000252,CUST-000252,Employed,Hospitality,Guest Services Lead,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-649-1495,2011-04-18,,15.0,9483.62,bi-weekly,True,False,2024-06-25,2024-10-26
+CED-0000253,CUST-000253,Employed,Technology,Software Engineer,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-260-4228,2010-12-22,,15.4,3677.69,bi-weekly,True,False,2026-09-21,2026-05-01
+CED-0000254,CUST-000254,Employed,Professional Services,Business Consultant,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-796-7548,2020-02-05,,6.2,3781.32,bi-weekly,True,False,2025-03-26,2025-07-09
+CED-0000255,CUST-000255,Employed,Professional Services,Business Consultant,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-791-5717,2010-11-13,,15.5,6833.43,bi-weekly,True,False,2026-09-06,2026-05-01
+CED-0000256,CUST-000256,Employed,Construction,Project Technician,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-745-2881,2017-05-09,,9.0,5253.89,monthly,True,False,2024-08-10,2024-10-04
+CED-0000257,CUST-000257,Employed,Technology,Software Engineer,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-632-9216,2025-11-25,,0.4,12356.7,monthly,True,False,2026-01-09,2026-05-01
+CED-0000258,CUST-000258,Unemployed,Unemployed,Unemployed Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-516-9421,2011-08-17,,14.7,3638.36,monthly,True,False,2025-07-08,2026-05-01
+CED-0000259,CUST-000259,Employed,Professional Services,Business Consultant,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-279-7144,2018-02-24,,8.2,11800.21,monthly,True,False,2024-01-27,2024-06-06
+CED-0000260,CUST-000260,Employed,Finance,Financial Analyst,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-890-5212,2015-03-27,,11.1,5514.07,monthly,True,False,2025-05-04,2026-01-22
+CED-0000261,CUST-000261,Employed,Retail,Store Supervisor,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-266-3897,2011-08-14,,14.7,10609.62,bi-weekly,True,False,2026-01-31,2026-05-01
+CED-0000262,CUST-000262,Student,Student,Student Associate,Blue River Health,"101 Main St, Charlotte, NC",+1-704-466-8764,2012-09-26,,13.6,1391.54,monthly,True,False,2025-01-21,2025-08-06
+CED-0000263,CUST-000263,Employed,Logistics,Operations Coordinator,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-965-8109,2017-09-13,,8.6,12811.76,monthly,True,False,2024-11-12,2025-08-19
+CED-0000264,CUST-000264,Employed,Technology,Software Engineer,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-540-5691,2023-04-02,,3.1,4211.67,monthly,True,False,2025-11-12,2026-05-01
+CED-0000265,CUST-000265,Retired,Retired,Retired Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-797-3263,2021-08-01,,4.7,5020.33,monthly,True,False,2024-08-03,2025-05-24
+CED-0000266,CUST-000266,Retired,Retired,Retired Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-940-3000,2009-07-09,2019-04-05,9.7,1573.59,bi-weekly,True,False,2024-06-22,2024-11-26
+CED-0000267,CUST-000267,Self-Employed,Healthcare,Registered Nurse,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-555-8738,2022-11-29,,3.4,6319.29,monthly,True,True,2025-04-22,2025-08-04
+CED-0000268,CUST-000268,Self-Employed,Retail,Store Supervisor,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-934-9608,2017-08-05,,8.7,14030.45,bi-weekly,True,True,2024-08-04,2024-09-08
+CED-0000269,CUST-000269,Employed,Retail,Store Supervisor,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-994-2958,2018-10-18,,7.5,8080.98,monthly,True,False,2024-07-17,2024-08-18
+CED-0000270,CUST-000270,Employed,Education,Teacher,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-236-1515,2013-07-29,,12.8,8553.84,bi-weekly,True,False,2024-04-09,2024-07-04
+CED-0000271,CUST-000271,Employed,Professional Services,Business Consultant,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-761-2417,2019-02-17,,7.2,4003.84,monthly,True,False,2024-06-25,2024-12-04
+CED-0000272,CUST-000272,Employed,Professional Services,Business Consultant,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-218-3755,2022-06-11,,3.9,7861.32,bi-weekly,True,False,2024-11-18,2025-01-13
+CED-0000273,CUST-000273,Employed,Professional Services,Business Consultant,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-760-4906,2012-07-03,,13.8,12199.24,bi-weekly,True,False,2024-12-26,2025-10-14
+CED-0000274,CUST-000274,Employed,Professional Services,Business Consultant,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-151-3587,2022-12-14,,3.4,5899.37,weekly,True,False,2024-07-25,2024-09-05
+CED-0000275,CUST-000275,Employed,Education,Teacher,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-728-7355,2015-03-27,,11.1,5295.92,monthly,True,False,2024-04-11,2024-10-29
+CED-0000276,CUST-000276,Employed,Technology,Software Engineer,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-571-7118,2016-04-09,,10.1,7463.73,bi-weekly,True,False,2025-09-15,2026-03-08
+CED-0000277,CUST-000277,Employed,Construction,Project Technician,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-368-2554,2015-07-15,,10.8,9244.48,bi-weekly,True,False,2026-01-27,2026-05-01
+CED-0000278,CUST-000278,Self-Employed,Retail,Store Supervisor,Blue River Health,"101 Main St, Charlotte, NC",+1-704-278-1680,2018-10-21,,7.5,4511.88,monthly,True,True,2026-09-29,2026-05-01
+CED-0000279,CUST-000279,Student,Student,Student Associate,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-988-7495,2013-04-28,,13.0,4388.0,bi-weekly,True,False,2024-11-21,2025-08-22
+CED-0000280,CUST-000280,Employed,Hospitality,Guest Services Lead,Coastal Services,"101 Main St, Charlotte, NC",+1-704-332-1667,2022-10-09,,3.6,12467.86,bi-weekly,True,False,2026-03-21,2026-05-01
+CED-0000281,CUST-000281,Employed,Education,Teacher,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-530-4031,2017-07-04,,8.8,8528.02,bi-weekly,True,False,2025-05-16,2026-02-05
+CED-0000282,CUST-000282,Retired,Retired,Retired Associate,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-809-8712,2014-11-09,2018-09-29,3.9,2036.73,monthly,True,False,2026-09-01,2026-05-01
+CED-0000283,CUST-000283,Employed,Retail,Store Supervisor,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-774-4187,2023-04-18,,3.0,6717.69,weekly,True,False,2025-08-10,2025-12-19
+CED-0000284,CUST-000284,Employed,Healthcare,Registered Nurse,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-687-6528,2024-04-22,,2.0,8260.73,monthly,True,False,2024-07-12,2025-03-20
+CED-0000285,CUST-000285,Unemployed,Unemployed,Unemployed Associate,Coastal Services,"101 Main St, Charlotte, NC",+1-704-110-1735,2016-07-17,2019-04-11,2.7,2302.04,bi-weekly,True,False,2025-08-14,2026-05-01
+CED-0000286,CUST-000286,Employed,Healthcare,Registered Nurse,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-522-6616,2025-07-15,,0.8,12600.56,bi-weekly,True,False,2025-03-10,2026-01-15
+CED-0000287,CUST-000287,Employed,Construction,Project Technician,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-109-7629,2022-03-09,,4.1,12908.57,weekly,True,False,2026-07-27,2026-05-01
+CED-0000288,CUST-000288,Employed,Healthcare,Registered Nurse,Coastal Services,"101 Main St, Charlotte, NC",+1-704-524-9892,2025-08-04,,0.7,6668.66,bi-weekly,True,False,2025-03-30,2025-06-15
+CED-0000289,CUST-000289,Employed,Retail,Store Supervisor,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-303-3715,2021-03-27,,5.1,9739.27,monthly,True,False,2025-04-09,2025-10-22
+CED-0000290,CUST-000290,Retired,Retired,Retired Associate,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-417-5469,2019-05-10,2023-02-07,3.7,1341.39,weekly,True,False,2024-11-18,2025-10-31
+CED-0000291,CUST-000291,Employed,Hospitality,Guest Services Lead,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-114-5661,2018-11-01,,7.5,2876.01,monthly,True,False,2024-04-07,2025-03-24
+CED-0000292,CUST-000292,Employed,Technology,Software Engineer,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-144-2885,2021-05-25,,4.9,9608.38,bi-weekly,True,False,2025-01-27,2025-08-13
+CED-0000293,CUST-000293,Employed,Technology,Software Engineer,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-826-9225,2013-05-15,,13.0,4219.21,monthly,True,False,2026-01-28,2026-05-01
+CED-0000294,CUST-000294,Employed,Construction,Project Technician,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-412-4598,2023-06-15,,2.9,10758.59,monthly,True,False,2026-07-22,2026-05-01
+CED-0000295,CUST-000295,Employed,Healthcare,Registered Nurse,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-488-7356,2023-09-03,,2.7,3571.49,bi-weekly,False,False,2025-11-02,2026-05-01
+CED-0000296,CUST-000296,Self-Employed,Professional Services,Business Consultant,Pioneer Tech,"88 Peachtree Ave, Atlanta, GA",+1-704-270-4619,2019-03-22,,7.1,8889.6,bi-weekly,True,True,2025-01-29,2025-03-29
+CED-0000297,CUST-000297,Employed,Construction,Project Technician,Coastal Services,"101 Main St, Charlotte, NC",+1-704-994-7361,2021-07-23,,4.8,9495.86,monthly,False,False,2024-01-05,2024-04-09
+CED-0000298,CUST-000298,Unemployed,Unemployed,Unemployed Associate,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-986-3999,2010-06-22,2019-08-20,9.2,2977.34,bi-weekly,True,False,2025-07-18,2025-10-20
+CED-0000299,CUST-000299,Student,Student,Student Associate,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-312-3130,2019-06-18,,6.9,1720.5,monthly,False,False,2026-05-07,2026-05-01
+CED-0000300,CUST-000300,Employed,Construction,Project Technician,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-790-1804,2024-05-12,,2.0,8055.42,monthly,True,False,2025-04-14,2025-08-05
+CED-0000301,CUST-000301,Employed,Education,Teacher,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-160-4538,2025-08-28,,0.7,3444.05,monthly,True,False,2024-11-30,2025-11-22
+CED-0000302,CUST-000302,Employed,Healthcare,Registered Nurse,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-521-2303,2014-01-08,,12.3,11763.89,monthly,True,False,2025-07-22,2026-02-04
+CED-0000303,CUST-000303,Employed,Education,Teacher,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-946-7065,2019-03-19,,7.1,6449.4,bi-weekly,True,False,2026-02-17,2026-05-01
+CED-0000304,CUST-000304,Employed,Technology,Software Engineer,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-127-5626,2025-01-15,,1.3,10454.14,monthly,True,False,2025-06-22,2026-05-01
+CED-0000305,CUST-000305,Employed,Education,Teacher,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-355-9737,2021-08-08,,4.7,10930.95,bi-weekly,True,False,2026-05-11,2026-05-01
+CED-0000306,CUST-000306,Employed,Healthcare,Registered Nurse,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-459-4147,2012-07-22,,13.8,4431.76,bi-weekly,True,False,2026-06-01,2026-05-01
+CED-0000307,CUST-000307,Employed,Finance,Financial Analyst,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-281-6395,2021-10-30,,4.5,9124.86,bi-weekly,True,False,2026-03-26,2026-05-01
+CED-0000308,CUST-000308,Employed,Hospitality,Guest Services Lead,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-878-4490,2015-12-05,,10.4,7332.19,bi-weekly,True,False,2025-07-21,2026-05-01
+CED-0000309,CUST-000309,Self-Employed,Hospitality,Guest Services Lead,Pioneer Tech,"88 Peachtree Ave, Atlanta, GA",+1-704-248-6742,2019-12-01,,6.4,10435.11,monthly,True,True,2025-03-04,2026-01-20
+CED-0000310,CUST-000310,Employed,Construction,Project Technician,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-845-4279,2017-10-09,,8.6,13828.35,monthly,True,False,2024-04-29,2024-07-31
+CED-0000311,CUST-000311,Retired,Retired,Retired Associate,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-471-6905,2023-09-27,,2.6,1982.18,bi-weekly,True,False,2024-10-14,2025-09-26
+CED-0000312,CUST-000312,Employed,Construction,Project Technician,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-908-5776,2019-05-12,,7.0,12605.69,monthly,True,False,2024-01-25,2024-05-13
+CED-0000313,CUST-000313,Employed,Finance,Financial Analyst,Blue River Health,"101 Main St, Charlotte, NC",+1-704-754-4841,2019-11-23,,6.4,8389.71,monthly,True,False,2025-04-10,2026-01-20
+CED-0000314,CUST-000314,Employed,Healthcare,Registered Nurse,Coastal Services,"101 Main St, Charlotte, NC",+1-704-660-4162,2022-05-06,,4.0,2868.55,bi-weekly,True,False,2025-11-03,2026-05-01
+CED-0000315,CUST-000315,Employed,Finance,Financial Analyst,Blue River Health,"101 Main St, Charlotte, NC",+1-704-127-5930,2017-02-03,,9.2,14296.09,bi-weekly,True,False,2024-02-12,2024-11-02
+CED-0000316,CUST-000316,Employed,Technology,Software Engineer,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-205-2628,2021-11-17,,4.5,10717.43,monthly,True,False,2024-08-03,2024-09-09
+CED-0000317,CUST-000317,Student,Student,Student Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-893-4251,2018-10-06,,7.6,4419.77,bi-weekly,True,False,2024-12-13,2025-02-11
+CED-0000318,CUST-000318,Employed,Hospitality,Guest Services Lead,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-992-3601,2023-02-05,,3.2,7281.67,monthly,True,False,2025-02-10,2026-02-02
+CED-0000319,CUST-000319,Unemployed,Unemployed,Unemployed Associate,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-963-3714,2009-06-08,2018-03-02,8.7,3742.71,bi-weekly,True,False,2024-03-23,2024-12-27
+CED-0000320,CUST-000320,Employed,Construction,Project Technician,Blue River Health,"101 Main St, Charlotte, NC",+1-704-941-5675,2016-06-30,,9.8,3052.11,monthly,True,False,2025-09-29,2026-05-01
+CED-0000321,CUST-000321,Unemployed,Unemployed,Unemployed Associate,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-611-1229,2009-07-16,2017-02-21,7.6,3655.6,monthly,True,False,2024-02-06,2024-07-03
+CED-0000322,CUST-000322,Employed,Retail,Store Supervisor,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-109-7293,2009-10-11,,16.6,8719.8,monthly,True,False,2026-09-26,2026-05-01
+CED-0000323,CUST-000323,Self-Employed,Healthcare,Registered Nurse,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-995-6629,2019-12-04,,6.4,4516.89,bi-weekly,True,True,2025-12-10,2026-04-18
+CED-0000324,CUST-000324,Self-Employed,Education,Teacher,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-533-3609,2025-08-03,,0.7,6386.5,monthly,True,True,2024-02-17,2024-11-13
+CED-0000325,CUST-000325,Self-Employed,Retail,Store Supervisor,Meridian Supplies,"220 Bay St, Jacksonville, FL",+1-704-192-5665,2024-09-13,,1.6,10484.52,bi-weekly,True,True,2024-04-29,2025-01-25
+CED-0000326,CUST-000326,Student,Student,Student Associate,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-340-6794,2023-08-20,,2.7,2939.26,weekly,True,False,2024-06-07,2024-12-02
+CED-0000327,CUST-000327,Employed,Healthcare,Registered Nurse,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-164-7259,2010-06-03,,15.9,11848.6,monthly,True,False,2026-07-10,2026-05-01
+CED-0000328,CUST-000328,Employed,Logistics,Operations Coordinator,Coastal Services,"101 Main St, Charlotte, NC",+1-704-891-6222,2024-11-19,,1.4,3759.31,monthly,True,False,2025-02-04,2025-05-18
+CED-0000329,CUST-000329,Retired,Retired,Retired Associate,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-940-6717,2024-01-25,,2.3,4819.29,bi-weekly,True,False,2026-08-31,2026-05-01
+CED-0000330,CUST-000330,Employed,Logistics,Operations Coordinator,Sunstate Logistics,"101 Main St, Charlotte, NC",+1-704-869-2135,2023-02-08,,3.2,4365.1,monthly,True,False,2024-10-15,2025-07-23
+CED-0000331,CUST-000331,Retired,Retired,Retired Associate,Pioneer Tech,"88 Peachtree Ave, Atlanta, GA",+1-704-956-9835,2012-06-26,2015-08-20,3.1,3515.18,monthly,True,False,2026-05-20,2026-05-01
+CED-0000332,CUST-000332,Unemployed,Unemployed,Unemployed Associate,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-134-3012,2015-06-10,,10.9,1556.06,monthly,True,False,2026-09-08,2026-05-01
+CED-0000333,CUST-000333,Employed,Hospitality,Guest Services Lead,Blue River Health,"101 Main St, Charlotte, NC",+1-704-143-7383,2017-11-07,,8.5,11946.28,monthly,True,False,2024-05-08,2024-07-28
+CED-0000334,CUST-000334,Retired,Retired,Retired Associate,Blue River Health,"101 Main St, Charlotte, NC",+1-704-816-2110,2019-03-18,,7.1,5101.77,monthly,True,False,2025-06-30,2026-04-21
+CED-0000335,CUST-000335,Employed,Retail,Store Supervisor,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-408-7306,2019-04-27,,7.0,2606.42,bi-weekly,True,False,2025-12-08,2026-05-01
+CED-0000336,CUST-000336,Student,Student,Student Associate,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-743-2988,2011-01-10,,15.3,2033.51,monthly,True,False,2025-04-03,2026-03-25
+CED-0000337,CUST-000337,Employed,Healthcare,Registered Nurse,Coastal Services,"101 Main St, Charlotte, NC",+1-704-342-4159,2019-06-14,,6.9,12671.34,weekly,True,False,2025-01-29,2025-06-14
+CED-0000338,CUST-000338,Unemployed,Unemployed,Unemployed Associate,Meridian Supplies,"45 Harbor Rd, Charleston, SC",+1-704-776-8964,2020-06-18,,5.9,3874.77,monthly,True,False,2026-02-23,2026-05-01
+CED-0000339,CUST-000339,Employed,Logistics,Operations Coordinator,Meridian Supplies,"88 Peachtree Ave, Atlanta, GA",+1-704-636-6294,2021-10-21,,4.5,12450.4,bi-weekly,True,False,2025-09-06,2026-02-11
+CED-0000340,CUST-000340,Retired,Retired,Retired Associate,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-509-4340,2020-01-22,,6.3,3982.47,weekly,True,False,2024-07-25,2024-10-25
+CED-0000341,CUST-000341,Employed,Retail,Store Supervisor,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-494-7800,2019-11-12,,6.5,7506.05,monthly,True,False,2025-06-01,2026-01-05
+CED-0000342,CUST-000342,Employed,Retail,Store Supervisor,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-215-2761,2025-11-15,,0.5,10318.53,bi-weekly,True,False,2024-08-27,2025-03-27
+CED-0000343,CUST-000343,Employed,Retail,Store Supervisor,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-198-9516,2012-04-22,,14.0,5224.99,bi-weekly,True,False,2024-03-06,2024-09-09
+CED-0000344,CUST-000344,Employed,Education,Teacher,Coastal Services,"101 Main St, Charlotte, NC",+1-704-389-1723,2014-11-17,,11.5,4985.75,bi-weekly,True,False,2026-07-07,2026-05-01
+CED-0000345,CUST-000345,Employed,Professional Services,Business Consultant,Pioneer Tech,"101 Main St, Charlotte, NC",+1-704-310-6371,2017-02-24,,9.2,13098.37,monthly,True,False,2025-09-20,2026-05-01
+CED-0000346,CUST-000346,Employed,Logistics,Operations Coordinator,Coastal Services,"45 Harbor Rd, Charleston, SC",+1-704-700-8267,2014-05-08,,12.0,4520.36,monthly,True,False,2025-09-13,2026-05-01
+CED-0000347,CUST-000347,Retired,Retired,Retired Associate,Sunstate Logistics,"220 Bay St, Jacksonville, FL",+1-704-929-5662,2015-05-18,2019-10-07,4.4,4404.98,monthly,True,False,2024-12-17,2025-10-06
+CED-0000348,CUST-000348,Student,Student,Student Associate,Blue River Health,"45 Harbor Rd, Charleston, SC",+1-704-170-5115,2017-05-29,,8.9,4794.94,monthly,False,False,2025-03-17,2025-06-04
+CED-0000349,CUST-000349,Retired,Retired,Retired Associate,Pioneer Tech,"45 Harbor Rd, Charleston, SC",+1-704-296-9859,2018-10-03,2020-04-18,1.5,4823.31,monthly,True,False,2026-02-12,2026-05-01
+CED-0000350,CUST-000350,Employed,Finance,Financial Analyst,Coastal Services,"101 Main St, Charlotte, NC",+1-704-529-6059,2009-09-11,,16.6,9745.16,bi-weekly,True,False,2024-07-02,2025-04-02
+CED-0000351,CUST-000351,Employed,Retail,Store Supervisor,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-881-5247,2019-10-07,,6.6,4087.58,bi-weekly,True,False,2025-11-07,2026-03-22
+CED-0000352,CUST-000352,Self-Employed,Professional Services,Business Consultant,Coastal Services,"88 Peachtree Ave, Atlanta, GA",+1-704-147-6698,2018-12-21,,7.4,12088.73,monthly,True,True,2025-12-26,2026-05-01
+CED-0000353,CUST-000353,Employed,Construction,Project Technician,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-226-2904,2015-09-18,,10.6,10851.06,monthly,True,False,2024-07-07,2024-12-03
+CED-0000354,CUST-000354,Retired,Retired,Retired Associate,Blue River Health,"220 Bay St, Jacksonville, FL",+1-704-301-7302,2018-08-20,2026-07-11,7.9,1312.6,monthly,True,False,2025-06-05,2026-04-29
+CED-0000355,CUST-000355,Employed,Technology,Software Engineer,Coastal Services,"220 Bay St, Jacksonville, FL",+1-704-927-7347,2018-09-15,,7.6,3258.75,weekly,True,False,2025-03-14,2025-05-30
+CED-0000356,CUST-000356,Employed,Retail,Store Supervisor,Sunstate Logistics,"45 Harbor Rd, Charleston, SC",+1-704-264-2136,2009-08-23,,16.7,7487.58,weekly,True,False,2025-04-25,2025-11-20
+CED-0000357,CUST-000357,Retired,Retired,Retired Associate,Meridian Supplies,"101 Main St, Charlotte, NC",+1-704-199-1657,2012-11-13,,13.5,3565.3,bi-weekly,True,False,2025-08-19,2025-12-27
+CED-0000358,CUST-000358,Employed,Logistics,Operations Coordinator,Sunstate Logistics,"88 Peachtree Ave, Atlanta, GA",+1-704-660-4485,2019-06-07,,6.9,8294.91,monthly,True,False,2024-02-21,2024-06-19
+CED-0000359,CUST-000359,Employed,Finance,Financial Analyst,Pioneer Tech,"220 Bay St, Jacksonville, FL",+1-704-271-6479,2021-09-01,,4.7,7325.61,monthly,True,False,2026-06-19,2026-05-01
+CED-0000360,CUST-000360,Employed,Construction,Project Technician,Blue River Health,"88 Peachtree Ave, Atlanta, GA",+1-704-723-7608,2014-01-30,,12.2,7792.09,monthly,True,False,2024-03-01,2024-07-02

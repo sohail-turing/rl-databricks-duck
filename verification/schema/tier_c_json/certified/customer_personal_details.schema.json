@@ -1,0 +1,252 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.customer_personal_details",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "date_of_birth": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "place_of_birth": {
+        "type": "string"
+      },
+      "country_of_birth_id": {
+        "type": "integer"
+      },
+      "gender_id": {
+        "type": "integer"
+      },
+      "marital_status_id": {
+        "type": "integer"
+      },
+      "citizenship_country_id": {
+        "type": "integer"
+      },
+      "dual_citizenship_flag": {
+        "type": "boolean"
+      },
+      "ssn_last4": {
+        "type": "string"
+      },
+      "tin": {
+        "type": "string"
+      },
+      "itin": {
+        "type": "string"
+      },
+      "is_politically_exposed": {
+        "type": "boolean"
+      },
+      "pep_details": {
+        "type": "string"
+      },
+      "annual_income_range": {
+        "type": "string"
+      },
+      "net_worth_range": {
+        "type": "string"
+      },
+      "source_of_wealth_summary": {
+        "type": "string"
+      },
+      "primary_language_id": {
+        "type": "integer"
+      },
+      "secondary_language_id": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "high_risk_flag": {
+        "type": "boolean"
+      },
+      "risk_reason": {
+        "type": "string"
+      },
+      "is_deceased": {
+        "type": "boolean"
+      },
+      "date_of_death": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date-time"
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "id",
+      "customer_id",
+      "date_of_birth",
+      "place_of_birth",
+      "country_of_birth_id",
+      "gender_id",
+      "marital_status_id",
+      "citizenship_country_id",
+      "dual_citizenship_flag",
+      "ssn_last4",
+      "tin",
+      "itin",
+      "is_politically_exposed",
+      "pep_details",
+      "annual_income_range",
+      "net_worth_range",
+      "source_of_wealth_summary",
+      "primary_language_id",
+      "high_risk_flag",
+      "risk_reason",
+      "is_deceased",
+      "created_at",
+      "updated_at"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.customer_personal_details",
+  "x-local-name": "certified.customer_personal_details",
+  "x-sqlite-name": "certified__customer_personal_details",
+  "x-row-count": 360,
+  "x-columns": [
+    {
+      "name": "id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "date_of_birth",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "place_of_birth",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "country_of_birth_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "gender_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "marital_status_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "citizenship_country_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "dual_citizenship_flag",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "ssn_last4",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "tin",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "itin",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "is_politically_exposed",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "pep_details",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "annual_income_range",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "net_worth_range",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "source_of_wealth_summary",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "primary_language_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "secondary_language_id",
+      "pandas_dtype": "float64",
+      "nullable": true
+    },
+    {
+      "name": "high_risk_flag",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "risk_reason",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "is_deceased",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "date_of_death",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": true
+    },
+    {
+      "name": "created_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "updated_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    }
+  ]
+}

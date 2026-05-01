@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.customer_channel_enrollments",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "channel_id": {
+        "type": "string"
+      },
+      "channel_code": {
+        "type": "string"
+      },
+      "channel_name": {
+        "type": "string"
+      },
+      "enrolled_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "enrollment_method": {
+        "type": "string"
+      },
+      "enrolled_by": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      },
+      "status_reason": {
+        "type": "string"
+      },
+      "status_updated_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "username": {
+        "type": "string"
+      },
+      "alias": {
+        "type": "string"
+      },
+      "two_factor_enabled": {
+        "type": "boolean"
+      },
+      "auth_method": {
+        "type": "string"
+      },
+      "last_login_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "failed_login_attempts": {
+        "type": "integer"
+      },
+      "locked_until": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date-time"
+      },
+      "daily_transaction_limit": {
+        "type": "number"
+      },
+      "per_transaction_limit": {
+        "type": "number"
+      },
+      "monthly_transaction_limit": {
+        "type": "number"
+      },
+      "cash_withdrawal_limit": {
+        "type": "number"
+      },
+      "transfer_limit": {
+        "type": "number"
+      },
+      "bill_payment_limit": {
+        "type": "number"
+      },
+      "max_transactions_per_day": {
+        "type": "integer"
+      },
+      "ip_whitelist": {
+        "type": "string"
+      },
+      "geo_restriction_flag": {
+        "type": "boolean"
+      },
+      "ussd_pin_set": {
+        "type": "boolean"
+      },
+      "ussd_last_access": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "mobile_app_version": {
+        "type": "string"
+      },
+      "push_notifications_enabled": {
+        "type": "boolean"
+      },
+      "security_questions_set": {
+        "type": "boolean"
+      },
+      "password_last_changed": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "transaction_fee_profile_id": {
+        "type": "string"
+      },
+      "sms_alerts_enabled": {
+        "type": "boolean"
+      },
+      "email_alerts_enabled": {
+        "type": "boolean"
+      },
+      "suspicious_activity_flag": {
+        "type": "boolean"
+      },
+      "last_suspicious_activity_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "id",
+      "customer_id",
+      "channel_id",
+      "channel_code",
+      "channel_name",
+      "enrolled_at",
+      "enrollment_method",
+      "enrolled_by",
+      "status",
+      "status_reason",
+      "status_updated_at",
+      "username",
+      "alias",
+      "two_factor_enabled",
+      "auth_method",
+      "last_login_at",
+      "failed_login_attempts",
+      "daily_transaction_limit",
+      "per_transaction_limit",
+      "monthly_transaction_limit",
+      "cash_withdrawal_limit",
+      "transfer_limit",
+      "bill_payment_limit",
+      "max_transactions_per_day",
+      "ip_whitelist",
+      "geo_restriction_flag",
+      "ussd_pin_set",
+      "ussd_last_access",
+      "mobile_app_version",
+      "push_notifications_enabled",
+      "security_questions_set",
+      "password_last_changed",
+      "transaction_fee_profile_id",
+      "sms_alerts_enabled",
+      "email_alerts_enabled",
+      "suspicious_activity_flag",
+      "last_suspicious_activity_date",
+      "created_at",
+      "updated_at"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.customer_channel_enrollments",
+  "x-local-name": "certified.customer_channel_enrollments",
+  "x-sqlite-name": "certified__customer_channel_enrollments",
+  "x-row-count": 2520,
+  "x-columns": [
+    {
+      "name": "id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "channel_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "channel_code",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "channel_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "enrolled_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "enrollment_method",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "enrolled_by",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "status",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "status_reason",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "status_updated_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "username",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "alias",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "two_factor_enabled",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "auth_method",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "last_login_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "failed_login_attempts",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "locked_until",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": true
+    },
+    {
+      "name": "daily_transaction_limit",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "per_transaction_limit",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "monthly_transaction_limit",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "cash_withdrawal_limit",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "transfer_limit",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "bill_payment_limit",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "max_transactions_per_day",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "ip_whitelist",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "geo_restriction_flag",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "ussd_pin_set",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "ussd_last_access",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "mobile_app_version",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "push_notifications_enabled",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "security_questions_set",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "password_last_changed",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "transaction_fee_profile_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "sms_alerts_enabled",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "email_alerts_enabled",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "suspicious_activity_flag",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "last_suspicious_activity_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "created_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "updated_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    }
+  ]
+}
