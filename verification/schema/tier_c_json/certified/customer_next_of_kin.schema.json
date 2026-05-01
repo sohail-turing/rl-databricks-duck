@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.customer_next_of_kin",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "kin_name": {
+        "type": "string"
+      },
+      "relationship_type": {
+        "type": "string"
+      },
+      "kin_email": {
+        "type": "string"
+      },
+      "kin_phone": {
+        "type": "string"
+      },
+      "kin_physical_address": {
+        "type": "string"
+      },
+      "kin_date_of_birth": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "id",
+      "customer_id",
+      "kin_name",
+      "relationship_type",
+      "kin_email",
+      "kin_phone",
+      "kin_physical_address",
+      "kin_date_of_birth",
+      "created_at",
+      "updated_at"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.customer_next_of_kin",
+  "x-local-name": "certified.customer_next_of_kin",
+  "x-sqlite-name": "certified__customer_next_of_kin",
+  "x-row-count": 360,
+  "x-columns": [
+    {
+      "name": "id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "kin_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "relationship_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "kin_email",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "kin_phone",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "kin_physical_address",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "kin_date_of_birth",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "created_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "updated_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    }
+  ]
+}

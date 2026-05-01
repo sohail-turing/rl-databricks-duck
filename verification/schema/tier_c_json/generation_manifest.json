@@ -1,146 +1,209 @@
 {
   "version": 1,
-  "table_count": 20,
+  "table_count": 29,
   "tables": [
     {
       "canonical_name": "main.certified.calendar_periods",
       "local_name": "certified.calendar_periods",
       "sqlite_name": "certified__calendar_periods",
       "row_count": 32,
-      "schema_path": "certified/calendar_periods.schema.json"
+      "schema_path": "certified\\calendar_periods.schema.json"
     },
     {
       "canonical_name": "main.certified.branches",
       "local_name": "certified.branches",
       "sqlite_name": "certified__branches",
       "row_count": 12,
-      "schema_path": "certified/branches.schema.json"
+      "schema_path": "certified\\branches.schema.json"
     },
     {
       "canonical_name": "main.certified.products",
       "local_name": "certified.products",
       "sqlite_name": "certified__products",
       "row_count": 6,
-      "schema_path": "certified/products.schema.json"
+      "schema_path": "certified\\products.schema.json"
     },
     {
       "canonical_name": "main.certified.channels",
       "local_name": "certified.channels",
       "sqlite_name": "certified__channels",
       "row_count": 8,
-      "schema_path": "certified/channels.schema.json"
+      "schema_path": "certified\\channels.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.genders",
+      "local_name": "certified.genders",
+      "sqlite_name": "certified__genders",
+      "row_count": 3,
+      "schema_path": "certified\\genders.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.marital_statuses",
+      "local_name": "certified.marital_statuses",
+      "sqlite_name": "certified__marital_statuses",
+      "row_count": 4,
+      "schema_path": "certified\\marital_statuses.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.countries",
+      "local_name": "certified.countries",
+      "sqlite_name": "certified__countries",
+      "row_count": 8,
+      "schema_path": "certified\\countries.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.languages",
+      "local_name": "certified.languages",
+      "sqlite_name": "certified__languages",
+      "row_count": 5,
+      "schema_path": "certified\\languages.schema.json"
     },
     {
       "canonical_name": "main.certified.employees",
       "local_name": "certified.employees",
       "sqlite_name": "certified__employees",
       "row_count": 72,
-      "schema_path": "certified/employees.schema.json"
+      "schema_path": "certified\\employees.schema.json"
     },
     {
       "canonical_name": "main.certified.customers",
       "local_name": "certified.customers",
       "sqlite_name": "certified__customers",
       "row_count": 360,
-      "schema_path": "certified/customers.schema.json"
+      "schema_path": "certified\\customers.schema.json"
     },
     {
       "canonical_name": "main.certified.accounts",
       "local_name": "certified.accounts",
       "sqlite_name": "certified__accounts",
       "row_count": 360,
-      "schema_path": "certified/accounts.schema.json"
+      "schema_path": "certified\\accounts.schema.json"
     },
     {
       "canonical_name": "main.finance_core.fee_revenue",
       "local_name": "finance_core.fee_revenue",
       "sqlite_name": "finance_core__fee_revenue",
       "row_count": 1728,
-      "schema_path": "finance_core/fee_revenue.schema.json"
+      "schema_path": "finance_core\\fee_revenue.schema.json"
     },
     {
       "canonical_name": "main.hr_people.employee_directory",
       "local_name": "hr_people.employee_directory",
       "sqlite_name": "hr_people__employee_directory",
       "row_count": 72,
-      "schema_path": "hr_people/employee_directory.schema.json"
+      "schema_path": "hr_people\\employee_directory.schema.json"
     },
     {
       "canonical_name": "main.marketing_campaigns.campaigns",
       "local_name": "marketing_campaigns.campaigns",
       "sqlite_name": "marketing_campaigns__campaigns",
       "row_count": 12,
-      "schema_path": "marketing_campaigns/campaigns.schema.json"
+      "schema_path": "marketing_campaigns\\campaigns.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_personal_details",
+      "local_name": "certified.customer_personal_details",
+      "sqlite_name": "certified__customer_personal_details",
+      "row_count": 360,
+      "schema_path": "certified\\customer_personal_details.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_employment_details",
+      "local_name": "certified.customer_employment_details",
+      "sqlite_name": "certified__customer_employment_details",
+      "row_count": 360,
+      "schema_path": "certified\\customer_employment_details.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_identifications",
+      "local_name": "certified.customer_identifications",
+      "sqlite_name": "certified__customer_identifications",
+      "row_count": 720,
+      "schema_path": "certified\\customer_identifications.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_next_of_kin",
+      "local_name": "certified.customer_next_of_kin",
+      "sqlite_name": "certified__customer_next_of_kin",
+      "row_count": 360,
+      "schema_path": "certified\\customer_next_of_kin.schema.json"
+    },
+    {
+      "canonical_name": "main.certified.customer_channel_enrollments",
+      "local_name": "certified.customer_channel_enrollments",
+      "sqlite_name": "certified__customer_channel_enrollments",
+      "row_count": 2520,
+      "schema_path": "certified\\customer_channel_enrollments.schema.json"
     },
     {
       "canonical_name": "main.hr_payroll.payroll_runs",
       "local_name": "hr_payroll.payroll_runs",
       "sqlite_name": "hr_payroll__payroll_runs",
       "row_count": 1666,
-      "schema_path": "hr_payroll/payroll_runs.schema.json"
+      "schema_path": "hr_payroll\\payroll_runs.schema.json"
     },
     {
       "canonical_name": "main.marketing_attribution.lead_conversions",
       "local_name": "marketing_attribution.lead_conversions",
       "sqlite_name": "marketing_attribution__lead_conversions",
       "row_count": 94,
-      "schema_path": "marketing_attribution/lead_conversions.schema.json"
+      "schema_path": "marketing_attribution\\lead_conversions.schema.json"
     },
     {
       "canonical_name": "main.communication_threads.incident_threads",
       "local_name": "communication_threads.incident_threads",
       "sqlite_name": "communication_threads__incident_threads",
       "row_count": 79,
-      "schema_path": "communication_threads/incident_threads.schema.json"
+      "schema_path": "communication_threads\\incident_threads.schema.json"
     },
     {
       "canonical_name": "main.ops_branch.branch_incidents",
       "local_name": "ops_branch.branch_incidents",
       "sqlite_name": "ops_branch__branch_incidents",
       "row_count": 79,
-      "schema_path": "ops_branch/branch_incidents.schema.json"
+      "schema_path": "ops_branch\\branch_incidents.schema.json"
     },
     {
       "canonical_name": "main.communication_threads.channel_messages",
       "local_name": "communication_threads.channel_messages",
       "sqlite_name": "communication_threads__channel_messages",
       "row_count": 1437,
-      "schema_path": "communication_threads/channel_messages.schema.json"
+      "schema_path": "communication_threads\\channel_messages.schema.json"
     },
     {
       "canonical_name": "main.finance_core.deposit_balances",
       "local_name": "finance_core.deposit_balances",
       "sqlite_name": "finance_core__deposit_balances",
       "row_count": 3866,
-      "schema_path": "finance_core/deposit_balances.schema.json"
+      "schema_path": "finance_core\\deposit_balances.schema.json"
     },
     {
       "canonical_name": "main.ops_branch.service_sla_events",
       "local_name": "ops_branch.service_sla_events",
       "sqlite_name": "ops_branch__service_sla_events",
       "row_count": 79,
-      "schema_path": "ops_branch/service_sla_events.schema.json"
+      "schema_path": "ops_branch\\service_sla_events.schema.json"
     },
     {
       "canonical_name": "main.communication_threads.campaign_announcements",
       "local_name": "communication_threads.campaign_announcements",
       "sqlite_name": "communication_threads__campaign_announcements",
       "row_count": 34,
-      "schema_path": "communication_threads/campaign_announcements.schema.json"
+      "schema_path": "communication_threads\\campaign_announcements.schema.json"
     },
     {
       "canonical_name": "main.hr_people.employee_changes",
       "local_name": "hr_people.employee_changes",
       "sqlite_name": "hr_people__employee_changes",
       "row_count": 18,
-      "schema_path": "hr_people/employee_changes.schema.json"
+      "schema_path": "hr_people\\employee_changes.schema.json"
     },
     {
       "canonical_name": "main.finance_gl.gl_entries",
       "local_name": "finance_gl.gl_entries",
       "sqlite_name": "finance_gl__gl_entries",
       "row_count": 237,
-      "schema_path": "finance_gl/gl_entries.schema.json"
+      "schema_path": "finance_gl\\gl_entries.schema.json"
     }
   ]
 }

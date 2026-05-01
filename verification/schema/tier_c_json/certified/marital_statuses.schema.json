@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.marital_statuses",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "marital_status_id": {
+        "type": "integer"
+      },
+      "marital_status_name": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "marital_status_id",
+      "marital_status_name"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.marital_statuses",
+  "x-local-name": "certified.marital_statuses",
+  "x-sqlite-name": "certified__marital_statuses",
+  "x-row-count": 4,
+  "x-columns": [
+    {
+      "name": "marital_status_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "marital_status_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

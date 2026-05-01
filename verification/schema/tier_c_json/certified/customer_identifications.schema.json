@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.customer_identifications",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "id_type": {
+        "type": "string"
+      },
+      "id_category": {
+        "type": "string"
+      },
+      "id_number": {
+        "type": "string"
+      },
+      "id_serial_number": {
+        "type": "string"
+      },
+      "issuing_country_id": {
+        "type": "integer"
+      },
+      "issuing_state": {
+        "type": "string"
+      },
+      "issuing_authority": {
+        "type": "string"
+      },
+      "issue_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "expiry_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "is_verified": {
+        "type": "boolean"
+      },
+      "verification_method": {
+        "type": "string"
+      },
+      "verified_by": {
+        "type": "string"
+      },
+      "verification_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "status": {
+        "type": "string"
+      },
+      "is_primary": {
+        "type": "boolean"
+      },
+      "is_suspected_fraud": {
+        "type": "boolean"
+      },
+      "fraud_notes": {
+        "type": "string"
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "id",
+      "customer_id",
+      "id_type",
+      "id_category",
+      "id_number",
+      "id_serial_number",
+      "issuing_country_id",
+      "issuing_state",
+      "issuing_authority",
+      "issue_date",
+      "expiry_date",
+      "is_verified",
+      "verification_method",
+      "verified_by",
+      "verification_date",
+      "status",
+      "is_primary",
+      "is_suspected_fraud",
+      "fraud_notes",
+      "created_at",
+      "updated_at"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.customer_identifications",
+  "x-local-name": "certified.customer_identifications",
+  "x-sqlite-name": "certified__customer_identifications",
+  "x-row-count": 720,
+  "x-columns": [
+    {
+      "name": "id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "id_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "id_category",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "id_number",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "id_serial_number",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "issuing_country_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "issuing_state",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "issuing_authority",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "issue_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "expiry_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "is_verified",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "verification_method",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "verified_by",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "verification_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "status",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "is_primary",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "is_suspected_fraud",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "fraud_notes",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "created_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "updated_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    }
+  ]
+}

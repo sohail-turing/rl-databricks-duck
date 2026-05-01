@@ -5,6 +5,8 @@
 /shared_plan_onepager.md
 /reference_docs/
 explainer.md
+self_scripts.txt
+tables_explainer.md
 
 __pycache__/
 *.py[cod]

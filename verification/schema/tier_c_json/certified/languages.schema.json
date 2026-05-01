@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.languages",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "language_id": {
+        "type": "integer"
+      },
+      "language_name": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "language_id",
+      "language_name"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.languages",
+  "x-local-name": "certified.languages",
+  "x-sqlite-name": "certified__languages",
+  "x-row-count": 5,
+  "x-columns": [
+    {
+      "name": "language_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "language_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

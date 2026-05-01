@@ -231,6 +231,44 @@ CAMPAIGN_THEMES = {
     "personal loan": ["Flex Credit", "Personal Loan Reset", "Seasonal Cash Support"],
 }
 
+GENDER_SPECS = [
+    {"gender_id": 1, "gender_name": "Male"},
+    {"gender_id": 2, "gender_name": "Female"},
+    {"gender_id": 3, "gender_name": "Non-binary"},
+]
+
+MARITAL_STATUS_SPECS = [
+    {"marital_status_id": 1, "marital_status_name": "Single"},
+    {"marital_status_id": 2, "marital_status_name": "Married"},
+    {"marital_status_id": 3, "marital_status_name": "Divorced"},
+    {"marital_status_id": 4, "marital_status_name": "Widowed"},
+]
+
+COUNTRY_SPECS = [
+    {"country_id": 1, "country_code": "US", "country_name": "United States"},
+    {"country_id": 2, "country_code": "CA", "country_name": "Canada"},
+    {"country_id": 3, "country_code": "GB", "country_name": "United Kingdom"},
+    {"country_id": 4, "country_code": "IN", "country_name": "India"},
+    {"country_id": 5, "country_code": "NG", "country_name": "Nigeria"},
+    {"country_id": 6, "country_code": "PH", "country_name": "Philippines"},
+    {"country_id": 7, "country_code": "AU", "country_name": "Australia"},
+    {"country_id": 8, "country_code": "ZA", "country_name": "South Africa"},
+]
+
+LANGUAGE_SPECS = [
+    {"language_id": 1, "language_name": "English"},
+    {"language_id": 2, "language_name": "Spanish"},
+    {"language_id": 3, "language_name": "French"},
+    {"language_id": 4, "language_name": "Hindi"},
+    {"language_id": 5, "language_name": "Tagalog"},
+]
+
+EMPLOYMENT_STATUSES = ["Employed", "Self-Employed", "Unemployed", "Retired", "Student"]
+ID_TYPE_SPECS = [
+    ("National ID", "government"),
+    ("Passport", "travel"),
+]
+
 
 @dataclass(frozen=True)
 class GeneratedTable:
@@ -267,12 +305,24 @@ def build_tier_a(
     branches = pd.DataFrame(BRANCH_SPECS)
     products = pd.DataFrame(PRODUCT_SPECS)
     channels = pd.DataFrame(CHANNEL_SPECS)
+    genders = pd.DataFrame(GENDER_SPECS)
+    marital_statuses = pd.DataFrame(MARITAL_STATUS_SPECS)
+    countries = pd.DataFrame(COUNTRY_SPECS)
+    languages = pd.DataFrame(LANGUAGE_SPECS)
     employees = generate_employees(people_pool, branches, rng, scale)
     customers = generate_customers(people_pool, branches, products, rng, scale, set(employees["source_key"]))
     accounts = generate_accounts(customers, products, rng)
     fee_revenue = generate_fee_revenue(branches, products, periods, rng)
     employee_directory = generate_employee_directory(employees)
     campaigns = generate_campaigns(products, periods, employees, rng, scale)
+    customer_personal_details = generate_customer_personal_details(
+        customers, genders, marital_statuses, countries, languages, rng
+    )
+    customer_employment_details = generate_customer_employment_details(customers, rng)
+    customer_identifications = generate_customer_identifications(customers, countries, rng)
+    customer_next_of_kin = generate_customer_next_of_kin(customers, rng)
+    channels_master = generate_channels_master(channels)
+    customer_channel_enrollments = generate_customer_channel_enrollments(customers, channels_master, rng)
 
     employees_output = employees[
         [
@@ -304,12 +354,46 @@ def build_tier_a(
         GeneratedTable("main.certified.branches", "certified", "branches", branches),
         GeneratedTable("main.certified.products", "certified", "products", products),
         GeneratedTable("main.certified.channels", "certified", "channels", channels),
+        GeneratedTable("main.certified.genders", "certified", "genders", genders),
+        GeneratedTable("main.certified.marital_statuses", "certified", "marital_statuses", marital_statuses),
+        GeneratedTable("main.certified.countries", "certified", "countries", countries),
+        GeneratedTable("main.certified.languages", "certified", "languages", languages),
         GeneratedTable("main.certified.employees", "certified", "employees", employees_output),
         GeneratedTable("main.certified.customers", "certified", "customers", customers_output),
         GeneratedTable("main.certified.accounts", "certified", "accounts", accounts),
         GeneratedTable("main.finance_core.fee_revenue", "finance_core", "fee_revenue", fee_revenue),
         GeneratedTable("main.hr_people.employee_directory", "hr_people", "employee_directory", employee_directory),
         GeneratedTable("main.marketing_campaigns.campaigns", "marketing_campaigns", "campaigns", campaigns),
+        GeneratedTable(
+            "main.certified.customer_personal_details",
+            "certified",
+            "customer_personal_details",
+            customer_personal_details,
+        ),
+        GeneratedTable(
+            "main.certified.customer_employment_details",
+            "certified",
+            "customer_employment_details",
+            customer_employment_details,
+        ),
+        GeneratedTable(
+            "main.certified.customer_identifications",
+            "certified",
+            "customer_identifications",
+            customer_identifications,
+        ),
+        GeneratedTable(
+            "main.certified.customer_next_of_kin",
+            "certified",
+            "customer_next_of_kin",
+            customer_next_of_kin,
+        ),
+        GeneratedTable(
+            "main.certified.customer_channel_enrollments",
+            "certified",
+            "customer_channel_enrollments",
+            customer_channel_enrollments,
+        ),
     ]
 
 
@@ -437,6 +521,8 @@ def generate_customers(
 
     customers = pd.DataFrame(rows)
     customers["signup_date"] = pd.to_datetime(customers["signup_date"])
+    customers["country_code"] = selected_people["country_code"].to_numpy()
+    customers["source_key"] = selected_people["source_key"].to_numpy()
     return customers
 
 
@@ -551,6 +637,352 @@ def generate_campaigns(
         )
 
     return pd.DataFrame(rows)
+
+
+def generate_customer_personal_details(
+    customers: pd.DataFrame,
+    genders: pd.DataFrame,
+    marital_statuses: pd.DataFrame,
+    countries: pd.DataFrame,
+    languages: pd.DataFrame,
+    rng: np.random.Generator,
+) -> pd.DataFrame:
+    current_date = pd.Timestamp(date.today())
+    gender_id_by_name = {row["gender_name"]: row["gender_id"] for row in genders.to_dict("records")}
+    marital_status_id_by_name = {
+        row["marital_status_name"]: row["marital_status_id"] for row in marital_statuses.to_dict("records")
+    }
+    country_id_by_code = {row["country_code"]: row["country_id"] for row in countries.to_dict("records")}
+    language_id_by_name = {row["language_name"]: row["language_id"] for row in languages.to_dict("records")}
+    rows: list[dict[str, object]] = []
+    for index, customer in enumerate(customers.to_dict("records"), start=1):
+        country_code = str(customer.get("country_code") or "US")
+        country_id = country_id_by_code.get(country_code, country_id_by_code["US"])
+        created_at = pd.Timestamp(customer["signup_date"]) + pd.to_timedelta(int(rng.integers(0, 5)), unit="D")
+        updated_at = created_at + pd.to_timedelta(int(rng.integers(3, 180)), unit="D")
+
+        is_deceased = bool(rng.random() < 0.006)
+        date_of_death = pd.Timestamp(_random_date(rng, date.today() - timedelta(days=3650), date.today())) if is_deceased else pd.NaT
+        dob = pd.Timestamp(_random_date(rng, date.today() - timedelta(days=31025), date.today() - timedelta(days=6570)))
+        annual_income_range = str(
+            rng.choice(["25k-50k", "50k-75k", "75k-120k", "120k-200k", "200k+"], p=[0.22, 0.29, 0.27, 0.16, 0.06])
+        )
+        net_worth_range = str(rng.choice(["<50k", "50k-150k", "150k-500k", "500k-1m", "1m+"], p=[0.18, 0.36, 0.30, 0.11, 0.05]))
+        language = str(rng.choice(["English", "Spanish", "French", "Hindi", "Tagalog"], p=[0.74, 0.17, 0.03, 0.03, 0.03]))
+        secondary_language = "English" if language != "English" else str(rng.choice(["Spanish", "French", "None"], p=[0.15, 0.04, 0.81]))
+        gender_name = str(rng.choice(["Male", "Female", "Non-binary"], p=[0.48, 0.49, 0.03]))
+        marital_status_name = str(rng.choice(["Single", "Married", "Divorced", "Widowed"], p=[0.41, 0.43, 0.12, 0.04]))
+        pep_flag = bool(rng.random() < 0.02)
+        high_risk_flag = bool(rng.random() < 0.025) or pep_flag
+
+        rows.append(
+            {
+                "id": f"CPD-{index:07d}",
+                "customer_id": customer["customer_id"],
+                "date_of_birth": dob,
+                "place_of_birth": str(rng.choice(["Charlotte", "Atlanta", "Jacksonville", "Miami", "Raleigh", "Columbia"])),
+                "country_of_birth_id": country_id,
+                "gender_id": gender_id_by_name[gender_name],
+                "marital_status_id": marital_status_id_by_name[marital_status_name],
+                "citizenship_country_id": country_id,
+                "dual_citizenship_flag": bool(rng.random() < 0.06),
+                "ssn_last4": f"{int(rng.integers(0, 10_000)):04d}",
+                "tin": f"TIN-{int(rng.integers(100_000_000, 999_999_999))}",
+                "itin": f"ITIN-{int(rng.integers(100_000_000, 999_999_999))}",
+                "is_politically_exposed": pep_flag,
+                "pep_details": "No PEP match found." if not pep_flag else "Potential local-government exposure; enhanced due diligence required.",
+                "annual_income_range": annual_income_range,
+                "net_worth_range": net_worth_range,
+                "source_of_wealth_summary": str(rng.choice(["Salary", "Business income", "Savings and investments", "Inheritance"])),
+                "primary_language_id": language_id_by_name[language],
+                "secondary_language_id": (
+                    language_id_by_name[secondary_language] if secondary_language in language_id_by_name else None
+                ),
+                "high_risk_flag": high_risk_flag,
+                "risk_reason": "Standard retail risk." if not high_risk_flag else str(rng.choice(["PEP-related monitoring", "Cross-border activity", "KYC quality exception"])),
+                "is_deceased": is_deceased,
+                "date_of_death": date_of_death,
+                "created_at": created_at,
+                "updated_at": min(updated_at, current_date),
+            }
+        )
+
+    personal_details = pd.DataFrame(rows)
+    for column in ("date_of_birth", "date_of_death", "created_at", "updated_at"):
+        personal_details[column] = pd.to_datetime(personal_details[column])
+    return personal_details
+
+
+def generate_customer_employment_details(customers: pd.DataFrame, rng: np.random.Generator) -> pd.DataFrame:
+    rows: list[dict[str, object]] = []
+    occupation_to_title = {
+        "Healthcare": "Registered Nurse",
+        "Education": "Teacher",
+        "Technology": "Software Engineer",
+        "Retail": "Store Supervisor",
+        "Logistics": "Operations Coordinator",
+        "Hospitality": "Guest Services Lead",
+        "Construction": "Project Technician",
+        "Finance": "Financial Analyst",
+        "Professional Services": "Business Consultant",
+    }
+    current_ts = pd.Timestamp(date.today())
+
+    for index, customer in enumerate(customers.to_dict("records"), start=1):
+        created_at = pd.Timestamp(customer["signup_date"]) + pd.to_timedelta(int(rng.integers(0, 3)), unit="D")
+        status = str(rng.choice(EMPLOYMENT_STATUSES, p=[0.61, 0.12, 0.08, 0.12, 0.07]))
+        occupation = str(rng.choice(list(occupation_to_title.keys())))
+        if status in {"Retired", "Student", "Unemployed"}:
+            occupation = status
+        start_date = pd.Timestamp(_random_date(rng, date.today() - timedelta(days=6205), date.today() - timedelta(days=120)))
+        end_date = pd.NaT
+        if status in {"Unemployed", "Retired"} and bool(rng.random() < 0.55):
+            end_date = start_date + pd.to_timedelta(int(rng.integers(365, 3650)), unit="D")
+        years_employed = round(max(0.0, ((end_date if pd.notna(end_date) else current_ts) - start_date).days / 365.25), 1)
+        income_frequency = str(rng.choice(["monthly", "bi-weekly", "weekly"], p=[0.56, 0.33, 0.11]))
+        income_amount = round(float(rng.uniform(2200.0, 14500.0)), 2)
+        if status in {"Retired", "Student", "Unemployed"}:
+            income_amount = round(float(rng.uniform(800.0, 5200.0)), 2)
+        updated_at = created_at + pd.to_timedelta(int(rng.integers(20, 360)), unit="D")
+
+        rows.append(
+            {
+                "id": f"CED-{index:07d}",
+                "customer_id": customer["customer_id"],
+                "employment_status": status,
+                "occupation": occupation,
+                "job_title": occupation_to_title.get(occupation, f"{occupation} Associate"),
+                "employer_name": str(rng.choice(["Blue River Health", "Sunstate Logistics", "Pioneer Tech", "Meridian Supplies", "Coastal Services"])),
+                "employer_address": str(rng.choice(["101 Main St, Charlotte, NC", "88 Peachtree Ave, Atlanta, GA", "220 Bay St, Jacksonville, FL", "45 Harbor Rd, Charleston, SC"])),
+                "employer_phone": f"+1-704-{int(rng.integers(100, 1000)):03d}-{int(rng.integers(1000, 10000)):04d}",
+                "employment_start_date": start_date,
+                "employment_end_date": end_date,
+                "years_employed": years_employed,
+                "income_amount": income_amount,
+                "income_frequency": income_frequency,
+                "is_primary_income": bool(rng.random() < 0.89),
+                "is_self_employed": status == "Self-Employed",
+                "created_at": created_at,
+                "updated_at": min(updated_at, current_ts),
+            }
+        )
+
+    employment_details = pd.DataFrame(rows)
+    for column in ("employment_start_date", "employment_end_date", "created_at", "updated_at"):
+        employment_details[column] = pd.to_datetime(employment_details[column])
+    return employment_details
+
+
+def generate_customer_identifications(
+    customers: pd.DataFrame,
+    countries: pd.DataFrame,
+    rng: np.random.Generator,
+) -> pd.DataFrame:
+    rows: list[dict[str, object]] = []
+    counter = 1
+    current_ts = pd.Timestamp(date.today())
+    country_id_by_code = {row["country_code"]: row["country_id"] for row in countries.to_dict("records")}
+
+    for customer in customers.to_dict("records"):
+        for id_type, id_category in ID_TYPE_SPECS:
+            issue_date = pd.Timestamp(_random_date(rng, date.today() - timedelta(days=5475), date.today() - timedelta(days=30)))
+            expiry_date = issue_date + pd.to_timedelta(int(rng.integers(365 * 3, 365 * 10)), unit="D")
+            verified = bool(rng.random() < 0.96)
+            suspected_fraud = bool(rng.random() < 0.008)
+            created_at = pd.Timestamp(customer["signup_date"]) + pd.to_timedelta(int(rng.integers(0, 10)), unit="D")
+            updated_at = created_at + pd.to_timedelta(int(rng.integers(5, 220)), unit="D")
+            verification_date = created_at + pd.to_timedelta(int(rng.integers(0, 5)), unit="D")
+
+            rows.append(
+                {
+                    "id": f"CID-{counter:08d}",
+                    "customer_id": customer["customer_id"],
+                    "id_type": id_type,
+                    "id_category": id_category,
+                    "id_number": f"{id_type[:3].upper()}-{int(rng.integers(100000000, 999999999))}",
+                    "id_serial_number": f"SER-{int(rng.integers(100000, 999999))}",
+                    "issuing_country_id": country_id_by_code["US"],
+                    "issuing_state": customer["state_code"],
+                    "issuing_authority": "State DMV" if id_type == "National ID" else "US Department of State",
+                    "issue_date": issue_date,
+                    "expiry_date": expiry_date,
+                    "is_verified": verified,
+                    "verification_method": str(rng.choice(["document_scan", "in_branch_review", "api_validation"])),
+                    "verified_by": "system_kyc" if verified else "manual_queue",
+                    "verification_date": verification_date,
+                    "status": "active" if expiry_date > current_ts else "expired",
+                    "is_primary": id_type == "National ID",
+                    "is_suspected_fraud": suspected_fraud,
+                    "fraud_notes": "No fraud indicators." if not suspected_fraud else "Pattern match on historical compromised-document list.",
+                    "created_at": created_at,
+                    "updated_at": min(updated_at, current_ts),
+                }
+            )
+            counter += 1
+
+    identifications = pd.DataFrame(rows)
+    for column in ("issue_date", "expiry_date", "verification_date", "created_at", "updated_at"):
+        identifications[column] = pd.to_datetime(identifications[column])
+    return identifications
+
+
+def generate_customer_next_of_kin(customers: pd.DataFrame, rng: np.random.Generator) -> pd.DataFrame:
+    rows: list[dict[str, object]] = []
+    relationship_types = [
+        "Spouse",
+        "Parent",
+        "Sibling",
+        "Child",
+        "Aunt/Uncle",
+        "Cousin",
+        "Guardian",
+    ]
+
+    for index, customer in enumerate(customers.to_dict("records"), start=1):
+        kin_first = str(rng.choice(["Alex", "Jordan", "Taylor", "Morgan", "Casey", "Riley", "Avery", "Sam"]))
+        kin_last = str(rng.choice(["Johnson", "Williams", "Brown", "Jones", "Garcia", "Davis", "Miller", "Wilson"]))
+        kin_dob = pd.Timestamp(
+            _random_date(
+                rng,
+                date.today() - timedelta(days=31025),
+                date.today() - timedelta(days=4745),
+            )
+        )
+        rows.append(
+            {
+                "id": f"KIN-{index:07d}",
+                "customer_id": customer["customer_id"],
+                "kin_name": f"{kin_first} {kin_last}",
+                "relationship_type": str(rng.choice(relationship_types)),
+                "kin_email": f"{_normalize_name_part(kin_first)}.{_normalize_name_part(kin_last)}.{int(rng.integers(10, 999))}@mail.com",
+                "kin_phone": f"+1-7{int(rng.integers(0, 10))}{int(rng.integers(0, 10))}-{int(rng.integers(100, 1000)):03d}-{int(rng.integers(1000, 10000)):04d}",
+                "kin_physical_address": str(
+                    rng.choice(
+                        [
+                            "14 Oak Street, Charlotte, NC",
+                            "220 Palm Ave, Tampa, FL",
+                            "87 Peachtree Lane, Atlanta, GA",
+                            "39 Harbor Drive, Charleston, SC",
+                        ]
+                    )
+                ),
+                "kin_date_of_birth": kin_dob,
+                "created_at": pd.Timestamp(customer["signup_date"]),
+                "updated_at": pd.Timestamp(customer["signup_date"])
+                + pd.to_timedelta(int(rng.integers(1, 120)), unit="D"),
+            }
+        )
+
+    next_of_kin = pd.DataFrame(rows)
+    for column in ("kin_date_of_birth", "created_at", "updated_at"):
+        next_of_kin[column] = pd.to_datetime(next_of_kin[column])
+    return next_of_kin
+
+
+def generate_channels_master(channels: pd.DataFrame) -> pd.DataFrame:
+    created_at = pd.Timestamp(date.today())
+    rows: list[dict[str, object]] = []
+    for channel in channels.to_dict("records"):
+        channel_name = str(channel["channel_name"])
+        is_digital = str(channel["channel_type"]) == "digital"
+        requires_internet = is_digital or channel_name in {"Email", "SMS"}
+        rows.append(
+            {
+                "id": channel["channel_id"],
+                "channel_code": str(channel["channel_id"]),
+                "channel_name": channel_name,
+                "description": f"{channel_name} channel managed by {channel['business_owner']}",
+                "is_digital": is_digital,
+                "requires_internet": requires_internet,
+                "is_active": channel_name not in {"Incident Hotline"},
+                "created_at": created_at,
+            }
+        )
+    channels_master = pd.DataFrame(rows)
+    channels_master["created_at"] = pd.to_datetime(channels_master["created_at"])
+    return channels_master
+
+
+def generate_customer_channel_enrollments(
+    customers: pd.DataFrame,
+    channels_master: pd.DataFrame,
+    rng: np.random.Generator,
+) -> pd.DataFrame:
+    rows: list[dict[str, object]] = []
+    counter = 1
+    today_ts = pd.Timestamp(date.today())
+    active_channels = channels_master[channels_master["is_active"] == True].reset_index(drop=True)  # noqa: E712
+
+    for customer in customers.to_dict("records"):
+        signup_ts = pd.Timestamp(customer["signup_date"])
+        for channel in active_channels.to_dict("records"):
+            enrolled_at = signup_ts + pd.to_timedelta(int(rng.integers(0, 45)), unit="D")
+            status = str(rng.choice(["active", "active", "active", "suspended", "inactive"], p=[0.68, 0.14, 0.08, 0.06, 0.04]))
+            status_updated_at = enrolled_at + pd.to_timedelta(int(rng.integers(3, 420)), unit="D")
+            last_login_at = status_updated_at - pd.to_timedelta(int(rng.integers(0, 60)), unit="D")
+            failed_login_attempts = int(rng.integers(0, 4))
+            is_digital = bool(channel["is_digital"])
+
+            rows.append(
+                {
+                    "id": f"CCE-{counter:09d}",
+                    "customer_id": customer["customer_id"],
+                    "channel_id": channel["id"],
+                    "channel_code": channel["channel_code"],
+                    "channel_name": channel["channel_name"],
+                    "enrolled_at": enrolled_at,
+                    "enrollment_method": str(rng.choice(["branch_assisted", "self_service", "call_center"])),
+                    "enrolled_by": str(rng.choice(["system_seed", "EMP-000001", "EMP-000007"])),
+                    "status": status,
+                    "status_reason": "In good standing." if status == "active" else str(rng.choice(["Customer request", "Security review", "Inactivity policy"])),
+                    "status_updated_at": min(status_updated_at, today_ts),
+                    "username": f"user_{customer['customer_id'].lower()}_{channel['channel_code'].lower()}",
+                    "alias": f"{customer['customer_id']}-{channel['channel_code']}",
+                    "two_factor_enabled": is_digital and bool(rng.random() < 0.86),
+                    "auth_method": str(rng.choice(["password", "biometric", "otp_sms", "otp_email"])),
+                    "last_login_at": min(last_login_at, today_ts),
+                    "failed_login_attempts": failed_login_attempts,
+                    "locked_until": today_ts + pd.to_timedelta(1, unit="D") if failed_login_attempts >= 3 else pd.NaT,
+                    "daily_transaction_limit": round(float(rng.uniform(1500.0, 9500.0)), 2),
+                    "per_transaction_limit": round(float(rng.uniform(350.0, 4200.0)), 2),
+                    "monthly_transaction_limit": round(float(rng.uniform(20_000.0, 130_000.0)), 2),
+                    "cash_withdrawal_limit": round(float(rng.uniform(250.0, 1300.0)), 2),
+                    "transfer_limit": round(float(rng.uniform(500.0, 7800.0)), 2),
+                    "bill_payment_limit": round(float(rng.uniform(700.0, 11_000.0)), 2),
+                    "max_transactions_per_day": int(rng.integers(3, 28)),
+                    "ip_whitelist": "10.10.10.0/24" if bool(rng.random() < 0.2) else "0.0.0.0/0",
+                    "geo_restriction_flag": bool(rng.random() < 0.11),
+                    "ussd_pin_set": channel["channel_name"] == "SMS" and bool(rng.random() < 0.74),
+                    "ussd_last_access": min(enrolled_at + pd.to_timedelta(int(rng.integers(1, 120)), unit="D"), today_ts),
+                    "mobile_app_version": str(rng.choice(["3.9.2", "4.0.1", "4.1.0"])) if channel["channel_name"] == "Mobile App" else "n/a",
+                    "push_notifications_enabled": channel["channel_name"] == "Mobile App" and bool(rng.random() < 0.81),
+                    "security_questions_set": bool(rng.random() < 0.9),
+                    "password_last_changed": min(enrolled_at + pd.to_timedelta(int(rng.integers(10, 180)), unit="D"), today_ts),
+                    "transaction_fee_profile_id": f"TFP-{int(rng.integers(100, 999))}",
+                    "sms_alerts_enabled": bool(rng.random() < 0.77),
+                    "email_alerts_enabled": bool(rng.random() < 0.84),
+                    "suspicious_activity_flag": bool(rng.random() < 0.014),
+                    "last_suspicious_activity_date": min(enrolled_at + pd.to_timedelta(int(rng.integers(30, 320)), unit="D"), today_ts),
+                    "created_at": enrolled_at,
+                    "updated_at": min(status_updated_at + pd.to_timedelta(int(rng.integers(0, 25)), unit="D"), today_ts),
+                }
+            )
+            counter += 1
+
+    enrollments = pd.DataFrame(rows)
+    for column in (
+        "enrolled_at",
+        "status_updated_at",
+        "last_login_at",
+        "locked_until",
+        "ussd_last_access",
+        "password_last_changed",
+        "last_suspicious_activity_date",
+        "created_at",
+        "updated_at",
+    ):
+        enrollments[column] = pd.to_datetime(enrollments[column])
+    return enrollments
 
 
 def write_sqlite(tables: list[GeneratedTable], output_path: str | Path) -> Path:

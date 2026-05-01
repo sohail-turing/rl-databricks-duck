@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.customer_employment_details",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "employment_status": {
+        "type": "string"
+      },
+      "occupation": {
+        "type": "string"
+      },
+      "job_title": {
+        "type": "string"
+      },
+      "employer_name": {
+        "type": "string"
+      },
+      "employer_address": {
+        "type": "string"
+      },
+      "employer_phone": {
+        "type": "string"
+      },
+      "employment_start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "employment_end_date": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "years_employed": {
+        "type": "number"
+      },
+      "income_amount": {
+        "type": "number"
+      },
+      "income_frequency": {
+        "type": "string"
+      },
+      "is_primary_income": {
+        "type": "boolean"
+      },
+      "is_self_employed": {
+        "type": "boolean"
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "id",
+      "customer_id",
+      "employment_status",
+      "occupation",
+      "job_title",
+      "employer_name",
+      "employer_address",
+      "employer_phone",
+      "employment_start_date",
+      "years_employed",
+      "income_amount",
+      "income_frequency",
+      "is_primary_income",
+      "is_self_employed",
+      "created_at",
+      "updated_at"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.customer_employment_details",
+  "x-local-name": "certified.customer_employment_details",
+  "x-sqlite-name": "certified__customer_employment_details",
+  "x-row-count": 360,
+  "x-columns": [
+    {
+      "name": "id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employment_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "occupation",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "job_title",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employer_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employer_address",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employer_phone",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employment_start_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "employment_end_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": true
+    },
+    {
+      "name": "years_employed",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "income_amount",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "income_frequency",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "is_primary_income",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "is_self_employed",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "created_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "updated_at",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    }
+  ]
+}

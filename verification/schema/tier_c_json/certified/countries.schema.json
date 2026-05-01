@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.countries",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "country_id": {
+        "type": "integer"
+      },
+      "country_code": {
+        "type": "string"
+      },
+      "country_name": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "country_id",
+      "country_code",
+      "country_name"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.countries",
+  "x-local-name": "certified.countries",
+  "x-sqlite-name": "certified__countries",
+  "x-row-count": 8,
+  "x-columns": [
+    {
+      "name": "country_id",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "country_code",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "country_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}
