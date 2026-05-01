@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.departments",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "department_id": {
+        "type": "string"
+      },
+      "department_name": {
+        "type": "string"
+      },
+      "function_group": {
+        "type": "string"
+      },
+      "executive_owner_employee_id": {
+        "type": "string"
+      },
+      "active_flag": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "department_id",
+      "department_name",
+      "function_group",
+      "executive_owner_employee_id",
+      "active_flag"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.departments",
+  "x-local-name": "hr_people.departments",
+  "x-sqlite-name": "hr_people__departments",
+  "x-row-count": 5,
+  "x-columns": [
+    {
+      "name": "department_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "department_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "function_group",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "executive_owner_employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "active_flag",
+      "pandas_dtype": "bool",
+      "nullable": false
+    }
+  ]
+}

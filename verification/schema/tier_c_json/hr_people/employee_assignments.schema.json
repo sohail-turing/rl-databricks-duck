@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.employee_assignments",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "assignment_id": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "department_id": {
+        "type": "string"
+      },
+      "role_id": {
+        "type": "string"
+      },
+      "manager_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "cost_center_id": {
+        "type": "string"
+      },
+      "fte": {
+        "type": "number"
+      },
+      "work_location_type": {
+        "type": "string"
+      },
+      "effective_start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "effective_end_date": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "assignment_status": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "assignment_id",
+      "employee_id",
+      "branch_id",
+      "department_id",
+      "role_id",
+      "cost_center_id",
+      "fte",
+      "work_location_type",
+      "effective_start_date",
+      "assignment_status"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.employee_assignments",
+  "x-local-name": "hr_people.employee_assignments",
+  "x-sqlite-name": "hr_people__employee_assignments",
+  "x-row-count": 72,
+  "x-columns": [
+    {
+      "name": "assignment_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "department_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "role_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "manager_id",
+      "pandas_dtype": "str",
+      "nullable": true
+    },
+    {
+      "name": "cost_center_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "fte",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "work_location_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "effective_start_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "effective_end_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": true
+    },
+    {
+      "name": "assignment_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

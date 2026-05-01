@@ -14,7 +14,8 @@ It is intentionally small. The goal is to make the first milestone coherent and 
 | `main.finance_core` | Tier 3 | primary Finance facts used by the milestone tasks |
 | `main.finance_gl` | Tier 3 | booked finance impact for the hardest operational task |
 | `main.hr_people` | Tier 3 | employee profile and change history |
-| `main.hr_payroll` | Tier 3 | payroll facts |
+| `main.hr_payroll` | Tier 3 | payroll and compensation facts |
+| `main.hr_benefits` | Tier 3 | benefit plan and enrollment facts |
 | `main.communication_threads` | Tier 3 | internal communication and incident discussion surfaces |
 | `main.marketing_campaigns` | Tier 3 | campaign definitions and targeting |
 | `main.marketing_attribution` | Tier 3 | conversion facts tied to campaigns and accounts |
@@ -178,6 +179,23 @@ Minimum columns:
 4. `role_title`
 5. `manager_id`
 6. `employment_status`
+
+### Expanded HR analytics layer
+
+Purpose: connected workforce graph for realistic HR analytics, inspired by HRIS/payroll systems such as Deel
+
+Tables:
+
+1. `main.hr_people.departments` — department dimension and executive owner
+2. `main.hr_people.job_roles` — role, job family, level, and salary-band dimension
+3. `main.hr_people.employee_assignments` — employee, branch, department, role, manager, cost center, FTE, and work-location assignment
+4. `main.hr_people.reporting_lines` — direct manager graph over employees
+5. `main.hr_people.time_off_requests` — leave requests tied to employee, manager, branch, and period
+6. `main.hr_people.performance_reviews` — employee review outcomes tied to manager, branch, period, payroll signal, and branch pressure
+7. `main.hr_people.onboarding_cases` — new-hire case status tied to employee, manager, HR partner, branch, and period
+8. `main.hr_payroll.employee_compensation_history` — monthly compensation snapshots tied to payroll, role, department, cost center, branch, and period
+9. `main.hr_benefits.benefit_plans` — benefit plan dimension
+10. `main.hr_benefits.benefit_enrollments` — employee benefit enrollment facts
 
 ### `main.hr_payroll.payroll_runs`
 

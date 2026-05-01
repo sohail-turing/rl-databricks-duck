@@ -1,0 +1,18 @@
+{
+  "internal_channel_ids": ["CH-004", "CH-007", "CH-008"],
+  "incident_type_choices": [
+    "atm_outage",
+    "cash_reconciliation_delay",
+    "branch_network_latency",
+    "statement_delivery_issue",
+    "card_dispute_queue"
+  ],
+  "severity_levels": ["low", "medium", "high", "critical"],
+  "severity_weights": {"low": 1.0, "medium": 1.8, "high": 2.6, "critical": 3.8},
+  "sla_thresholds": {
+    "low": {"response": 90, "resolution": 720},
+    "medium": {"response": 60, "resolution": 480},
+    "high": {"response": 40, "resolution": 300},
+    "critical": {"response": 25, "resolution": 180}
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {"branch_id": "BR-001", "branch_name": "Charlotte Uptown", "region_name": "Carolinas", "state_code": "NC", "market_name": "Charlotte"},
+  {"branch_id": "BR-002", "branch_name": "Raleigh North Hills", "region_name": "Carolinas", "state_code": "NC", "market_name": "Raleigh"},
+  {"branch_id": "BR-003", "branch_name": "Asheville River Arts", "region_name": "Carolinas", "state_code": "NC", "market_name": "Asheville"},
+  {"branch_id": "BR-004", "branch_name": "Columbia Vista", "region_name": "Carolinas", "state_code": "SC", "market_name": "Columbia"},
+  {"branch_id": "BR-005", "branch_name": "Greenville Eastside", "region_name": "Carolinas", "state_code": "SC", "market_name": "Greenville"},
+  {"branch_id": "BR-006", "branch_name": "Charleston Harbor", "region_name": "Carolinas", "state_code": "SC", "market_name": "Charleston"},
+  {"branch_id": "BR-007", "branch_name": "Atlanta Midtown", "region_name": "Georgia", "state_code": "GA", "market_name": "Atlanta"},
+  {"branch_id": "BR-008", "branch_name": "Savannah Historic", "region_name": "Georgia", "state_code": "GA", "market_name": "Savannah"},
+  {"branch_id": "BR-009", "branch_name": "Macon Riverside", "region_name": "Georgia", "state_code": "GA", "market_name": "Macon"},
+  {"branch_id": "BR-010", "branch_name": "Jacksonville Southpoint", "region_name": "Florida", "state_code": "FL", "market_name": "Jacksonville"},
+  {"branch_id": "BR-011", "branch_name": "Orlando Lake Nona", "region_name": "Florida", "state_code": "FL", "market_name": "Orlando"},
+  {"branch_id": "BR-012", "branch_name": "Tampa Channelside", "region_name": "Florida", "state_code": "FL", "market_name": "Tampa"}
+]

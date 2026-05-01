@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_benefits.benefit_enrollments",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "benefit_enrollment_id": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "benefit_plan_id": {
+        "type": "string"
+      },
+      "coverage_tier": {
+        "type": "string"
+      },
+      "enrollment_status": {
+        "type": "string"
+      },
+      "effective_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "employee_monthly_contribution_usd": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "benefit_enrollment_id",
+      "employee_id",
+      "benefit_plan_id",
+      "coverage_tier",
+      "enrollment_status",
+      "effective_date",
+      "employee_monthly_contribution_usd"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_benefits.benefit_enrollments",
+  "x-local-name": "hr_benefits.benefit_enrollments",
+  "x-sqlite-name": "hr_benefits__benefit_enrollments",
+  "x-row-count": 288,
+  "x-columns": [
+    {
+      "name": "benefit_enrollment_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "benefit_plan_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "coverage_tier",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "enrollment_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "effective_date",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    },
+    {
+      "name": "employee_monthly_contribution_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

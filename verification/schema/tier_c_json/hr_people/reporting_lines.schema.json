@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.reporting_lines",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "reporting_line_id": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "manager_employee_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "effective_start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "effective_end_date": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "reporting_type": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "reporting_line_id",
+      "employee_id",
+      "manager_employee_id",
+      "branch_id",
+      "effective_start_date",
+      "reporting_type"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.reporting_lines",
+  "x-local-name": "hr_people.reporting_lines",
+  "x-sqlite-name": "hr_people__reporting_lines",
+  "x-row-count": 60,
+  "x-columns": [
+    {
+      "name": "reporting_line_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "manager_employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "effective_start_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "effective_end_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": true
+    },
+    {
+      "name": "reporting_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

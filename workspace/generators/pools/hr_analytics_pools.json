@@ -1,0 +1,9 @@
+{
+  "department_function_group": {
+    "Retail Banking": "branch_banking",
+    "Operations": "branch_operations",
+    "Marketing": "growth",
+    "HR": "people_operations",
+    "Finance": "corporate_finance"
+  }
+}

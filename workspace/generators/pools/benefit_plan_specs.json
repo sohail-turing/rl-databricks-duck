@@ -1,0 +1,7 @@
+[
+  {"benefit_plan_id": "BEN-MED-PPO", "plan_name": "Meridian PPO Medical", "plan_type": "medical", "provider_name": "BlueCross Southeast", "employer_monthly_cost_usd": 625.0},
+  {"benefit_plan_id": "BEN-MED-HSA", "plan_name": "Meridian HSA Medical", "plan_type": "medical", "provider_name": "Aetna Select", "employer_monthly_cost_usd": 510.0},
+  {"benefit_plan_id": "BEN-DENTAL", "plan_name": "Meridian Dental Plus", "plan_type": "dental", "provider_name": "Delta Dental", "employer_monthly_cost_usd": 48.0},
+  {"benefit_plan_id": "BEN-VISION", "plan_name": "Meridian Vision", "plan_type": "vision", "provider_name": "VSP", "employer_monthly_cost_usd": 18.0},
+  {"benefit_plan_id": "BEN-401K", "plan_name": "Meridian 401k Match", "plan_type": "retirement", "provider_name": "Fidelity", "employer_monthly_cost_usd": 0.0}
+]

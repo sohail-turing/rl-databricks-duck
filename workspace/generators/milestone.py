@@ -15,221 +15,38 @@ import numpy as np
 import pandas as pd
 
 
-FOOTPRINT_STATES = ("NC", "SC", "GA", "FL")
-BANK_DOMAIN = "meridiantrust.bank"
+POOLS_DIR = Path(__file__).resolve().parent / "pools"
 
-BRANCH_SPECS = [
-    {
-        "branch_id": "BR-001",
-        "branch_name": "Charlotte Uptown",
-        "region_name": "Carolinas",
-        "state_code": "NC",
-        "market_name": "Charlotte",
-    },
-    {
-        "branch_id": "BR-002",
-        "branch_name": "Raleigh North Hills",
-        "region_name": "Carolinas",
-        "state_code": "NC",
-        "market_name": "Raleigh",
-    },
-    {
-        "branch_id": "BR-003",
-        "branch_name": "Asheville River Arts",
-        "region_name": "Carolinas",
-        "state_code": "NC",
-        "market_name": "Asheville",
-    },
-    {
-        "branch_id": "BR-004",
-        "branch_name": "Columbia Vista",
-        "region_name": "Carolinas",
-        "state_code": "SC",
-        "market_name": "Columbia",
-    },
-    {
-        "branch_id": "BR-005",
-        "branch_name": "Greenville Eastside",
-        "region_name": "Carolinas",
-        "state_code": "SC",
-        "market_name": "Greenville",
-    },
-    {
-        "branch_id": "BR-006",
-        "branch_name": "Charleston Harbor",
-        "region_name": "Carolinas",
-        "state_code": "SC",
-        "market_name": "Charleston",
-    },
-    {
-        "branch_id": "BR-007",
-        "branch_name": "Atlanta Midtown",
-        "region_name": "Georgia",
-        "state_code": "GA",
-        "market_name": "Atlanta",
-    },
-    {
-        "branch_id": "BR-008",
-        "branch_name": "Savannah Historic",
-        "region_name": "Georgia",
-        "state_code": "GA",
-        "market_name": "Savannah",
-    },
-    {
-        "branch_id": "BR-009",
-        "branch_name": "Macon Riverside",
-        "region_name": "Georgia",
-        "state_code": "GA",
-        "market_name": "Macon",
-    },
-    {
-        "branch_id": "BR-010",
-        "branch_name": "Jacksonville Southpoint",
-        "region_name": "Florida",
-        "state_code": "FL",
-        "market_name": "Jacksonville",
-    },
-    {
-        "branch_id": "BR-011",
-        "branch_name": "Orlando Lake Nona",
-        "region_name": "Florida",
-        "state_code": "FL",
-        "market_name": "Orlando",
-    },
-    {
-        "branch_id": "BR-012",
-        "branch_name": "Tampa Channelside",
-        "region_name": "Florida",
-        "state_code": "FL",
-        "market_name": "Tampa",
-    },
-]
 
-PRODUCT_SPECS = [
-    {
-        "product_id": "PRD-001",
-        "product_name": "Meridian Everyday Checking",
-        "product_family": "retail checking",
-        "product_group": "deposits",
-    },
-    {
-        "product_id": "PRD-002",
-        "product_name": "Meridian High-Yield Savings",
-        "product_family": "high-yield savings",
-        "product_group": "deposits",
-    },
-    {
-        "product_id": "PRD-003",
-        "product_name": "Meridian Business Advantage Checking",
-        "product_family": "small-business checking",
-        "product_group": "deposits",
-    },
-    {
-        "product_id": "PRD-004",
-        "product_name": "Meridian Rewards Card",
-        "product_family": "consumer credit card",
-        "product_group": "cards",
-    },
-    {
-        "product_id": "PRD-005",
-        "product_name": "Meridian Auto Loan",
-        "product_family": "auto loan",
-        "product_group": "lending",
-    },
-    {
-        "product_id": "PRD-006",
-        "product_name": "Meridian Personal Loan",
-        "product_family": "personal loan",
-        "product_group": "lending",
-    },
-]
+def load_pool_json(filename: str) -> dict:
+    pool_path = POOLS_DIR / filename
+    with pool_path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
 
-CHANNEL_SPECS = [
-    {
-        "channel_id": "CH-001",
-        "channel_name": "Branch Network",
-        "channel_type": "customer",
-        "business_owner": "Retail Banking",
-    },
-    {
-        "channel_id": "CH-002",
-        "channel_name": "Online Banking",
-        "channel_type": "digital",
-        "business_owner": "Digital Banking",
-    },
-    {
-        "channel_id": "CH-003",
-        "channel_name": "Mobile App",
-        "channel_type": "digital",
-        "business_owner": "Digital Banking",
-    },
-    {
-        "channel_id": "CH-004",
-        "channel_name": "Email",
-        "channel_type": "campaign",
-        "business_owner": "Marketing",
-    },
-    {
-        "channel_id": "CH-005",
-        "channel_name": "SMS",
-        "channel_type": "campaign",
-        "business_owner": "Marketing",
-    },
-    {
-        "channel_id": "CH-006",
-        "channel_name": "Call Center",
-        "channel_type": "service",
-        "business_owner": "Service Recovery",
-    },
-    {
-        "channel_id": "CH-007",
-        "channel_name": "Operations Bridge",
-        "channel_type": "internal",
-        "business_owner": "Operations",
-    },
-    {
-        "channel_id": "CH-008",
-        "channel_name": "Incident Hotline",
-        "channel_type": "internal",
-        "business_owner": "Operations",
-    },
-]
 
-CUSTOMER_PRODUCT_WEIGHTS = np.array([0.29, 0.18, 0.14, 0.16, 0.11, 0.12], dtype=float)
+BANK_PROFILE = load_pool_json("bank_profile.json")
+PRODUCT_FINANCIALS = load_pool_json("product_financials.json")
+CAMPAIGN_POOLS = load_pool_json("campaign_pools.json")
+
+FOOTPRINT_STATES = tuple(BANK_PROFILE["footprint_states"])
+BANK_DOMAIN = str(BANK_PROFILE["bank_domain"])
+DEFAULT_BRANCH_STAFF_TARGET = int(BANK_PROFILE["default_branch_staff_target"])
+
+BRANCH_SPECS = load_pool_json("branch_specs.json")
+PRODUCT_SPECS = load_pool_json("product_specs.json")
+CHANNEL_SPECS = load_pool_json("channel_specs.json")
+
+_CUSTOMER_PRODUCT_WEIGHTS_BY_ID = load_pool_json("customer_product_weights.json")["weights_by_product_id"]
+CUSTOMER_PRODUCT_WEIGHTS = np.array(
+    [_CUSTOMER_PRODUCT_WEIGHTS_BY_ID[product["product_id"]] for product in PRODUCT_SPECS],
+    dtype=float,
+)
 CUSTOMER_PRODUCT_WEIGHTS = CUSTOMER_PRODUCT_WEIGHTS / CUSTOMER_PRODUCT_WEIGHTS.sum()
 
-FEE_BASE_AMOUNTS = {
-    "retail checking": 5_200.0,
-    "high-yield savings": 2_150.0,
-    "small-business checking": 7_800.0,
-    "consumer credit card": 9_400.0,
-    "auto loan": 6_300.0,
-    "personal loan": 5_900.0,
-}
-
-FEE_TYPES = {
-    "retail checking": "maintenance_fee",
-    "high-yield savings": "service_fee",
-    "small-business checking": "treasury_service_fee",
-    "consumer credit card": "interchange_fee",
-    "auto loan": "servicing_fee",
-    "personal loan": "origination_fee",
-}
-
-CAMPAIGN_CHANNELS = {
-    "deposits": ["Email", "SMS", "Online Banking"],
-    "cards": ["Email", "Mobile App", "SMS"],
-    "lending": ["Email", "Mobile App", "Branch Network"],
-}
-
-CAMPAIGN_THEMES = {
-    "retail checking": ["Checking Refresh", "Everyday Banking Bonus", "Switch and Save"],
-    "high-yield savings": ["Savings Lift", "Summer Savings Boost", "Reserve Growth"],
-    "small-business checking": ["Business Cashflow Drive", "Business Momentum", "Owner Advantage"],
-    "consumer credit card": ["Rewards Launch", "Tap to Earn", "Everyday Spend Bonus"],
-    "auto loan": ["Drive Forward", "Dealer Fast Track", "Refi Ready"],
-    "personal loan": ["Flex Credit", "Personal Loan Reset", "Seasonal Cash Support"],
-}
+FEE_BASE_AMOUNTS = PRODUCT_FINANCIALS["fee_base_amounts"]
+FEE_TYPES = PRODUCT_FINANCIALS["fee_types"]
+CAMPAIGN_CHANNELS = CAMPAIGN_POOLS["campaign_channels"]
+CAMPAIGN_THEMES = CAMPAIGN_POOLS["campaign_themes"]
 
 
 @dataclass(frozen=True)
@@ -358,7 +175,7 @@ def generate_employees(
     rng: np.random.Generator,
     scale: float,
 ) -> pd.DataFrame:
-    branch_staff_target = max(5, int(round(6 * scale)))
+    branch_staff_target = max(5, int(round(DEFAULT_BRANCH_STAFF_TARGET * scale)))
     selected_people = _take_people(people_pool, len(branches) * branch_staff_target, rng, set())
     rows: list[dict[str, object]] = []
     counter = 1
@@ -827,7 +644,7 @@ def _build_json_schema_payload(table: GeneratedTable) -> dict[str, object]:
         column_descriptors.append(
             {
                 "name": column_name,
-                "pandas_dtype": str(series.dtype),
+                "pandas_dtype": _display_dtype_for_schema(column_name, series),
                 "nullable": bool(series.isna().any()),
             }
         )
@@ -869,3 +686,19 @@ def _json_schema_for_series(column_name: str, series: pd.Series) -> dict[str, ob
         nullable_schema["type"] = [base_schema["type"], "null"]
         return nullable_schema
     return base_schema
+
+
+def _display_dtype_for_schema(column_name: str, series: pd.Series) -> str:
+    if pd.api.types.is_bool_dtype(series):
+        return str(series.dtype)
+    if pd.api.types.is_integer_dtype(series):
+        return str(series.dtype)
+    if pd.api.types.is_float_dtype(series):
+        return str(series.dtype)
+    if pd.api.types.is_datetime64_any_dtype(series):
+        if column_name != "effective_date" and (
+            column_name.endswith("_date") or column_name in {"start_date", "end_date"}
+        ):
+            return "datetime64[s]"
+        return "datetime64[us]"
+    return "str"

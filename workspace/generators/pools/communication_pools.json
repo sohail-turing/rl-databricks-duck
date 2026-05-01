@@ -1,0 +1,20 @@
+{
+  "message_types_by_department": {
+    "Retail Banking": ["team_announcement", "branch_update", "service_alert"],
+    "Operations": ["incident_followup", "service_alert", "branch_update"],
+    "Marketing": ["campaign_launch", "campaign_update", "team_announcement"],
+    "HR": ["onboarding_update", "policy_update", "team_announcement"],
+    "Finance": ["performance_update", "policy_update", "team_announcement"]
+  },
+  "message_channel_by_type": {
+    "team_announcement": "CH-004",
+    "branch_update": "CH-007",
+    "service_alert": "CH-008",
+    "incident_followup": "CH-008",
+    "campaign_launch": "CH-004",
+    "campaign_update": "CH-004",
+    "onboarding_update": "CH-004",
+    "policy_update": "CH-007",
+    "performance_update": "CH-007"
+  }
+}

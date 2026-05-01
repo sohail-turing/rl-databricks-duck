@@ -1,0 +1,44 @@
+{
+  "role_base_pay": {
+    "Branch Manager": 8900.0,
+    "Relationship Banker": 4950.0,
+    "Operations Analyst": 5450.0,
+    "Service Lead": 5250.0,
+    "Universal Banker": 3100.0,
+    "Campaign Manager": 6450.0,
+    "Payroll Specialist": 5850.0,
+    "Finance Analyst": 6200.0,
+    "Small Business Banker": 5900.0,
+    "Branch Operations Specialist": 5050.0,
+    "Teller": 2650.0,
+    "Fraud Resolution Analyst": 5650.0
+  },
+  "role_bonus_rate": {
+    "Branch Manager": 0.12,
+    "Relationship Banker": 0.05,
+    "Operations Analyst": 0.03,
+    "Service Lead": 0.04,
+    "Universal Banker": 0.02,
+    "Campaign Manager": 0.09,
+    "Payroll Specialist": 0.02,
+    "Finance Analyst": 0.05,
+    "Small Business Banker": 0.07,
+    "Branch Operations Specialist": 0.03,
+    "Teller": 0.01,
+    "Fraud Resolution Analyst": 0.04
+  },
+  "role_job_family": {
+    "Branch Manager": ["branch_leadership", "M3"],
+    "Relationship Banker": ["sales_and_service", "P2"],
+    "Operations Analyst": ["operations", "P2"],
+    "Service Lead": ["service_operations", "M1"],
+    "Universal Banker": ["sales_and_service", "P1"],
+    "Campaign Manager": ["marketing", "P3"],
+    "Payroll Specialist": ["people_operations", "P2"],
+    "Finance Analyst": ["finance", "P2"],
+    "Small Business Banker": ["business_banking", "P3"],
+    "Branch Operations Specialist": ["operations", "P2"],
+    "Teller": ["sales_and_service", "P1"],
+    "Fraud Resolution Analyst": ["risk_operations", "P2"]
+  }
+}

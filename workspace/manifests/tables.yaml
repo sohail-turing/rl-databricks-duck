@@ -39,14 +39,54 @@ tables:
     tag: gold
     role: tier_a
     notes: First HR gold surface and reusable workforce profile table.
+  - asset_ref: main.hr_people.departments
+    tag: gold
+    role: tier_b
+    notes: HR department dimension used by assignments, roles, compensation, and staffing analysis.
+  - asset_ref: main.hr_people.job_roles
+    tag: gold
+    role: tier_b
+    notes: Role and salary-band dimension connected to employee assignments and compensation history.
+  - asset_ref: main.hr_people.employee_assignments
+    tag: gold
+    role: tier_b
+    notes: Current employee-to-branch, department, role, manager, cost-center, and FTE assignment surface.
+  - asset_ref: main.hr_people.reporting_lines
+    tag: gold
+    role: tier_b
+    notes: Direct manager reporting graph for span-of-control and workforce hierarchy tasks.
+  - asset_ref: main.hr_people.time_off_requests
+    tag: gold
+    role: tier_b
+    notes: Manager-approved leave requests connected to employees, branches, periods, and incident pressure.
+  - asset_ref: main.hr_people.performance_reviews
+    tag: gold
+    role: tier_b
+    notes: Review ratings connected to employees, managers, branches, payroll outcomes, and incident context.
+  - asset_ref: main.hr_people.onboarding_cases
+    tag: gold
+    role: tier_b
+    notes: New-hire onboarding status tied to employees, managers, HR partners, branches, and periods.
   - asset_ref: main.marketing_campaigns.campaigns
     tag: gold
     role: tier_a
     notes: First marketing gold surface for campaign planning and ownership.
+  - asset_ref: main.hr_payroll.employee_compensation_history
+    tag: gold
+    role: tier_b
+    notes: Periodic compensation snapshots linked to payroll, roles, departments, cost centers, and branches.
   - asset_ref: main.hr_payroll.payroll_runs
     tag: gold
     role: tier_b
     notes: Payroll facts used for medium-difficulty HR and finance comparisons.
+  - asset_ref: main.hr_benefits.benefit_plans
+    tag: gold
+    role: tier_b
+    notes: Benefit plan dimension for enrollment and cost analytics.
+  - asset_ref: main.hr_benefits.benefit_enrollments
+    tag: gold
+    role: tier_b
+    notes: Employee benefit enrollment fact surface connected to plans and employee status.
   - asset_ref: main.marketing_attribution.lead_conversions
     tag: gold
     role: tier_b

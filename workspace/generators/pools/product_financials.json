@@ -1,0 +1,28 @@
+{
+  "fee_base_amounts": {
+    "retail checking": 5200.0,
+    "high-yield savings": 2150.0,
+    "small-business checking": 7800.0,
+    "consumer credit card": 9400.0,
+    "auto loan": 6300.0,
+    "personal loan": 5900.0
+  },
+  "fee_types": {
+    "retail checking": "maintenance_fee",
+    "high-yield savings": "service_fee",
+    "small-business checking": "treasury_service_fee",
+    "consumer credit card": "interchange_fee",
+    "auto loan": "servicing_fee",
+    "personal loan": "origination_fee"
+  },
+  "deposit_balance_factor": {
+    "retail checking": 0.86,
+    "high-yield savings": 0.93,
+    "small-business checking": 0.89
+  },
+  "conversion_revenue": {
+    "deposits": 190.0,
+    "cards": 335.0,
+    "lending": 980.0
+  }
+}

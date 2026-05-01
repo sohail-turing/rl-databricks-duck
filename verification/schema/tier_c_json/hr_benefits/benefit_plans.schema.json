@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_benefits.benefit_plans",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "benefit_plan_id": {
+        "type": "string"
+      },
+      "plan_name": {
+        "type": "string"
+      },
+      "plan_type": {
+        "type": "string"
+      },
+      "provider_name": {
+        "type": "string"
+      },
+      "employer_monthly_cost_usd": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "benefit_plan_id",
+      "plan_name",
+      "plan_type",
+      "provider_name",
+      "employer_monthly_cost_usd"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_benefits.benefit_plans",
+  "x-local-name": "hr_benefits.benefit_plans",
+  "x-sqlite-name": "hr_benefits__benefit_plans",
+  "x-row-count": 5,
+  "x-columns": [
+    {
+      "name": "benefit_plan_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "plan_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "plan_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "provider_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employer_monthly_cost_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}
