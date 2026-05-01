@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.job_roles",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "role_id": {
+        "type": "string"
+      },
+      "department_id": {
+        "type": "string"
+      },
+      "role_title": {
+        "type": "string"
+      },
+      "job_family": {
+        "type": "string"
+      },
+      "job_level": {
+        "type": "string"
+      },
+      "exempt_flag": {
+        "type": "boolean"
+      },
+      "annual_salary_min_usd": {
+        "type": "number"
+      },
+      "annual_salary_mid_usd": {
+        "type": "number"
+      },
+      "annual_salary_max_usd": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "role_id",
+      "department_id",
+      "role_title",
+      "job_family",
+      "job_level",
+      "exempt_flag",
+      "annual_salary_min_usd",
+      "annual_salary_mid_usd",
+      "annual_salary_max_usd"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.job_roles",
+  "x-local-name": "hr_people.job_roles",
+  "x-sqlite-name": "hr_people__job_roles",
+  "x-row-count": 9,
+  "x-columns": [
+    {
+      "name": "role_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "department_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "role_title",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "job_family",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "job_level",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "exempt_flag",
+      "pandas_dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "annual_salary_min_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "annual_salary_mid_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "annual_salary_max_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

@@ -183,13 +183,23 @@ The first build list should be treated as the minimum authoritative slice that m
 
 ### Tier B — Must exist before medium-task authoring is complete
 
-1. `main.hr_payroll.payroll_runs`
-2. `main.marketing_attribution.lead_conversions`
-3. `main.communication_threads.incident_threads`
-4. `main.ops_branch.branch_incidents`
-5. `main.communication_threads.channel_messages`
-6. `main.finance_core.deposit_balances`
-7. `main.ops_branch.service_sla_events`
+1. `main.hr_people.departments`
+2. `main.hr_people.job_roles`
+3. `main.hr_people.employee_assignments`
+4. `main.hr_people.reporting_lines`
+5. `main.hr_people.time_off_requests`
+6. `main.hr_people.performance_reviews`
+7. `main.hr_people.onboarding_cases`
+8. `main.hr_payroll.employee_compensation_history`
+9. `main.hr_payroll.payroll_runs`
+10. `main.hr_benefits.benefit_plans`
+11. `main.hr_benefits.benefit_enrollments`
+12. `main.marketing_attribution.lead_conversions`
+13. `main.communication_threads.incident_threads`
+14. `main.ops_branch.branch_incidents`
+15. `main.communication_threads.channel_messages`
+16. `main.finance_core.deposit_balances`
+17. `main.ops_branch.service_sla_events`
 
 ### Tier C — Must exist before hard-task authoring is complete
 

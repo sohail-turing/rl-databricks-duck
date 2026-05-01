@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.onboarding_cases",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "onboarding_case_id": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "hr_partner_employee_id": {
+        "type": "string"
+      },
+      "manager_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "case_status": {
+        "type": "string"
+      },
+      "case_opened_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "target_completion_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "actual_completion_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "completion_pct": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "onboarding_case_id",
+      "employee_id",
+      "branch_id",
+      "period_id",
+      "hr_partner_employee_id",
+      "case_status",
+      "case_opened_date",
+      "target_completion_date",
+      "actual_completion_date",
+      "completion_pct"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.onboarding_cases",
+  "x-local-name": "hr_people.onboarding_cases",
+  "x-sqlite-name": "hr_people__onboarding_cases",
+  "x-row-count": 31,
+  "x-columns": [
+    {
+      "name": "onboarding_case_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "hr_partner_employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "manager_id",
+      "pandas_dtype": "str",
+      "nullable": true
+    },
+    {
+      "name": "case_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "case_opened_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "target_completion_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "actual_completion_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "completion_pct",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

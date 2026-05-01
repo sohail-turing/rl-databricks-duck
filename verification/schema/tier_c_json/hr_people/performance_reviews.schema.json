@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.performance_reviews",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "review_id": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "manager_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "review_period_id": {
+        "type": "string"
+      },
+      "performance_rating": {
+        "type": "integer"
+      },
+      "potential_rating": {
+        "type": "integer"
+      },
+      "goals_met_pct": {
+        "type": "number"
+      },
+      "review_status": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "review_id",
+      "employee_id",
+      "branch_id",
+      "review_period_id",
+      "performance_rating",
+      "potential_rating",
+      "goals_met_pct",
+      "review_status"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.performance_reviews",
+  "x-local-name": "hr_people.performance_reviews",
+  "x-sqlite-name": "hr_people__performance_reviews",
+  "x-row-count": 102,
+  "x-columns": [
+    {
+      "name": "review_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "manager_id",
+      "pandas_dtype": "str",
+      "nullable": true
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "review_period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "performance_rating",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "potential_rating",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "goals_met_pct",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "review_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

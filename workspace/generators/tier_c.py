@@ -7,20 +7,14 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from .milestone import GeneratedTable
+from .milestone import GeneratedTable, load_pool_json
 from .tier_b import build_tier_b
 
 
-ANNOUNCEMENT_TYPES = (
-    "launch_brief",
-    "channel_enablement",
-    "performance_update",
-)
-GL_ACCOUNT_CODES = {
-    "service_recovery_expense": "610510",
-    "customer_remediation_reserve": "221130",
-    "branch_overtime_expense": "610275",
-}
+CAMPAIGN_POOLS = load_pool_json("campaign_pools.json")
+
+ANNOUNCEMENT_TYPES = tuple(CAMPAIGN_POOLS["announcement_types"])
+GL_ACCOUNT_CODES = load_pool_json("gl_account_codes.json")
 
 
 def build_tier_c(

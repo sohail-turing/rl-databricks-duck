@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "table_count": 20,
+  "table_count": 30,
   "tables": [
     {
       "canonical_name": "main.certified.calendar_periods",
@@ -73,11 +73,81 @@
       "schema_path": "marketing_campaigns/campaigns.schema.json"
     },
     {
+      "canonical_name": "main.hr_people.departments",
+      "local_name": "hr_people.departments",
+      "sqlite_name": "hr_people__departments",
+      "row_count": 5,
+      "schema_path": "hr_people/departments.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_people.job_roles",
+      "local_name": "hr_people.job_roles",
+      "sqlite_name": "hr_people__job_roles",
+      "row_count": 9,
+      "schema_path": "hr_people/job_roles.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_people.employee_assignments",
+      "local_name": "hr_people.employee_assignments",
+      "sqlite_name": "hr_people__employee_assignments",
+      "row_count": 72,
+      "schema_path": "hr_people/employee_assignments.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_people.reporting_lines",
+      "local_name": "hr_people.reporting_lines",
+      "sqlite_name": "hr_people__reporting_lines",
+      "row_count": 60,
+      "schema_path": "hr_people/reporting_lines.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_people.time_off_requests",
+      "local_name": "hr_people.time_off_requests",
+      "sqlite_name": "hr_people__time_off_requests",
+      "row_count": 143,
+      "schema_path": "hr_people/time_off_requests.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_people.performance_reviews",
+      "local_name": "hr_people.performance_reviews",
+      "sqlite_name": "hr_people__performance_reviews",
+      "row_count": 102,
+      "schema_path": "hr_people/performance_reviews.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_people.onboarding_cases",
+      "local_name": "hr_people.onboarding_cases",
+      "sqlite_name": "hr_people__onboarding_cases",
+      "row_count": 31,
+      "schema_path": "hr_people/onboarding_cases.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_payroll.employee_compensation_history",
+      "local_name": "hr_payroll.employee_compensation_history",
+      "sqlite_name": "hr_payroll__employee_compensation_history",
+      "row_count": 1666,
+      "schema_path": "hr_payroll/employee_compensation_history.schema.json"
+    },
+    {
       "canonical_name": "main.hr_payroll.payroll_runs",
       "local_name": "hr_payroll.payroll_runs",
       "sqlite_name": "hr_payroll__payroll_runs",
       "row_count": 1666,
       "schema_path": "hr_payroll/payroll_runs.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_benefits.benefit_plans",
+      "local_name": "hr_benefits.benefit_plans",
+      "sqlite_name": "hr_benefits__benefit_plans",
+      "row_count": 5,
+      "schema_path": "hr_benefits/benefit_plans.schema.json"
+    },
+    {
+      "canonical_name": "main.hr_benefits.benefit_enrollments",
+      "local_name": "hr_benefits.benefit_enrollments",
+      "sqlite_name": "hr_benefits__benefit_enrollments",
+      "row_count": 288,
+      "schema_path": "hr_benefits/benefit_enrollments.schema.json"
     },
     {
       "canonical_name": "main.marketing_attribution.lead_conversions",

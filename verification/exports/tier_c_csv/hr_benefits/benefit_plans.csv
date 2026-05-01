@@ -1,0 +1,6 @@
+benefit_plan_id,plan_name,plan_type,provider_name,employer_monthly_cost_usd
+BEN-MED-PPO,Meridian PPO Medical,medical,BlueCross Southeast,625.0
+BEN-MED-HSA,Meridian HSA Medical,medical,Aetna Select,510.0
+BEN-DENTAL,Meridian Dental Plus,dental,Delta Dental,48.0
+BEN-VISION,Meridian Vision,vision,VSP,18.0
+BEN-401K,Meridian 401k Match,retirement,Fidelity,0.0

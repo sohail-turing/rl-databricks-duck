@@ -1,0 +1,16 @@
+{
+  "campaign_channels": {
+    "deposits": ["Email", "SMS", "Online Banking"],
+    "cards": ["Email", "Mobile App", "SMS"],
+    "lending": ["Email", "Mobile App", "Branch Network"]
+  },
+  "campaign_themes": {
+    "retail checking": ["Checking Refresh", "Everyday Banking Bonus", "Switch and Save"],
+    "high-yield savings": ["Savings Lift", "Summer Savings Boost", "Reserve Growth"],
+    "small-business checking": ["Business Cashflow Drive", "Business Momentum", "Owner Advantage"],
+    "consumer credit card": ["Rewards Launch", "Tap to Earn", "Everyday Spend Bonus"],
+    "auto loan": ["Drive Forward", "Dealer Fast Track", "Refi Ready"],
+    "personal loan": ["Flex Credit", "Personal Loan Reset", "Seasonal Cash Support"]
+  },
+  "announcement_types": ["launch_brief", "channel_enablement", "performance_update"]
+}

@@ -1,0 +1,10 @@
+[
+  {"channel_id": "CH-001", "channel_name": "Branch Network", "channel_type": "customer", "business_owner": "Retail Banking"},
+  {"channel_id": "CH-002", "channel_name": "Online Banking", "channel_type": "digital", "business_owner": "Digital Banking"},
+  {"channel_id": "CH-003", "channel_name": "Mobile App", "channel_type": "digital", "business_owner": "Digital Banking"},
+  {"channel_id": "CH-004", "channel_name": "Email", "channel_type": "campaign", "business_owner": "Marketing"},
+  {"channel_id": "CH-005", "channel_name": "SMS", "channel_type": "campaign", "business_owner": "Marketing"},
+  {"channel_id": "CH-006", "channel_name": "Call Center", "channel_type": "service", "business_owner": "Service Recovery"},
+  {"channel_id": "CH-007", "channel_name": "Operations Bridge", "channel_type": "internal", "business_owner": "Operations"},
+  {"channel_id": "CH-008", "channel_name": "Incident Hotline", "channel_type": "internal", "business_owner": "Operations"}
+]

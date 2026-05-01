@@ -9,6 +9,17 @@ This folder is the active generator layer for the current 10-task Meridian Trust
 3. `tier_c.py` -> Tier C hard-task tables
 4. `run.py` -> CLI entrypoint
 
+Reusable static pools live in `pools/`. Keep branch footprints, product
+definitions, HR/payroll assumptions, incident categories, communication types,
+benefit plans, and GL codes there instead of hard-coding them in generator
+logic.
+
+Tier B now includes the expanded HR analytics graph: departments, roles,
+assignments, reporting lines, compensation history, benefits, time off,
+performance reviews, and onboarding cases. These tables are connected through
+employee, manager, branch, period, role, department, cost-center, and benefit
+plan keys.
+
 ## Current output modes
 
 | Output | Why it exists |

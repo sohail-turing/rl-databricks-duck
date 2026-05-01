@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.time_off_requests",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "time_off_request_id": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "manager_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "request_type": {
+        "type": "string"
+      },
+      "request_status": {
+        "type": "string"
+      },
+      "requested_start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "requested_end_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "requested_hours": {
+        "type": "number"
+      },
+      "submitted_ts": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "time_off_request_id",
+      "employee_id",
+      "branch_id",
+      "period_id",
+      "request_type",
+      "request_status",
+      "requested_start_date",
+      "requested_end_date",
+      "requested_hours",
+      "submitted_ts"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.time_off_requests",
+  "x-local-name": "hr_people.time_off_requests",
+  "x-sqlite-name": "hr_people__time_off_requests",
+  "x-row-count": 143,
+  "x-columns": [
+    {
+      "name": "time_off_request_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "manager_id",
+      "pandas_dtype": "str",
+      "nullable": true
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "request_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "request_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "requested_start_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "requested_end_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "requested_hours",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "submitted_ts",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    }
+  ]
+}

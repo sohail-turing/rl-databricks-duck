@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_payroll.employee_compensation_history",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "compensation_snapshot_id": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "department_id": {
+        "type": "string"
+      },
+      "role_id": {
+        "type": "string"
+      },
+      "cost_center_id": {
+        "type": "string"
+      },
+      "pay_type": {
+        "type": "string"
+      },
+      "annualized_base_pay_usd": {
+        "type": "number"
+      },
+      "monthly_base_pay_usd": {
+        "type": "number"
+      },
+      "monthly_bonus_pay_usd": {
+        "type": "number"
+      },
+      "salary_band_position_pct": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "compensation_snapshot_id",
+      "employee_id",
+      "period_id",
+      "branch_id",
+      "department_id",
+      "role_id",
+      "cost_center_id",
+      "pay_type",
+      "annualized_base_pay_usd",
+      "monthly_base_pay_usd",
+      "monthly_bonus_pay_usd",
+      "salary_band_position_pct"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_payroll.employee_compensation_history",
+  "x-local-name": "hr_payroll.employee_compensation_history",
+  "x-sqlite-name": "hr_payroll__employee_compensation_history",
+  "x-row-count": 1666,
+  "x-columns": [
+    {
+      "name": "compensation_snapshot_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "department_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "role_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "cost_center_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "pay_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "annualized_base_pay_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "monthly_base_pay_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "monthly_bonus_pay_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "salary_band_position_pct",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

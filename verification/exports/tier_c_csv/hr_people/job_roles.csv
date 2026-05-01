@@ -1,0 +1,10 @@
+role_id,department_id,role_title,job_family,job_level,exempt_flag,annual_salary_min_usd,annual_salary_mid_usd,annual_salary_max_usd
+ROLE-001,DPT-001,Finance Analyst,finance,P2,True,61008.0,74400.0,91512.0
+ROLE-002,DPT-002,Payroll Specialist,people_operations,P2,True,57564.0,70200.0,86346.0
+ROLE-003,DPT-003,Campaign Manager,marketing,P3,True,63468.0,77400.0,95202.0
+ROLE-004,DPT-004,Operations Analyst,operations,P2,True,53628.0,65400.0,80442.0
+ROLE-005,DPT-004,Service Lead,service_operations,M1,True,51660.0,63000.0,77490.0
+ROLE-006,DPT-005,Branch Manager,branch_leadership,M3,True,87576.0,106800.0,131364.0
+ROLE-007,DPT-005,Relationship Banker,sales_and_service,P2,True,48708.0,59400.0,73062.0
+ROLE-008,DPT-005,Small Business Banker,business_banking,P3,True,58056.0,70800.0,87084.0
+ROLE-009,DPT-005,Universal Banker,sales_and_service,P1,False,30504.0,37200.0,45756.0

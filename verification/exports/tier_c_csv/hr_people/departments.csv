@@ -1,0 +1,6 @@
+department_id,department_name,function_group,executive_owner_employee_id,active_flag
+DPT-001,Finance,corporate_finance,EMP-000018,True
+DPT-002,HR,people_operations,EMP-000012,True
+DPT-003,Marketing,growth,EMP-000006,True
+DPT-004,Operations,branch_operations,EMP-000003,True
+DPT-005,Retail Banking,branch_banking,EMP-000001,True

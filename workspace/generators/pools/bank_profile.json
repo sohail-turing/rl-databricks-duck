@@ -1,0 +1,6 @@
+{
+  "bank_domain": "meridiantrust.bank",
+  "size_segment": "small_regional_bank",
+  "footprint_states": ["NC", "SC", "GA", "FL"],
+  "default_branch_staff_target": 6
+}
