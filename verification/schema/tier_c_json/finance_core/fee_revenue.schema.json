@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.finance_core.fee_revenue",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "branch_id": {
+        "type": "string"
+      },
+      "product_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "fee_type": {
+        "type": "string"
+      },
+      "fee_amount_usd": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "branch_id",
+      "product_id",
+      "period_id",
+      "fee_type",
+      "fee_amount_usd"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.finance_core.fee_revenue",
+  "x-local-name": "finance_core.fee_revenue",
+  "x-sqlite-name": "finance_core__fee_revenue",
+  "x-row-count": 1728,
+  "x-columns": [
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "product_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "fee_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "fee_amount_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

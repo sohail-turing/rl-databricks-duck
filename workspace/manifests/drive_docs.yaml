@@ -1,6 +1,21 @@
 version: 1
-generated_at: TBD
+generated_at: 2026-05-01
 
-drive_docs: []
+drive_docs:
+  - path: /Companies/Marketing/campaigns/2026-h2-launch-brief.gdoc
+    source_file: workspace/drive/Companies/Marketing/campaigns/2026-h2-launch-brief.gdoc
+    tag: gold
+    related_tasks: [T-003, T-009]
+    notes: Marketing launch brief that explains timing, channel ownership, and post-launch review expectations.
+  - path: /Companies/Operations/incidents/q3-service-recovery-review.gdoc
+    source_file: workspace/drive/Companies/Operations/incidents/q3-service-recovery-review.gdoc
+    tag: gold
+    related_tasks: [T-006, T-008, T-010]
+    notes: Operations review note on incident handling, SLA follow-up, and branch recovery expectations.
+  - path: /Companies/HR/people/branch-staffing-realignment.gdoc
+    source_file: workspace/drive/Companies/HR/people/branch-staffing-realignment.gdoc
+    tag: gold
+    related_tasks: [T-007, T-010]
+    notes: HR note on branch staffing shifts and temporary reassignment decisions.
 
 retrieval_tests: []

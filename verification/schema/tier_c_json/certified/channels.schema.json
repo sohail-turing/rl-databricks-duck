@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.channels",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "channel_id": {
+        "type": "string"
+      },
+      "channel_name": {
+        "type": "string"
+      },
+      "channel_type": {
+        "type": "string"
+      },
+      "business_owner": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "channel_id",
+      "channel_name",
+      "channel_type",
+      "business_owner"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.channels",
+  "x-local-name": "certified.channels",
+  "x-sqlite-name": "certified__channels",
+  "x-row-count": 8,
+  "x-columns": [
+    {
+      "name": "channel_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "channel_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "channel_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "business_owner",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

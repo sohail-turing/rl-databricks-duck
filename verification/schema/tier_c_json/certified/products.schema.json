@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.products",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "product_id": {
+        "type": "string"
+      },
+      "product_name": {
+        "type": "string"
+      },
+      "product_family": {
+        "type": "string"
+      },
+      "product_group": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "product_id",
+      "product_name",
+      "product_family",
+      "product_group"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.products",
+  "x-local-name": "certified.products",
+  "x-sqlite-name": "certified__products",
+  "x-row-count": 6,
+  "x-columns": [
+    {
+      "name": "product_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "product_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "product_family",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "product_group",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

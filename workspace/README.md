@@ -1,23 +1,24 @@
-# Workspace
+# Workspace Source
 
-Source-of-truth for everything that gets loaded into the Databricks workspace.
+This folder is the repo-side source of truth for assets that support the Meridian Trust milestone and, later, Databricks workspace loading.
 
-| Subfolder        | What it holds                                                              |
-| ---------------- | -------------------------------------------------------------------------- |
-| `manifests/`     | YAML manifests — every asset is enumerated here with its taxonomy tag.     |
-| `generators/`    | Python data generators (one per canonical entity).                         |
-| `notebooks/`     | Source notebooks (.ipynb / .py).                                           |
-| `dashboards/`    | Dashboard definitions (JSON / YAML).                                       |
-| `drive/`         | Source files for Google Drive — interview notes, briefs, memos.            |
+## Current subfolders
 
-## Manifest contract
+| Subfolder | Current role |
+| --- | --- |
+| `manifests/` | YAML manifests for the current tables, notebooks, and drive docs |
+| `generators/` | Active SQLite-first synthetic data generators |
+| `notebooks/` | Current support notebooks used in local discovery and task authoring |
+| `dashboards/` | Reserved for dashboard source files; not populated for the current milestone |
+| `drive/` | Current support documents for narrative grounding and later MCP loading |
 
-Every asset in the workspace must appear in exactly one manifest, tagged with one of:
-- `gold` — authoritative for at least one task.
-- `distractor:<taxonomy_id>` — see `validator.md` §2.1.
-- `anchor:<taxonomy_id>` — see `validator.md` §2.2.
-- `noise` — generic noise that isn't claimed by any task.
+## Current milestone status
 
-The manifest is the input to:
-1. The loader that creates the assets in the workspace.
-2. The coverage-matrix tool that confirms every taxonomy element is exercised.
+1. generator code is active
+2. notebook assets are active
+3. drive-doc assets are active
+4. dashboard source files are still a placeholder area
+
+## Working rule
+
+Every asset that matters for the milestone should have a corresponding manifest entry so the workspace story stays auditable and reusable later.

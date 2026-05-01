@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.branches",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "branch_id": {
+        "type": "string"
+      },
+      "branch_name": {
+        "type": "string"
+      },
+      "region_name": {
+        "type": "string"
+      },
+      "state_code": {
+        "type": "string"
+      },
+      "market_name": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "branch_id",
+      "branch_name",
+      "region_name",
+      "state_code",
+      "market_name"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.branches",
+  "x-local-name": "certified.branches",
+  "x-sqlite-name": "certified__branches",
+  "x-row-count": 12,
+  "x-columns": [
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "region_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "state_code",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "market_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

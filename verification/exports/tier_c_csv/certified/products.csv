@@ -1,0 +1,7 @@
+product_id,product_name,product_family,product_group
+PRD-001,Meridian Everyday Checking,retail checking,deposits
+PRD-002,Meridian High-Yield Savings,high-yield savings,deposits
+PRD-003,Meridian Business Advantage Checking,small-business checking,deposits
+PRD-004,Meridian Rewards Card,consumer credit card,cards
+PRD-005,Meridian Auto Loan,auto loan,lending
+PRD-006,Meridian Personal Loan,personal loan,lending

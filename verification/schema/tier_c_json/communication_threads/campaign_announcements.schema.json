@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.communication_threads.campaign_announcements",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "campaign_id": {
+        "type": "string"
+      },
+      "channel_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "announcement_ts": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "owner_employee_id": {
+        "type": "string"
+      },
+      "announcement_type": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "campaign_id",
+      "channel_id",
+      "period_id",
+      "announcement_ts",
+      "owner_employee_id",
+      "announcement_type"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.communication_threads.campaign_announcements",
+  "x-local-name": "communication_threads.campaign_announcements",
+  "x-sqlite-name": "communication_threads__campaign_announcements",
+  "x-row-count": 34,
+  "x-columns": [
+    {
+      "name": "campaign_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "channel_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "announcement_ts",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    },
+    {
+      "name": "owner_employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "announcement_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

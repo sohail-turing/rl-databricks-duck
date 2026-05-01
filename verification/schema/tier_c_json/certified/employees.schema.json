@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.employees",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "employee_id": {
+        "type": "string"
+      },
+      "employee_name": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "department": {
+        "type": "string"
+      },
+      "manager_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "hire_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "employment_type": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "employee_id",
+      "employee_name",
+      "branch_id",
+      "department",
+      "hire_date",
+      "employment_type",
+      "email"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.employees",
+  "x-local-name": "certified.employees",
+  "x-sqlite-name": "certified__employees",
+  "x-row-count": 72,
+  "x-columns": [
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "department",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "manager_id",
+      "pandas_dtype": "str",
+      "nullable": true
+    },
+    {
+      "name": "hire_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "employment_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "email",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

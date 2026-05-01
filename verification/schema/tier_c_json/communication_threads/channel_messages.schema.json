@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.communication_threads.channel_messages",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "channel_id": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "message_ts": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "message_type": {
+        "type": "string"
+      },
+      "engagement_count": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "channel_id",
+      "employee_id",
+      "period_id",
+      "message_ts",
+      "message_type",
+      "engagement_count"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.communication_threads.channel_messages",
+  "x-local-name": "communication_threads.channel_messages",
+  "x-sqlite-name": "communication_threads__channel_messages",
+  "x-row-count": 1437,
+  "x-columns": [
+    {
+      "name": "channel_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "message_ts",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    },
+    {
+      "name": "message_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "engagement_count",
+      "pandas_dtype": "int64",
+      "nullable": false
+    }
+  ]
+}

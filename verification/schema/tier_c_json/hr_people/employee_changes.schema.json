@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.employee_changes",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "employee_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "change_type": {
+        "type": "string"
+      },
+      "old_department": {
+        "type": "string"
+      },
+      "new_department": {
+        "type": "string"
+      },
+      "effective_date": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "required": [
+      "employee_id",
+      "period_id",
+      "branch_id",
+      "change_type",
+      "old_department",
+      "new_department",
+      "effective_date"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.employee_changes",
+  "x-local-name": "hr_people.employee_changes",
+  "x-sqlite-name": "hr_people__employee_changes",
+  "x-row-count": 18,
+  "x-columns": [
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "change_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "old_department",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "new_department",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "effective_date",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    }
+  ]
+}

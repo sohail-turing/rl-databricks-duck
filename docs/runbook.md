@@ -8,6 +8,24 @@
 - `pip install -r requirements.txt`
 - `.env` configured (copy from `.env.example`)
 
+## Generate the local milestone slice
+
+```bash
+.venv/bin/python -m workspace.generators.run \
+  --target sqlite \
+  --build tier-c \
+  --out verification/runs/tier_c_seed.sqlite \
+  --csv-dir verification/exports/tier_c_csv \
+  --schema-json-dir verification/schema/tier_c_json
+```
+
+## Query the local SQLite artifact with canonical names
+
+```bash
+.venv/bin/python tools/sqlite_query.py --list-mapping
+.venv/bin/python tools/sqlite_query.py --sql "select branch_id, sum(fee_amount_usd) as total_fee from main.finance_core.fee_revenue group by 1 order by 2 desc limit 5"
+```
+
 ## Generate the workspace (after access lands)
 ```bash
 python -m workspace.generators.run --target databricks

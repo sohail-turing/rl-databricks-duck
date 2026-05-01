@@ -1,0 +1,13 @@
+branch_id,branch_name,region_name,state_code,market_name
+BR-001,Charlotte Uptown,Carolinas,NC,Charlotte
+BR-002,Raleigh North Hills,Carolinas,NC,Raleigh
+BR-003,Asheville River Arts,Carolinas,NC,Asheville
+BR-004,Columbia Vista,Carolinas,SC,Columbia
+BR-005,Greenville Eastside,Carolinas,SC,Greenville
+BR-006,Charleston Harbor,Carolinas,SC,Charleston
+BR-007,Atlanta Midtown,Georgia,GA,Atlanta
+BR-008,Savannah Historic,Georgia,GA,Savannah
+BR-009,Macon Riverside,Georgia,GA,Macon
+BR-010,Jacksonville Southpoint,Florida,FL,Jacksonville
+BR-011,Orlando Lake Nona,Florida,FL,Orlando
+BR-012,Tampa Channelside,Florida,FL,Tampa

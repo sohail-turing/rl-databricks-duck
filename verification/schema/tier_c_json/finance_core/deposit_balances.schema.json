@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.finance_core.deposit_balances",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "account_id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "ending_balance_usd": {
+        "type": "number"
+      },
+      "average_balance_usd": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "account_id",
+      "customer_id",
+      "branch_id",
+      "period_id",
+      "ending_balance_usd",
+      "average_balance_usd"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.finance_core.deposit_balances",
+  "x-local-name": "finance_core.deposit_balances",
+  "x-sqlite-name": "finance_core__deposit_balances",
+  "x-row-count": 3866,
+  "x-columns": [
+    {
+      "name": "account_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "ending_balance_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "average_balance_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

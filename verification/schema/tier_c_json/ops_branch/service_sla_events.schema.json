@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.ops_branch.service_sla_events",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "sla_event_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "incident_id": {
+        "type": "string"
+      },
+      "response_minutes": {
+        "type": "integer"
+      },
+      "resolution_minutes": {
+        "type": "integer"
+      },
+      "sla_breached_flag": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "sla_event_id",
+      "branch_id",
+      "period_id",
+      "incident_id",
+      "response_minutes",
+      "resolution_minutes",
+      "sla_breached_flag"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.ops_branch.service_sla_events",
+  "x-local-name": "ops_branch.service_sla_events",
+  "x-sqlite-name": "ops_branch__service_sla_events",
+  "x-row-count": 79,
+  "x-columns": [
+    {
+      "name": "sla_event_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "incident_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "response_minutes",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "resolution_minutes",
+      "pandas_dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "sla_breached_flag",
+      "pandas_dtype": "bool",
+      "nullable": false
+    }
+  ]
+}

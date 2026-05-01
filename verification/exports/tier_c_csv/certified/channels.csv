@@ -1,0 +1,9 @@
+channel_id,channel_name,channel_type,business_owner
+CH-001,Branch Network,customer,Retail Banking
+CH-002,Online Banking,digital,Digital Banking
+CH-003,Mobile App,digital,Digital Banking
+CH-004,Email,campaign,Marketing
+CH-005,SMS,campaign,Marketing
+CH-006,Call Center,service,Service Recovery
+CH-007,Operations Bridge,internal,Operations
+CH-008,Incident Hotline,internal,Operations

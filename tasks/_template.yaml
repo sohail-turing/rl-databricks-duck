@@ -1,5 +1,5 @@
 id: T-XXX
-domain: sales            # sales | marketing | finance | engineering
+domain: finance          # finance | hr | communication | marketing | operations
 sub_domain: TBD
 difficulty: hard         # easy | medium | hard
 target_pass_at_5: "<20%"

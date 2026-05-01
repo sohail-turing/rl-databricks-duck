@@ -1,0 +1,15 @@
+Meridian Trust Bank
+2026 H2 Launch Brief
+
+Scope
+- Focus on retail checking, high-yield savings, and consumer credit card launches in the Southeast footprint.
+- Internal campaign launch communication should land in the first week of the campaign period.
+- Launch timing reviews should reconcile campaign setup, internal announcement timing, and booked conversions.
+
+Working guidance
+- Use main.marketing_campaigns.campaigns for canonical campaign setup and ownership.
+- Use main.communication_threads.campaign_announcements for internal launch timing context.
+- Use main.marketing_attribution.lead_conversions for downstream conversion outcome and booked revenue.
+
+Review note
+- For pure budget ranking questions, announcement activity is supporting context rather than the canonical gold path.

@@ -1,5 +1,85 @@
 version: 1
-domain: example
-generated_at: TBD
+domain: milestone
+generated_at: 2026-05-01
 
-tables: []
+tables:
+  - asset_ref: main.certified.calendar_periods
+    tag: gold
+    role: shared_dimension
+    notes: Shared reporting calendar used across the full milestone slice.
+  - asset_ref: main.certified.branches
+    tag: gold
+    role: shared_dimension
+    notes: Canonical branch and region lookup for all branch-level tasks.
+  - asset_ref: main.certified.products
+    tag: gold
+    role: shared_dimension
+    notes: Product catalog used by marketing, finance, and account joins.
+  - asset_ref: main.certified.channels
+    tag: gold
+    role: shared_dimension
+    notes: Channel registry used by communication and campaign surfaces.
+  - asset_ref: main.certified.employees
+    tag: gold
+    role: shared_dimension
+    notes: Canonical employee identity surface for HR and communication joins.
+  - asset_ref: main.certified.customers
+    tag: gold
+    role: shared_dimension
+    notes: Customer identity and segmentation for account and campaign joins.
+  - asset_ref: main.certified.accounts
+    tag: gold
+    role: shared_dimension
+    notes: Canonical account entity used by deposits, conversions, and GL links.
+  - asset_ref: main.finance_core.fee_revenue
+    tag: gold
+    role: tier_a
+    notes: First finance gold surface and reusable anchor for branch revenue questions.
+  - asset_ref: main.hr_people.employee_directory
+    tag: gold
+    role: tier_a
+    notes: First HR gold surface and reusable workforce profile table.
+  - asset_ref: main.marketing_campaigns.campaigns
+    tag: gold
+    role: tier_a
+    notes: First marketing gold surface for campaign planning and ownership.
+  - asset_ref: main.hr_payroll.payroll_runs
+    tag: gold
+    role: tier_b
+    notes: Payroll facts used for medium-difficulty HR and finance comparisons.
+  - asset_ref: main.marketing_attribution.lead_conversions
+    tag: gold
+    role: tier_b
+    notes: Conversion outcome surface used for campaign-to-account reasoning.
+  - asset_ref: main.communication_threads.incident_threads
+    tag: gold
+    role: tier_b
+    notes: Incident-specific communication trail for disruption analysis.
+  - asset_ref: main.ops_branch.branch_incidents
+    tag: gold
+    role: tier_b
+    notes: Canonical incident surface reused by operations and hard-task joins.
+  - asset_ref: main.communication_threads.channel_messages
+    tag: gold
+    role: tier_b
+    notes: General communication activity used for onboarding and engagement reasoning.
+  - asset_ref: main.finance_core.deposit_balances
+    tag: gold
+    role: tier_b
+    notes: Deposit balance movement surface for service impact tasks.
+  - asset_ref: main.ops_branch.service_sla_events
+    tag: gold
+    role: tier_b
+    notes: SLA timing and breach facts for service recovery analysis.
+  - asset_ref: main.communication_threads.campaign_announcements
+    tag: gold
+    role: tier_c
+    notes: Internal campaign-launch communication surface for hard marketing tasks.
+  - asset_ref: main.hr_people.employee_changes
+    tag: gold
+    role: tier_c
+    notes: Staffing movement surface used for hard operational reasoning.
+  - asset_ref: main.finance_gl.gl_entries
+    tag: gold
+    role: tier_c
+    notes: Branch and incident-linked ledger impact surface for the hardest finance path.

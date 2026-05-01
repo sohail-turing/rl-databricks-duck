@@ -1,31 +1,36 @@
 # Harness
 
-Runs tasks. Owns:
+This folder is the future automation layer for running tasks against an agent tool surface.
 
-- The **tool surface** the agent sees (SQL exec, list catalogs / schemas / tables, get table metadata, read notebook, read dashboard query, MCP retrieve).
-- The **baseline agent** wired to that surface (frontier model — Claude / GPT-class — used for both eval and verification ablations).
-- **Per-run namespaced output dirs** so concurrent runs don't collide.
-- **Ablation apply/undo scripts** under `ablation/T-XXX/<claim_id>/` — used by WS-9 verification.
-- **Reset script** that removes per-run artifacts after scoring.
+## Current status
 
-## Components
+`harness/runner.py` is still a scaffold and currently raises `NotImplementedError`.
 
-```
+That means the harness is not the primary day-to-day loop for the current 10-task milestone.
+
+Current working milestone loop:
+
+1. author the task in the repo
+2. validate the gold SQL locally against SQLite
+3. run the manual or Genie-style 3-pass smoke check outside the unfinished harness path
+
+## Current folder layout
+
+```text
 harness/
-  __init__.py
-  runner.py              # CLI: --task, --suite, --concurrency, --ablation
-  tools/                 # Databricks tool surface
-    __init__.py
-    sql.py
-    catalog.py
-    notebooks.py
-    dashboards.py
-    drive_mcp.py
-  agent/                 # baseline agent wired to the tool surface
-    __init__.py
-    frontier.py          # OpenAI / Anthropic / etc.
-  ablation/              # paired apply/undo scripts per (task, claim)
-  sessions/              # per-run state
+  runner.py
+  ablation/
+  sessions/
 ```
 
-To be filled during WS-8.
+## What this folder is meant to own later
+
+1. the tool surface the agent sees
+2. the baseline agent wiring
+3. per-run namespaced outputs
+4. ablation apply/undo execution
+5. run orchestration for suites and claims
+
+## Team guidance right now
+
+Do not present the harness as production-ready automation yet. For the current milestone, treat it as planned infrastructure, not finished operating tooling.

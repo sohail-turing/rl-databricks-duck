@@ -1,0 +1,14 @@
+Meridian Trust Bank
+Branch Staffing Realignment Note
+
+Scope
+- Temporary staffing shifts may occur when a branch has sustained incident pressure or service backlog.
+- Staffing review should connect employee movement, branch operating pressure, and booked cost impact.
+
+Working guidance
+- Use main.hr_people.employee_changes for the canonical staffing movement record.
+- Use main.ops_branch.branch_incidents for operational pressure in the same branch and period.
+- Use main.finance_gl.gl_entries for booked branch impact tied to service recovery and overtime.
+
+Review note
+- Fee revenue can be useful as supporting finance context, but it is not a full substitute for booked ledger impact in the hard operational path.

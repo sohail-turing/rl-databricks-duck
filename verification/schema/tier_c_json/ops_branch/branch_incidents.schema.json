@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.ops_branch.branch_incidents",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "incident_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "channel_id": {
+        "type": "string"
+      },
+      "incident_type": {
+        "type": "string"
+      },
+      "severity": {
+        "type": "string"
+      },
+      "opened_ts": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "resolved_ts": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "incident_id",
+      "branch_id",
+      "period_id",
+      "channel_id",
+      "incident_type",
+      "severity",
+      "opened_ts",
+      "resolved_ts"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.ops_branch.branch_incidents",
+  "x-local-name": "ops_branch.branch_incidents",
+  "x-sqlite-name": "ops_branch__branch_incidents",
+  "x-row-count": 79,
+  "x-columns": [
+    {
+      "name": "incident_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "channel_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "incident_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "severity",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "opened_ts",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    },
+    {
+      "name": "resolved_ts",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    }
+  ]
+}

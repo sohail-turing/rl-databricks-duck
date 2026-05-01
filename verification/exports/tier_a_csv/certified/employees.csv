@@ -1,0 +1,73 @@
+employee_id,employee_name,branch_id,department,manager_id,hire_date,employment_type,email
+EMP-000001,Stephen Olson,BR-001,Retail Banking,,2020-03-19,Full-time,stephen.olson.001@meridiantrust.bank
+EMP-000002,Courtney Jimenez,BR-001,Retail Banking,EMP-000001,2021-04-08,Full-time,courtney.jimenez.002@meridiantrust.bank
+EMP-000003,Karen Lee,BR-001,Operations,EMP-000001,2025-12-10,Full-time,karen.lee.003@meridiantrust.bank
+EMP-000004,Marcus Wells,BR-001,Operations,EMP-000001,2024-10-29,Full-time,marcus.wells.004@meridiantrust.bank
+EMP-000005,Jared Taylor,BR-001,Retail Banking,EMP-000001,2018-04-12,Part-time,jared.taylor.005@meridiantrust.bank
+EMP-000006,Jeremy Jimenez,BR-001,Marketing,EMP-000001,2019-11-15,Full-time,jeremy.jimenez.006@meridiantrust.bank
+EMP-000007,Garrett Cox,BR-002,Retail Banking,,2024-07-28,Full-time,garrett.cox.007@meridiantrust.bank
+EMP-000008,Isla Hughes,BR-002,Retail Banking,EMP-000007,2018-06-20,Full-time,isla.hughes.008@meridiantrust.bank
+EMP-000009,Edward Clark,BR-002,Operations,EMP-000007,2024-11-05,Full-time,edward.clark.009@meridiantrust.bank
+EMP-000010,Mark Mitchell,BR-002,Operations,EMP-000007,2020-04-02,Full-time,mark.mitchell.010@meridiantrust.bank
+EMP-000011,Kyle Rice,BR-002,Retail Banking,EMP-000007,2025-05-05,Part-time,kyle.rice.011@meridiantrust.bank
+EMP-000012,Nathan Boyd,BR-002,HR,EMP-000007,2020-05-07,Full-time,nathan.boyd.012@meridiantrust.bank
+EMP-000013,Howard Ortiz,BR-003,Retail Banking,,2021-06-23,Full-time,howard.ortiz.013@meridiantrust.bank
+EMP-000014,Jared Ellis,BR-003,Retail Banking,EMP-000013,2023-04-19,Full-time,jared.ellis.014@meridiantrust.bank
+EMP-000015,Sean Hayes,BR-003,Operations,EMP-000013,2019-01-04,Full-time,sean.hayes.015@meridiantrust.bank
+EMP-000016,Sharon Wood,BR-003,Operations,EMP-000013,2022-06-16,Full-time,sharon.wood.016@meridiantrust.bank
+EMP-000017,Theodore Woods,BR-003,Retail Banking,EMP-000013,2022-01-15,Part-time,theodore.woods.017@meridiantrust.bank
+EMP-000018,Lindsey Henry,BR-003,Finance,EMP-000013,2024-04-09,Full-time,lindsey.henry.018@meridiantrust.bank
+EMP-000019,Luis Washington,BR-004,Retail Banking,,2025-12-20,Full-time,luis.washington.019@meridiantrust.bank
+EMP-000020,Blake Green,BR-004,Retail Banking,EMP-000019,2023-04-26,Full-time,blake.green.020@meridiantrust.bank
+EMP-000021,Janice Gray,BR-004,Operations,EMP-000019,2021-04-10,Full-time,janice.gray.021@meridiantrust.bank
+EMP-000022,Lawrence Ross,BR-004,Operations,EMP-000019,2021-04-02,Full-time,lawrence.ross.022@meridiantrust.bank
+EMP-000023,Lindsey Hunter,BR-004,Retail Banking,EMP-000019,2021-05-06,Part-time,lindsey.hunter.023@meridiantrust.bank
+EMP-000024,Michelle Olson,BR-004,Retail Banking,EMP-000019,2024-07-06,Full-time,michelle.olson.024@meridiantrust.bank
+EMP-000025,Dustin Sanders,BR-005,Retail Banking,,2020-07-27,Full-time,dustin.sanders.025@meridiantrust.bank
+EMP-000026,Sophia Tucker,BR-005,Retail Banking,EMP-000025,2019-05-03,Full-time,sophia.tucker.026@meridiantrust.bank
+EMP-000027,Savannah Ryan,BR-005,Operations,EMP-000025,2020-09-03,Full-time,savannah.ryan.027@meridiantrust.bank
+EMP-000028,Kaylee Perez,BR-005,Operations,EMP-000025,2018-03-08,Full-time,kaylee.perez.028@meridiantrust.bank
+EMP-000029,Marcus Bell,BR-005,Retail Banking,EMP-000025,2018-11-07,Part-time,marcus.bell.029@meridiantrust.bank
+EMP-000030,Cesar Cruz,BR-005,Marketing,EMP-000025,2018-09-21,Full-time,cesar.cruz.030@meridiantrust.bank
+EMP-000031,Frances Martinez,BR-006,Retail Banking,,2024-03-04,Full-time,frances.martinez.031@meridiantrust.bank
+EMP-000032,Emma Rodriguez,BR-006,Retail Banking,EMP-000031,2023-10-12,Full-time,emma.rodriguez.032@meridiantrust.bank
+EMP-000033,Timothy Robinson,BR-006,Operations,EMP-000031,2023-07-29,Full-time,timothy.robinson.033@meridiantrust.bank
+EMP-000034,Alexis Boyd,BR-006,Operations,EMP-000031,2021-09-11,Full-time,alexis.boyd.034@meridiantrust.bank
+EMP-000035,Silas Wood,BR-006,Retail Banking,EMP-000031,2023-09-27,Part-time,silas.wood.035@meridiantrust.bank
+EMP-000036,Matthew Gonzalez,BR-006,HR,EMP-000031,2019-04-17,Full-time,matthew.gonzalez.036@meridiantrust.bank
+EMP-000037,Carson Flores,BR-007,Retail Banking,,2025-03-16,Full-time,carson.flores.037@meridiantrust.bank
+EMP-000038,Trinity Snyder,BR-007,Retail Banking,EMP-000037,2022-01-04,Full-time,trinity.snyder.038@meridiantrust.bank
+EMP-000039,Cody Payne,BR-007,Operations,EMP-000037,2025-07-03,Full-time,cody.payne.039@meridiantrust.bank
+EMP-000040,Laura Hill,BR-007,Operations,EMP-000037,2019-03-22,Full-time,laura.hill.040@meridiantrust.bank
+EMP-000041,Chloe Jones,BR-007,Retail Banking,EMP-000037,2021-12-24,Part-time,chloe.jones.041@meridiantrust.bank
+EMP-000042,Addison Murray,BR-007,Finance,EMP-000037,2023-07-28,Full-time,addison.murray.042@meridiantrust.bank
+EMP-000043,Cameron Simpson,BR-008,Retail Banking,,2021-12-19,Full-time,cameron.simpson.043@meridiantrust.bank
+EMP-000044,Harper Reyes,BR-008,Retail Banking,EMP-000043,2021-07-27,Full-time,harper.reyes.044@meridiantrust.bank
+EMP-000045,Elizabeth Gomez,BR-008,Operations,EMP-000043,2019-05-01,Full-time,elizabeth.gomez.045@meridiantrust.bank
+EMP-000046,Brooke Phillips,BR-008,Operations,EMP-000043,2021-01-18,Full-time,brooke.phillips.046@meridiantrust.bank
+EMP-000047,Reagan Spencer,BR-008,Retail Banking,EMP-000043,2019-11-29,Part-time,reagan.spencer.047@meridiantrust.bank
+EMP-000048,Paul Simmons,BR-008,Retail Banking,EMP-000043,2020-05-31,Full-time,paul.simmons.048@meridiantrust.bank
+EMP-000049,Sydney Wright,BR-009,Retail Banking,,2023-06-21,Full-time,sydney.wright.049@meridiantrust.bank
+EMP-000050,Grace Kelley,BR-009,Retail Banking,EMP-000049,2023-01-16,Full-time,grace.kelley.050@meridiantrust.bank
+EMP-000051,Easton Morales,BR-009,Operations,EMP-000049,2022-11-10,Full-time,easton.morales.051@meridiantrust.bank
+EMP-000052,Nancy Garcia,BR-009,Operations,EMP-000049,2020-11-23,Full-time,nancy.garcia.052@meridiantrust.bank
+EMP-000053,Thomas Nguyen,BR-009,Retail Banking,EMP-000049,2025-09-05,Part-time,thomas.nguyen.053@meridiantrust.bank
+EMP-000054,Leslie Alexander,BR-009,Marketing,EMP-000049,2018-09-14,Full-time,leslie.alexander.054@meridiantrust.bank
+EMP-000055,Cooper Collins,BR-010,Retail Banking,,2020-09-28,Full-time,cooper.collins.055@meridiantrust.bank
+EMP-000056,Emily Jenkins,BR-010,Retail Banking,EMP-000055,2018-12-11,Full-time,emily.jenkins.056@meridiantrust.bank
+EMP-000057,Spencer Sanchez,BR-010,Operations,EMP-000055,2020-09-17,Full-time,spencer.sanchez.057@meridiantrust.bank
+EMP-000058,Anna Hall,BR-010,Operations,EMP-000055,2025-09-11,Full-time,anna.hall.058@meridiantrust.bank
+EMP-000059,Bryce Moore,BR-010,Retail Banking,EMP-000055,2020-12-06,Part-time,bryce.moore.059@meridiantrust.bank
+EMP-000060,Kathleen Hawkins,BR-010,HR,EMP-000055,2025-04-08,Full-time,kathleen.hawkins.060@meridiantrust.bank
+EMP-000061,Emily Burns,BR-011,Retail Banking,,2021-12-17,Full-time,emily.burns.061@meridiantrust.bank
+EMP-000062,Cynthia Nelson,BR-011,Retail Banking,EMP-000061,2023-08-07,Full-time,cynthia.nelson.062@meridiantrust.bank
+EMP-000063,Brenda Ramirez,BR-011,Operations,EMP-000061,2021-08-29,Full-time,brenda.ramirez.063@meridiantrust.bank
+EMP-000064,Doris Fox,BR-011,Operations,EMP-000061,2020-02-16,Full-time,doris.fox.064@meridiantrust.bank
+EMP-000065,Elena Miller,BR-011,Retail Banking,EMP-000061,2024-02-12,Part-time,elena.miller.065@meridiantrust.bank
+EMP-000066,Bella Ferguson,BR-011,Finance,EMP-000061,2025-10-02,Full-time,bella.ferguson.066@meridiantrust.bank
+EMP-000067,Caleb Foster,BR-012,Retail Banking,,2020-02-10,Full-time,caleb.foster.067@meridiantrust.bank
+EMP-000068,Addison Butler,BR-012,Retail Banking,EMP-000067,2024-03-25,Full-time,addison.butler.068@meridiantrust.bank
+EMP-000069,Sawyer Robinson,BR-012,Operations,EMP-000067,2020-02-03,Full-time,sawyer.robinson.069@meridiantrust.bank
+EMP-000070,Gregory Jackson,BR-012,Operations,EMP-000067,2023-09-26,Full-time,gregory.jackson.070@meridiantrust.bank
+EMP-000071,Owen Simmons,BR-012,Retail Banking,EMP-000067,2024-04-24,Part-time,owen.simmons.071@meridiantrust.bank
+EMP-000072,Margaret Ellis,BR-012,Retail Banking,EMP-000067,2021-08-06,Full-time,margaret.ellis.072@meridiantrust.bank

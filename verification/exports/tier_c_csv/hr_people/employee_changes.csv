@@ -1,0 +1,19 @@
+employee_id,period_id,branch_id,change_type,old_department,new_department,effective_date
+EMP-000001,2026-M03,BR-001,temporary_backfill,Retail Banking,Retail Banking,2026-03-21
+EMP-000002,2026-M09,BR-001,temporary_backfill,Retail Banking,Retail Banking,2026-09-22
+EMP-000003,2026-M08,BR-001,reassignment,Operations,Finance,2026-08-06
+EMP-000004,2026-M12,BR-001,reassignment,Operations,Retail Banking,2026-12-16
+EMP-000007,2026-M01,BR-002,temporary_backfill,Retail Banking,Operations,2026-01-21
+EMP-000008,2026-M01,BR-002,temporary_backfill,Retail Banking,Operations,2026-01-13
+EMP-000009,2026-M12,BR-002,reassignment,Operations,Finance,2026-12-17
+EMP-000010,2026-M08,BR-002,reassignment,Operations,Operations,2026-08-07
+EMP-000013,2026-M12,BR-003,temporary_backfill,Retail Banking,Marketing,2026-12-18
+EMP-000014,2026-M11,BR-003,temporary_backfill,Retail Banking,Operations,2026-11-21
+EMP-000015,2026-M11,BR-003,reassignment,Operations,Retail Banking,2026-11-21
+EMP-000016,2026-M08,BR-003,reassignment,Operations,Operations,2026-08-16
+EMP-000019,2026-M07,BR-004,temporary_backfill,Retail Banking,Operations,2026-07-04
+EMP-000020,2026-M07,BR-004,temporary_backfill,Retail Banking,Marketing,2026-07-04
+EMP-000021,2026-M09,BR-004,reassignment,Operations,Finance,2026-09-16
+EMP-000022,2026-M12,BR-004,reassignment,Operations,Operations,2026-12-03
+EMP-000025,2026-M02,BR-005,temporary_backfill,Retail Banking,Operations,2026-02-09
+EMP-000026,2026-M04,BR-005,temporary_backfill,Retail Banking,Marketing,2026-04-06

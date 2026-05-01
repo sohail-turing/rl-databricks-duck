@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_payroll.payroll_runs",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "employee_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "base_pay_usd": {
+        "type": "number"
+      },
+      "bonus_pay_usd": {
+        "type": "number"
+      },
+      "total_pay_usd": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "employee_id",
+      "period_id",
+      "branch_id",
+      "base_pay_usd",
+      "bonus_pay_usd",
+      "total_pay_usd"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_payroll.payroll_runs",
+  "x-local-name": "hr_payroll.payroll_runs",
+  "x-sqlite-name": "hr_payroll__payroll_runs",
+  "x-row-count": 1666,
+  "x-columns": [
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "base_pay_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "bonus_pay_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "total_pay_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

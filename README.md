@@ -1,51 +1,62 @@
-# Databricks RL Environment Build
+# Meridian Trust 10-Task Milestone
 
-Realistic, production-like Databricks workspace + 100-task analytical evaluation suite + verifier/harness, built for Databricks by Turing.
+This repo currently supports the first Meridian Trust Bank milestone: a SQLite-first local data slice, support assets, task templates, and the scaffolding for later harness and verification expansion.
+
+The broad long-horizon Databricks program documents are still here, but the team should treat the 10-task bank slice as the operational focus for current work.
 
 ## Start here
 
-1. [`context.md`](./context.md) — what we're building, vocabulary, taxonomies, principles.
-2. [`plan.md`](./plan.md) — 6-week execution plan, workstreams, locked decisions, risks.
-3. [`validator.md`](./validator.md) — 4-layer validation strategy and the Fisher's-exact ablation method.
+1. `10_task_plan.md` — current milestone workflow, ERD, commands, and delivery gates.
+2. `phase3_context.md` — low-token handoff for task authoring.
+3. `docs/bank_canon.md` — locked Meridian Trust Bank identity and naming rules.
+4. `docs/milestone_schema_map.md` — minimum schema and joins.
+5. `docs/milestone_gold_table_map.md` — gold paths and table build order.
+6. `workspace/generators/README.md` — generator commands and local artifact flow.
 
-## Source documents (input)
+## Current working artifacts
 
-- [`reference_docs/`](./reference_docs) — the three source docs this build is derived from:
-  - `Workspace taxonomies and verification.docx` (Databricks methodology)
-  - `How Agents Distinguish Tables_ Concrete Examples for Workspace Complexity.docx` (Databricks recipe)
-  - `[Databricks __ Turing] - Initial Proposal Databricks RL Env Build-v0.docx` (Turing engagement scope)
+| Artifact | Path | Purpose |
+| --- | --- | --- |
+| Local SQLite database | `verification/runs/tier_c_seed.sqlite` | Main local source of truth for task authoring |
+| CSV export | `verification/exports/tier_c_csv/` | Easy table review for the team |
+| JSON schema export | `verification/schema/tier_c_json/` | Portable schema handoff |
+| Canonical local SQL helper | `tools/sqlite_query.py` | Query SQLite with canonical table names |
+
+## Common local commands
+
+```bash
+cd /Users/apple/Documents/turing/apple/databrick-rl
+
+# Rebuild the Tier C milestone slice
+.venv/bin/python -m workspace.generators.run \
+  --target sqlite \
+  --build tier-c \
+  --out verification/runs/tier_c_seed.sqlite \
+  --csv-dir verification/exports/tier_c_csv \
+  --schema-json-dir verification/schema/tier_c_json
+
+# Inspect canonical-to-SQLite mappings
+.venv/bin/python tools/sqlite_query.py --list-mapping
+
+# Run local SQL with canonical table names
+.venv/bin/python tools/sqlite_query.py --sql "select branch_id, sum(fee_amount_usd) as total_fee from main.finance_core.fee_revenue group by 1 order by 2 desc limit 5"
+```
 
 ## Repo layout
 
-| Path                    | What lives here                                                                                |
-| ----------------------- | ---------------------------------------------------------------------------------------------- |
-| `docs/`                 | Detail design docs (domain model, catalog layout, naming conventions, runbooks).               |
-| `workspace/manifests/`  | YAML manifests of every table / notebook / dashboard / Drive doc, with taxonomy tags.          |
-| `workspace/generators/` | Python generators that produce the synthetic data.                                              |
-| `workspace/notebooks/`  | Source notebooks that get loaded into the workspace.                                            |
-| `workspace/dashboards/` | Dashboard definitions (JSON / YAML).                                                            |
-| `workspace/drive/`      | Source documents that get uploaded to Google Drive (interview notes, briefs, memos).            |
-| `tasks/`                | Task specs (`T-001.yaml` … `T-100.yaml`). Schema in `validator.md` §7.                          |
-| `tasks/rubrics/`        | LLM-as-judge rubrics (per-task or shared).                                                      |
-| `verifier/programmatic/`| Programmatic verifier kernel (exact, set, numeric, frame).                                      |
-| `verifier/judge/`       | Judge runner. Default model: ChatGPT (OpenAI). Pluggable.                                        |
-| `harness/`              | Run harness, tool surface, ablation apply/undo scripts, session manager.                        |
-| `verification/`         | Raw runs of the baseline agent + per-claim Fisher's-exact reports.                              |
-| `tools/`                | Utility scripts (coverage matrix generator, stats helpers).                                     |
+| Path | Current role |
+| --- | --- |
+| `docs/` | Bank canon, schema maps, task guidance, and runbooks |
+| `workspace/` | Generators, manifests, notebooks, dashboard placeholders, and drive docs |
+| `tasks/` | Milestone task templates and future task specs |
+| `verifier/` | Programmatic matchers plus judge scaffolding |
+| `harness/` | Future automation layer; currently still scaffolded |
+| `verification/` | SQLite runs, CSV exports, JSON schemas, and later report outputs |
+| `tools/` | Helper scripts for local querying, validation, and coverage |
 
-## Quick start (after access lands)
+## Current status
 
-```bash
-# Install deps (Python 3.11)
-pip install -r requirements.txt
-
-# Run the harness against a single task
-python -m harness.runner --task T-001 --run-id local-001
-
-# Generate the coverage matrix
-python tools/coverage_matrix.py
-```
-
-## Status
-
-**Currently in WS-0 (offline-buildable path).** Workspace + Drive + MCP credentials are still being procured. See [`plan.md`](./plan.md) §2.1 for the parallel offline workstream.
+1. Phase 0, Phase 1, and Phase 2 are complete.
+2. Phase 3 task authoring is ready to proceed on top of the SQLite artifact.
+3. The generator, CSV export, JSON schema export, and canonical local SQL helper are working now.
+4. The harness, judge runner, and statistical ablation flow are still partial scaffolds and should not be presented as finished automation yet.

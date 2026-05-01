@@ -16,9 +16,9 @@ __pycache__/
 verification/runs/**/*.jsonl
 verification/runs/**/*.log
 harness/sessions/**/*.json
-*.duckdb
-*.duckdb-shm
-*.duckdb-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
 
 .DS_Store
 .idea/

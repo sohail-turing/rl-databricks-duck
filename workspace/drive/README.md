@@ -1,20 +1,23 @@
-# Drive source documents
+# Drive Source Documents
 
-Source-of-truth files that get uploaded to the Google Drive folder served by MCP.
+This folder holds the repo-side source documents used for later Drive or MCP loading and for current milestone narrative grounding.
 
-Layout:
-```
+## Current milestone docs
+
+1. `Companies/Marketing/campaigns/2026-h2-launch-brief.gdoc`
+2. `Companies/Operations/incidents/q3-service-recovery-review.gdoc`
+3. `Companies/HR/people/branch-staffing-realignment.gdoc`
+
+## Layout
+
+```text
 drive/
   Companies/
-    Sales/
-      orders/...
-      pipeline/...
+    HR/
     Marketing/
-      campaigns/...
-    Finance/
-      gl/...
-    Engineering/
-      asset_management/...
+    Operations/
 ```
 
-To be filled during WS-6.
+## Working rule
+
+Only include a drive document in `expected_assets` if the gold path actually needs it.

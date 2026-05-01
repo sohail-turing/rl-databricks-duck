@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.hr_people.employee_directory",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "employee_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "department": {
+        "type": "string"
+      },
+      "role_title": {
+        "type": "string"
+      },
+      "manager_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "employment_status": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "employee_id",
+      "branch_id",
+      "department",
+      "role_title",
+      "employment_status"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.hr_people.employee_directory",
+  "x-local-name": "hr_people.employee_directory",
+  "x-sqlite-name": "hr_people__employee_directory",
+  "x-row-count": 72,
+  "x-columns": [
+    {
+      "name": "employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "department",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "role_title",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "manager_id",
+      "pandas_dtype": "str",
+      "nullable": true
+    },
+    {
+      "name": "employment_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

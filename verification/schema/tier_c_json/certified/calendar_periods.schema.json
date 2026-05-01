@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.calendar_periods",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "period_id": {
+        "type": "string"
+      },
+      "period_type": {
+        "type": "string"
+      },
+      "start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "end_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "fiscal_year": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "period_id",
+      "period_type",
+      "start_date",
+      "end_date",
+      "fiscal_year"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.calendar_periods",
+  "x-local-name": "certified.calendar_periods",
+  "x-sqlite-name": "certified__calendar_periods",
+  "x-row-count": 32,
+  "x-columns": [
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_type",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "start_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "end_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "fiscal_year",
+      "pandas_dtype": "int64",
+      "nullable": false
+    }
+  ]
+}

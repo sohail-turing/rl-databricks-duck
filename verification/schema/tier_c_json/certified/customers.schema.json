@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.customers",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "customer_id": {
+        "type": "string"
+      },
+      "customer_name": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "product_id": {
+        "type": "string"
+      },
+      "signup_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "segment": {
+        "type": "string"
+      },
+      "state_code": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "customer_id",
+      "customer_name",
+      "branch_id",
+      "product_id",
+      "signup_date",
+      "segment",
+      "state_code"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.customers",
+  "x-local-name": "certified.customers",
+  "x-sqlite-name": "certified__customers",
+  "x-row-count": 360,
+  "x-columns": [
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "product_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "signup_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "segment",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "state_code",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

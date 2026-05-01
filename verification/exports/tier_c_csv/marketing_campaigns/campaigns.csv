@@ -1,0 +1,13 @@
+campaign_id,product_id,period_id,campaign_name,campaign_channel,budget_usd,owner_employee_id
+CMP-0001,PRD-001,2026-M01,Winter Checking Refresh,Email,45964.54,EMP-000006
+CMP-0002,PRD-002,2026-M02,Winter Summer Savings Boost,SMS,48201.22,EMP-000030
+CMP-0003,PRD-003,2026-M03,Spring Owner Advantage,Online Banking,53915.48,EMP-000054
+CMP-0004,PRD-004,2026-M04,Spring Rewards Launch,Email,82117.28,EMP-000006
+CMP-0005,PRD-005,2026-M05,Spring Dealer Fast Track,Mobile App,55218.61,EMP-000030
+CMP-0006,PRD-006,2026-M06,Summer Seasonal Cash Support,Branch Network,60069.02,EMP-000054
+CMP-0007,PRD-001,2026-M07,Summer Checking Refresh,Email,58671.52,EMP-000006
+CMP-0008,PRD-002,2026-M08,Summer Summer Savings Boost,SMS,58383.47,EMP-000030
+CMP-0009,PRD-003,2026-M09,Fall Owner Advantage,Online Banking,48462.31,EMP-000054
+CMP-0010,PRD-004,2026-M10,Fall Rewards Launch,Email,71552.72,EMP-000006
+CMP-0011,PRD-005,2026-M11,Fall Dealer Fast Track,Mobile App,68617.24,EMP-000030
+CMP-0012,PRD-006,2026-M12,Winter Seasonal Cash Support,Branch Network,68635.45,EMP-000054

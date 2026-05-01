@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.certified.accounts",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "account_id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "product_id": {
+        "type": "string"
+      },
+      "account_open_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "account_status": {
+        "type": "string"
+      },
+      "current_balance_usd": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "account_id",
+      "customer_id",
+      "branch_id",
+      "product_id",
+      "account_open_date",
+      "account_status",
+      "current_balance_usd"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.certified.accounts",
+  "x-local-name": "certified.accounts",
+  "x-sqlite-name": "certified__accounts",
+  "x-row-count": 360,
+  "x-columns": [
+    {
+      "name": "account_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "product_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "account_open_date",
+      "pandas_dtype": "datetime64[s]",
+      "nullable": false
+    },
+    {
+      "name": "account_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "current_balance_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

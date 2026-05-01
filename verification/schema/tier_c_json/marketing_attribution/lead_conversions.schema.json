@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.marketing_attribution.lead_conversions",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "campaign_id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "account_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "conversion_status": {
+        "type": "string"
+      },
+      "conversion_ts": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "booked_revenue_usd": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "campaign_id",
+      "customer_id",
+      "account_id",
+      "period_id",
+      "conversion_status",
+      "conversion_ts",
+      "booked_revenue_usd"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.marketing_attribution.lead_conversions",
+  "x-local-name": "marketing_attribution.lead_conversions",
+  "x-sqlite-name": "marketing_attribution__lead_conversions",
+  "x-row-count": 94,
+  "x-columns": [
+    {
+      "name": "campaign_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "account_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "conversion_status",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "conversion_ts",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    },
+    {
+      "name": "booked_revenue_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.communication_threads.incident_threads",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "channel_id": {
+        "type": "string"
+      },
+      "branch_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "incident_id": {
+        "type": "string"
+      },
+      "thread_ts": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "severity": {
+        "type": "string"
+      },
+      "message_count": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "channel_id",
+      "branch_id",
+      "period_id",
+      "incident_id",
+      "thread_ts",
+      "severity",
+      "message_count"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.communication_threads.incident_threads",
+  "x-local-name": "communication_threads.incident_threads",
+  "x-sqlite-name": "communication_threads__incident_threads",
+  "x-row-count": 79,
+  "x-columns": [
+    {
+      "name": "channel_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "branch_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "incident_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "thread_ts",
+      "pandas_dtype": "datetime64[us]",
+      "nullable": false
+    },
+    {
+      "name": "severity",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "message_count",
+      "pandas_dtype": "int64",
+      "nullable": false
+    }
+  ]
+}

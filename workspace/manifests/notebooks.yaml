@@ -1,4 +1,19 @@
 version: 1
-generated_at: TBD
+generated_at: 2026-05-01
 
-notebooks: []
+notebooks:
+  - path: /Workspace/Shared/marketing/campaign_launch_timeline.py
+    source_file: workspace/notebooks/marketing/campaign_launch_timeline.py
+    tag: gold
+    related_tasks: [T-003, T-009]
+    notes: Discovery notebook for launch timing, announcement sequence, and conversion follow-through.
+  - path: /Workspace/Shared/operations/incident_service_recovery.py
+    source_file: workspace/notebooks/operations/incident_service_recovery.py
+    tag: gold
+    related_tasks: [T-006, T-008, T-010]
+    notes: Incident, SLA, and deposit-impact review notebook for operational discovery.
+  - path: /Workspace/Shared/hr/staffing_change_watch.py
+    source_file: workspace/notebooks/hr/staffing_change_watch.py
+    tag: gold
+    related_tasks: [T-007, T-010]
+    notes: Staffing change notebook that ties branch reassignment activity to operational pressure.

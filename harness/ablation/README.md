@@ -1,31 +1,34 @@
-# Ablation scripts
+# Ablation
 
-Per-claim apply/undo scripts used for **non-asset** ablations (a single tag, a comment substring, a single SQL line — anything that can't be turned off via permission flips alone).
+This folder is reserved for future apply/undo scripts used in full statistical claim verification.
 
-## Layout
+## Current milestone status
 
-```
+The first 10-task milestone still uses manual anchors and distractors.
+
+That means this folder is currently a placeholder, not an active part of the delivery path.
+
+## Expected later layout
+
+```text
 ablation/
   T-XXX/
     D-3/
-      apply.sh           # mutate the workspace
-      undo.sh            # restore the workspace
-      manifest.yaml      # what was changed; used by QA to diff
+      apply.sh
+      undo.sh
+      manifest.yaml
     A-2/
       apply.sh
       undo.sh
       manifest.yaml
 ```
 
-## QA contract
+## Later QA contract
 
-For every pair, QA runs:
-1. `apply.sh` → capture state hash of affected assets
-2. `undo.sh`  → capture state hash of affected assets
-3. Assert post-`undo` hash equals pre-`apply` hash.
+When the full ablation flow is active, each pair should:
 
-A failing pair must be fixed before the claim can be verified.
+1. apply a reversible change
+2. record what changed in `manifest.yaml`
+3. restore the workspace cleanly on `undo.sh`
 
-## Asset-level ablations
-
-When the claim is a whole asset, no scripts are needed — the harness flips workspace permissions to hide the asset from the eval principal.
+For now, keep this folder empty unless the team explicitly starts the later verification phase.

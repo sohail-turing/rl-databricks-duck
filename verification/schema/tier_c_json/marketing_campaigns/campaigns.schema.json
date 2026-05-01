@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "main.marketing_campaigns.campaigns",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "campaign_id": {
+        "type": "string"
+      },
+      "product_id": {
+        "type": "string"
+      },
+      "period_id": {
+        "type": "string"
+      },
+      "campaign_name": {
+        "type": "string"
+      },
+      "campaign_channel": {
+        "type": "string"
+      },
+      "budget_usd": {
+        "type": "number"
+      },
+      "owner_employee_id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "campaign_id",
+      "product_id",
+      "period_id",
+      "campaign_name",
+      "campaign_channel",
+      "budget_usd",
+      "owner_employee_id"
+    ],
+    "additionalProperties": false
+  },
+  "x-canonical-name": "main.marketing_campaigns.campaigns",
+  "x-local-name": "marketing_campaigns.campaigns",
+  "x-sqlite-name": "marketing_campaigns__campaigns",
+  "x-row-count": 12,
+  "x-columns": [
+    {
+      "name": "campaign_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "product_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "period_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "campaign_name",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "campaign_channel",
+      "pandas_dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "budget_usd",
+      "pandas_dtype": "float64",
+      "nullable": false
+    },
+    {
+      "name": "owner_employee_id",
+      "pandas_dtype": "str",
+      "nullable": false
+    }
+  ]
+}

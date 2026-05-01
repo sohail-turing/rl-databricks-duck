@@ -1,0 +1,14 @@
+Meridian Trust Bank
+Q3 Service Recovery Review
+
+Scope
+- Review branch incidents with elevated severity and confirm whether the follow-up met response expectations.
+- Compare incident timing, SLA performance, and balance movement in the affected branch and period.
+
+Working guidance
+- Use main.ops_branch.branch_incidents for the canonical incident record.
+- Use main.ops_branch.service_sla_events for response and resolution timing.
+- Use main.finance_core.deposit_balances when checking whether service pressure overlapped with balance movement.
+
+Review note
+- Branch incident counts alone are not enough for the service-impact question. SLA and balance context should be checked together.
