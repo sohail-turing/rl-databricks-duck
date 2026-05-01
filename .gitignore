@@ -4,6 +4,7 @@
 /shared_plan.md
 /shared_plan_onepager.md
 /reference_docs/
+explainer.md
 
 __pycache__/
 *.py[cod]
